@@ -1,0 +1,21 @@
+Compiler type: unix
+--noopenmp: 0
+--forceopenmp: 0
+--noxpreprocessor: 0
+--forcellvm: 0
+--forcegnugcc: 0
+--forcestatic: 0
+Cython found (during compilation)
+- Version: 3.0.10
+- Locations: <module 'Cython' from '/Users/wannes/Projects/Research/2016-DTW/repo_dtw/venv-311/lib/python3.11/site-packages/Cython/__init__.py'>
+Numpy found (during compilation):
+- Version: 2.0.2
+- Location: <module 'numpy' from '/Users/wannes/Projects/Research/2016-DTW/repo_dtw/venv-311/lib/python3.11/site-packages/numpy/__init__.py'>
+Using LLVM settings (clang)
+Checking for OpenMP availability for clang
+clang -dM -E -Xpreprocessor -fopenmp - # with stdout=-1, stderr=-1, input=, encoding=ascii
+
+#define _OPENMP 202011
+... found OpenMP
+All extensions:
+[<setuptools.extension.Extension('dtaidistance.dtw_cc') at 0x109d3ae90>, <setuptools.extension.Extension('dtaidistance.ed_cc') at 0x109c8be90>, <setuptools.extension.Extension('dtaidistance.dtw_cc_omp') at 0x109d3aa50>, <setuptools.extension.Extension('dtaidistance.loco_cc') at 0x109d31f50>, <setuptools.extension.Extension('dtaidistance.dtw_cc_numpy') at 0x109d4c150>]
