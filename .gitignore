@@ -7,17 +7,12 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Generated data and caches
-data/raw/
-data/cleaned/
-data/processed/
-data/pruned_datasets/
-data/subsets/
+
 
 cleaned_data/
 dtw_cache/
 traj_cache/
 logs/
-outputs/
 trajectory_plots/
 
 # Local model artifacts and temporary files if needed

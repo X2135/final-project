@@ -1,0 +1,136 @@
+{
+  "seed_info": {
+    "seed_run_dir": "/Users/lcx/Desktop/毕设/复现/outputs/test_cleaning_seed/run_20260206_174317",
+    "ais_csv": "/Users/lcx/Desktop/毕设/复现/data/raw/ais_yuanli.csv",
+    "dtw_npy": "/Users/lcx/Desktop/毕设/复现/dtw_cache/delta_cog/ais_yuanli_dtw_matrix.npy",
+    "feature_mode": "delta_cog"
+  },
+  "target": {
+    "noise_ratio": 0.1,
+    "K_range": [
+      3,
+      5
+    ]
+  },
+  "params": {
+    "minpts_stat": "mean",
+    "poa_two_stage": true,
+    "coarse_steps": 150,
+    "refine_steps": 300,
+    "refine_window_mult": 5.0,
+    "max_iters": 30
+  },
+  "history": [
+    {
+      "iter": 0,
+      "n": 80,
+      "eps": 0.5128843418785585,
+      "minPts": 3,
+      "K": 3,
+      "noise_ratio": 0.35,
+      "removed": 6
+    },
+    {
+      "iter": 1,
+      "n": 74,
+      "eps": 0.5128843418785585,
+      "minPts": 3,
+      "K": 3,
+      "noise_ratio": 0.2972972972972973,
+      "removed": 5
+    },
+    {
+      "iter": 2,
+      "n": 69,
+      "eps": 0.5128843418785585,
+      "minPts": 4,
+      "K": 3,
+      "noise_ratio": 0.2463768115942029,
+      "removed": 4
+    },
+    {
+      "iter": 3,
+      "n": 65,
+      "eps": 0.5128843418785585,
+      "minPts": 4,
+      "K": 3,
+      "noise_ratio": 0.2,
+      "removed": 3
+    },
+    {
+      "iter": 4,
+      "n": 62,
+      "eps": 0.5128843418785585,
+      "minPts": 4,
+      "K": 3,
+      "noise_ratio": 0.16129032258064516,
+      "removed": 2
+    },
+    {
+      "iter": 5,
+      "n": 60,
+      "eps": 0.5127457537648501,
+      "minPts": 4,
+      "K": 3,
+      "noise_ratio": 0.13333333333333333,
+      "removed": 2
+    },
+    {
+      "iter": 6,
+      "n": 58,
+      "eps": 0.5127457537648501,
+      "minPts": 4,
+      "K": 3,
+      "noise_ratio": 0.10344827586206896,
+      "removed": 2
+    },
+    {
+      "iter": 7,
+      "n": 56,
+      "eps": 0.5127457537648501,
+      "minPts": 4,
+      "K": 3,
+      "noise_ratio": 0.07142857142857142,
+      "removed": 1
+    },
+    {
+      "iter": 8,
+      "n": 55,
+      "eps": 0.3944198105883462,
+      "minPts": 5,
+      "K": 1,
+      "noise_ratio": 0.45454545454545453,
+      "removed": 5
+    },
+    {
+      "iter": 9,
+      "n": 50,
+      "eps": 0.393896641359632,
+      "minPts": 5,
+      "K": 1,
+      "noise_ratio": 0.4,
+      "removed": 4
+    },
+    {
+      "iter": 10,
+      "n": 46,
+      "eps": 0.2328632017600113,
+      "minPts": 1,
+      "K": 34,
+      "noise_ratio": 0.0,
+      "removed": 0
+    }
+  ],
+  "best_metrics": {
+    "eps": 0.5127457537648501,
+    "minPts": 4,
+    "K": 3,
+    "noise_ratio": 0.07142857142857142
+  },
+  "final": {
+    "n_keep": 56,
+    "n_total": 80,
+    "final_csv": "/Users/lcx/Desktop/毕设/复现/data/cleaned/loopclean_20260206_180225/final.csv",
+    "final_csv_rows": 695175
+  }
+}

@@ -1,0 +1,6 @@
+dataset,model,status,eps,minPts,K,noise_ratio,DBI_prime,CP_prime,SP_prime
+k=3_dataset,models/drl_delta_plus_batch_mean_s0.pth,ok,0.008571,1,48,0.000000,0.1555,0.0060,0.0114
+k=3(2)_dataset,models/drl_delta_plus_batch_mean_s0.pth,ok,0.018164,2,6,0.6454,0.6274,0.0591,0.0710
+k=3(3)_dataset,models/drl_delta_plus_batch_mean_s0.pth,ok,0.021972,3,4,0.4021,0.6506,0.1381,0.2253
+k=7_dataset,models/drl_delta_plus_batch_mean_s0.pth,ok,0.035302,3,6,0.4053,0.4832,0.0681,0.1896
+k=8_dataset,models/drl_delta_plus_batch_mean_s0.pth,ok,0.067546,2,7,0.2055,0.7341,0.2144,0.2691

@@ -1,0 +1,4312 @@
+============================================================
+海洋交通行为模式识别系统 (论文原版复现)
+============================================================
+📌 选参模式: paper
+🧩 特征模式: delta_cog
+✅ 找到AIS文件: /Users/lcx/Desktop/毕设/复现/outputs/two_stage/k=3(2)_dataset/pruned_dataset.csv
+
+========================================
+步骤1: 数据加载
+========================================
+✅ 成功加载 251 艘船舶的轨迹数据
+✅ 选择 251 艘船舶进行处理
+
+========================================
+步骤2: 数据预处理
+========================================
+ℹ️  轨迹缓存CSV路径不一致（忽略）
+处理船舶 900000001 (1/251)...
+处理船舶 900000002 (2/251)...
+处理船舶 900000003 (3/251)...
+处理船舶 900000004 (4/251)...
+处理船舶 900000005 (5/251)...
+处理船舶 900000006 (6/251)...
+处理船舶 900000007 (7/251)...
+处理船舶 900000008 (8/251)...
+处理船舶 900000009 (9/251)...
+处理船舶 900000010 (10/251)...
+处理船舶 900000011 (11/251)...
+处理船舶 900000012 (12/251)...
+处理船舶 900000013 (13/251)...
+处理船舶 900000014 (14/251)...
+处理船舶 900000015 (15/251)...
+处理船舶 900000016 (16/251)...
+处理船舶 900000017 (17/251)...
+处理船舶 900000018 (18/251)...
+处理船舶 900000019 (19/251)...
+处理船舶 900000020 (20/251)...
+处理船舶 900000021 (21/251)...
+处理船舶 900000023 (22/251)...
+处理船舶 900000024 (23/251)...
+处理船舶 900000025 (24/251)...
+处理船舶 900000026 (25/251)...
+处理船舶 900000027 (26/251)...
+处理船舶 900000028 (27/251)...
+处理船舶 900000029 (28/251)...
+处理船舶 900000030 (29/251)...
+处理船舶 900000031 (30/251)...
+处理船舶 900000032 (31/251)...
+处理船舶 900000033 (32/251)...
+处理船舶 900000034 (33/251)...
+处理船舶 900000035 (34/251)...
+处理船舶 900000036 (35/251)...
+处理船舶 900000037 (36/251)...
+处理船舶 900000038 (37/251)...
+处理船舶 900000039 (38/251)...
+处理船舶 900000040 (39/251)...
+处理船舶 900000042 (40/251)...
+处理船舶 900000043 (41/251)...
+处理船舶 900000044 (42/251)...
+处理船舶 900000045 (43/251)...
+处理船舶 900000046 (44/251)...
+处理船舶 900000047 (45/251)...
+处理船舶 900000048 (46/251)...
+处理船舶 900000049 (47/251)...
+处理船舶 900000050 (48/251)...
+处理船舶 900000051 (49/251)...
+处理船舶 900000052 (50/251)...
+处理船舶 900000053 (51/251)...
+处理船舶 900000054 (52/251)...
+处理船舶 900000055 (53/251)...
+处理船舶 900000057 (54/251)...
+处理船舶 900000058 (55/251)...
+处理船舶 900000059 (56/251)...
+处理船舶 900000060 (57/251)...
+处理船舶 900000061 (58/251)...
+处理船舶 900000062 (59/251)...
+处理船舶 900000063 (60/251)...
+处理船舶 900000064 (61/251)...
+处理船舶 900000065 (62/251)...
+处理船舶 900000066 (63/251)...
+处理船舶 900000067 (64/251)...
+处理船舶 900000068 (65/251)...
+处理船舶 900000069 (66/251)...
+处理船舶 900000070 (67/251)...
+处理船舶 900000071 (68/251)...
+处理船舶 900000072 (69/251)...
+处理船舶 900000073 (70/251)...
+处理船舶 900000074 (71/251)...
+处理船舶 900000075 (72/251)...
+处理船舶 900000076 (73/251)...
+处理船舶 900000077 (74/251)...
+处理船舶 900000078 (75/251)...
+处理船舶 900000079 (76/251)...
+处理船舶 900000081 (77/251)...
+处理船舶 900000082 (78/251)...
+处理船舶 900000083 (79/251)...
+处理船舶 900000084 (80/251)...
+处理船舶 900000085 (81/251)...
+处理船舶 900000086 (82/251)...
+处理船舶 900000087 (83/251)...
+处理船舶 900000088 (84/251)...
+处理船舶 900000089 (85/251)...
+处理船舶 900000090 (86/251)...
+处理船舶 900000091 (87/251)...
+处理船舶 900000092 (88/251)...
+处理船舶 900000093 (89/251)...
+处理船舶 900000094 (90/251)...
+处理船舶 900000095 (91/251)...
+处理船舶 900000096 (92/251)...
+处理船舶 900000097 (93/251)...
+处理船舶 900000098 (94/251)...
+处理船舶 900000099 (95/251)...
+处理船舶 900000100 (96/251)...
+处理船舶 900000101 (97/251)...
+处理船舶 900000102 (98/251)...
+处理船舶 900000103 (99/251)...
+处理船舶 900000104 (100/251)...
+处理船舶 900000105 (101/251)...
+处理船舶 900000106 (102/251)...
+处理船舶 900000107 (103/251)...
+处理船舶 900000108 (104/251)...
+处理船舶 900000109 (105/251)...
+处理船舶 900000110 (106/251)...
+处理船舶 900000111 (107/251)...
+处理船舶 900000112 (108/251)...
+处理船舶 900000113 (109/251)...
+处理船舶 900000114 (110/251)...
+处理船舶 900000115 (111/251)...
+处理船舶 900000116 (112/251)...
+处理船舶 900000117 (113/251)...
+处理船舶 900000118 (114/251)...
+处理船舶 900000119 (115/251)...
+处理船舶 900000120 (116/251)...
+处理船舶 900000121 (117/251)...
+处理船舶 900000122 (118/251)...
+处理船舶 900000123 (119/251)...
+处理船舶 900000124 (120/251)...
+处理船舶 900000125 (121/251)...
+处理船舶 900000126 (122/251)...
+处理船舶 900000127 (123/251)...
+处理船舶 900000128 (124/251)...
+处理船舶 900000129 (125/251)...
+处理船舶 900000130 (126/251)...
+处理船舶 900000131 (127/251)...
+处理船舶 900000132 (128/251)...
+处理船舶 900000133 (129/251)...
+处理船舶 900000135 (130/251)...
+处理船舶 900000136 (131/251)...
+处理船舶 900000137 (132/251)...
+处理船舶 900000139 (133/251)...
+处理船舶 900000140 (134/251)...
+处理船舶 900000141 (135/251)...
+处理船舶 900000142 (136/251)...
+处理船舶 900000143 (137/251)...
+处理船舶 900000144 (138/251)...
+处理船舶 900000145 (139/251)...
+处理船舶 900000146 (140/251)...
+处理船舶 900000147 (141/251)...
+处理船舶 900000148 (142/251)...
+处理船舶 900000149 (143/251)...
+处理船舶 900000150 (144/251)...
+处理船舶 900000151 (145/251)...
+处理船舶 900000152 (146/251)...
+处理船舶 900000153 (147/251)...
+处理船舶 900000154 (148/251)...
+处理船舶 900000155 (149/251)...
+处理船舶 900000156 (150/251)...
+处理船舶 900000157 (151/251)...
+处理船舶 900000158 (152/251)...
+处理船舶 900000159 (153/251)...
+处理船舶 900000160 (154/251)...
+处理船舶 900000161 (155/251)...
+处理船舶 900000163 (156/251)...
+处理船舶 900000165 (157/251)...
+处理船舶 900000166 (158/251)...
+处理船舶 900000167 (159/251)...
+处理船舶 900000169 (160/251)...
+处理船舶 900000170 (161/251)...
+处理船舶 900000171 (162/251)...
+处理船舶 900000172 (163/251)...
+处理船舶 900000173 (164/251)...
+处理船舶 900000175 (165/251)...
+处理船舶 900000176 (166/251)...
+处理船舶 900000177 (167/251)...
+处理船舶 900000178 (168/251)...
+处理船舶 900000180 (169/251)...
+处理船舶 900000181 (170/251)...
+处理船舶 900000182 (171/251)...
+处理船舶 900000183 (172/251)...
+处理船舶 900000184 (173/251)...
+处理船舶 900000186 (174/251)...
+处理船舶 900000187 (175/251)...
+处理船舶 900000188 (176/251)...
+处理船舶 900000189 (177/251)...
+处理船舶 900000190 (178/251)...
+处理船舶 900000191 (179/251)...
+处理船舶 900000194 (180/251)...
+处理船舶 900000195 (181/251)...
+处理船舶 900000196 (182/251)...
+处理船舶 900000197 (183/251)...
+处理船舶 900000198 (184/251)...
+处理船舶 900000199 (185/251)...
+处理船舶 900000200 (186/251)...
+处理船舶 900000201 (187/251)...
+处理船舶 900000202 (188/251)...
+处理船舶 900000203 (189/251)...
+处理船舶 900000204 (190/251)...
+处理船舶 900000205 (191/251)...
+处理船舶 900000206 (192/251)...
+处理船舶 900000207 (193/251)...
+处理船舶 900000208 (194/251)...
+处理船舶 900000209 (195/251)...
+处理船舶 900000210 (196/251)...
+处理船舶 900000211 (197/251)...
+处理船舶 900000212 (198/251)...
+处理船舶 900000213 (199/251)...
+处理船舶 900000214 (200/251)...
+处理船舶 900000216 (201/251)...
+处理船舶 900000217 (202/251)...
+处理船舶 900000218 (203/251)...
+处理船舶 900000220 (204/251)...
+处理船舶 900000221 (205/251)...
+处理船舶 900000222 (206/251)...
+处理船舶 900000223 (207/251)...
+处理船舶 900000224 (208/251)...
+处理船舶 900000225 (209/251)...
+处理船舶 900000226 (210/251)...
+处理船舶 900000227 (211/251)...
+处理船舶 900000228 (212/251)...
+处理船舶 900000229 (213/251)...
+处理船舶 900000230 (214/251)...
+处理船舶 900000231 (215/251)...
+处理船舶 900000232 (216/251)...
+处理船舶 900000250 (217/251)...
+处理船舶 900000257 (218/251)...
+处理船舶 900000258 (219/251)...
+处理船舶 900000259 (220/251)...
+处理船舶 900000260 (221/251)...
+处理船舶 900000261 (222/251)...
+处理船舶 900000263 (223/251)...
+处理船舶 900000265 (224/251)...
+处理船舶 900000266 (225/251)...
+处理船舶 900000267 (226/251)...
+处理船舶 900000268 (227/251)...
+处理船舶 900000270 (228/251)...
+处理船舶 900000271 (229/251)...
+处理船舶 900000272 (230/251)...
+处理船舶 900000274 (231/251)...
+处理船舶 900000275 (232/251)...
+处理船舶 900000276 (233/251)...
+处理船舶 900000277 (234/251)...
+处理船舶 900000278 (235/251)...
+处理船舶 900000279 (236/251)...
+处理船舶 900000280 (237/251)...
+处理船舶 900000282 (238/251)...
+处理船舶 900000283 (239/251)...
+处理船舶 900000284 (240/251)...
+处理船舶 900000285 (241/251)...
+处理船舶 900000286 (242/251)...
+处理船舶 900000287 (243/251)...
+处理船舶 900000290 (244/251)...
+处理船舶 900000291 (245/251)...
+处理船舶 900000292 (246/251)...
+处理船舶 900000294 (247/251)...
+处理船舶 900000295 (248/251)...
+处理船舶 900000297 (249/251)...
+处理船舶 900000299 (250/251)...
+处理船舶 900000300 (251/251)...
+✅ 预处理完成，共 251 条轨迹（跳过 0 条）
+
+========================================
+步骤3: 轨迹简化
+========================================
+[SACSB] N=219, len(COG_Variation)=109, len(idx_sacsb_keypoints)=39
+[SACSB] keypoints orig idx (first10)=[3, 5, 7, 9, 29, 85, 89, 109, 115, 117]
+[Simplify] N=219, DP_kept=29, SACSB_keypoints=39, merge_kept=63, compression=71.23%
+  简化轨迹 1/251 完成（MMSI=900000001），点数 63，压缩率 71.23%
+[SACSB] N=262, len(COG_Variation)=130, len(idx_sacsb_keypoints)=44
+[SACSB] keypoints orig idx (first10)=[27, 35, 39, 67, 69, 71, 73, 75, 77, 79]
+[Simplify] N=262, DP_kept=31, SACSB_keypoints=44, merge_kept=69, compression=73.66%
+  简化轨迹 2/251 完成（MMSI=900000002），点数 69，压缩率 73.66%
+[SACSB] N=228, len(COG_Variation)=113, len(idx_sacsb_keypoints)=49
+[SACSB] keypoints orig idx (first10)=[9, 13, 17, 21, 23, 35, 55, 57, 65, 67]
+[Simplify] N=228, DP_kept=34, SACSB_keypoints=49, merge_kept=75, compression=67.11%
+  简化轨迹 3/251 完成（MMSI=900000003），点数 75，压缩率 67.11%
+[SACSB] N=219, len(COG_Variation)=109, len(idx_sacsb_keypoints)=40
+[SACSB] keypoints orig idx (first10)=[9, 63, 65, 67, 69, 101, 103, 105, 107, 109]
+[Simplify] N=219, DP_kept=26, SACSB_keypoints=40, merge_kept=60, compression=72.60%
+  简化轨迹 4/251 完成（MMSI=900000004），点数 60，压缩率 72.60%
+[SACSB] N=229, len(COG_Variation)=114, len(idx_sacsb_keypoints)=35
+[SACSB] keypoints orig idx (first10)=[5, 7, 9, 11, 19, 21, 29, 31, 33, 35]
+[Simplify] N=229, DP_kept=27, SACSB_keypoints=35, merge_kept=60, compression=73.80%
+  简化轨迹 5/251 完成（MMSI=900000005），点数 60，压缩率 73.80%
+[SACSB] N=230, len(COG_Variation)=114, len(idx_sacsb_keypoints)=57
+[Simplify] N=230, DP_kept=34, SACSB_keypoints=57, merge_kept=87, compression=62.17%
+  简化轨迹 6/251 完成（MMSI=900000006），点数 87，压缩率 62.17%
+[SACSB] N=280, len(COG_Variation)=139, len(idx_sacsb_keypoints)=78
+[Simplify] N=280, DP_kept=50, SACSB_keypoints=78, merge_kept=115, compression=58.93%
+  简化轨迹 7/251 完成（MMSI=900000007），点数 115，压缩率 58.93%
+[SACSB] N=229, len(COG_Variation)=114, len(idx_sacsb_keypoints)=46
+[Simplify] N=229, DP_kept=27, SACSB_keypoints=46, merge_kept=67, compression=70.74%
+  简化轨迹 8/251 完成（MMSI=900000008），点数 67，压缩率 70.74%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=27
+[Simplify] N=224, DP_kept=28, SACSB_keypoints=27, merge_kept=52, compression=76.79%
+  简化轨迹 9/251 完成（MMSI=900000009），点数 52，压缩率 76.79%
+[SACSB] N=223, len(COG_Variation)=111, len(idx_sacsb_keypoints)=27
+[Simplify] N=223, DP_kept=20, SACSB_keypoints=27, merge_kept=43, compression=80.72%
+  简化轨迹 10/251 完成（MMSI=900000010），点数 43，压缩率 80.72%
+[SACSB] N=226, len(COG_Variation)=112, len(idx_sacsb_keypoints)=72
+[Simplify] N=226, DP_kept=48, SACSB_keypoints=72, merge_kept=105, compression=53.54%
+  简化轨迹 11/251 完成（MMSI=900000011），点数 105，压缩率 53.54%
+[SACSB] N=251, len(COG_Variation)=125, len(idx_sacsb_keypoints)=49
+[Simplify] N=251, DP_kept=33, SACSB_keypoints=49, merge_kept=74, compression=70.52%
+  简化轨迹 12/251 完成（MMSI=900000012），点数 74，压缩率 70.52%
+[SACSB] N=258, len(COG_Variation)=128, len(idx_sacsb_keypoints)=61
+[Simplify] N=258, DP_kept=44, SACSB_keypoints=61, merge_kept=99, compression=61.63%
+  简化轨迹 13/251 完成（MMSI=900000013），点数 99，压缩率 61.63%
+[SACSB] N=267, len(COG_Variation)=133, len(idx_sacsb_keypoints)=70
+[Simplify] N=267, DP_kept=33, SACSB_keypoints=70, merge_kept=97, compression=63.67%
+  简化轨迹 14/251 完成（MMSI=900000014），点数 97，压缩率 63.67%
+[SACSB] N=305, len(COG_Variation)=152, len(idx_sacsb_keypoints)=59
+[Simplify] N=305, DP_kept=28, SACSB_keypoints=59, merge_kept=83, compression=72.79%
+  简化轨迹 15/251 完成（MMSI=900000015），点数 83，压缩率 72.79%
+[SACSB] N=480, len(COG_Variation)=239, len(idx_sacsb_keypoints)=131
+[Simplify] N=480, DP_kept=30, SACSB_keypoints=131, merge_kept=151, compression=68.54%
+  简化轨迹 16/251 完成（MMSI=900000016），点数 151，压缩率 68.54%
+[SACSB] N=225, len(COG_Variation)=112, len(idx_sacsb_keypoints)=38
+[Simplify] N=225, DP_kept=20, SACSB_keypoints=38, merge_kept=50, compression=77.78%
+  简化轨迹 17/251 完成（MMSI=900000017），点数 50，压缩率 77.78%
+[SACSB] N=241, len(COG_Variation)=120, len(idx_sacsb_keypoints)=46
+[Simplify] N=241, DP_kept=44, SACSB_keypoints=46, merge_kept=80, compression=66.80%
+  简化轨迹 18/251 完成（MMSI=900000018），点数 80，压缩率 66.80%
+[SACSB] N=314, len(COG_Variation)=156, len(idx_sacsb_keypoints)=75
+[Simplify] N=314, DP_kept=42, SACSB_keypoints=75, merge_kept=108, compression=65.61%
+  简化轨迹 19/251 完成（MMSI=900000019），点数 108，压缩率 65.61%
+[SACSB] N=285, len(COG_Variation)=142, len(idx_sacsb_keypoints)=57
+[Simplify] N=285, DP_kept=71, SACSB_keypoints=57, merge_kept=119, compression=58.25%
+  简化轨迹 20/251 完成（MMSI=900000020），点数 119，压缩率 58.25%
+[SACSB] N=253, len(COG_Variation)=126, len(idx_sacsb_keypoints)=69
+[Simplify] N=253, DP_kept=18, SACSB_keypoints=69, merge_kept=85, compression=66.40%
+  简化轨迹 21/251 完成（MMSI=900000021），点数 85，压缩率 66.40%
+[SACSB] N=236, len(COG_Variation)=117, len(idx_sacsb_keypoints)=17
+[Simplify] N=236, DP_kept=28, SACSB_keypoints=17, merge_kept=44, compression=81.36%
+  简化轨迹 22/251 完成（MMSI=900000023），点数 44，压缩率 81.36%
+[SACSB] N=260, len(COG_Variation)=129, len(idx_sacsb_keypoints)=52
+[Simplify] N=260, DP_kept=27, SACSB_keypoints=52, merge_kept=72, compression=72.31%
+  简化轨迹 23/251 完成（MMSI=900000024），点数 72，压缩率 72.31%
+[SACSB] N=266, len(COG_Variation)=132, len(idx_sacsb_keypoints)=69
+[Simplify] N=266, DP_kept=27, SACSB_keypoints=69, merge_kept=90, compression=66.17%
+  简化轨迹 24/251 完成（MMSI=900000025），点数 90，压缩率 66.17%
+[SACSB] N=220, len(COG_Variation)=109, len(idx_sacsb_keypoints)=41
+[Simplify] N=220, DP_kept=26, SACSB_keypoints=41, merge_kept=61, compression=72.27%
+  简化轨迹 25/251 完成（MMSI=900000026），点数 61，压缩率 72.27%
+[SACSB] N=256, len(COG_Variation)=127, len(idx_sacsb_keypoints)=54
+[Simplify] N=256, DP_kept=30, SACSB_keypoints=54, merge_kept=77, compression=69.92%
+  简化轨迹 26/251 完成（MMSI=900000027），点数 77，压缩率 69.92%
+[SACSB] N=252, len(COG_Variation)=125, len(idx_sacsb_keypoints)=47
+[Simplify] N=252, DP_kept=26, SACSB_keypoints=47, merge_kept=68, compression=73.02%
+  简化轨迹 27/251 完成（MMSI=900000028），点数 68，压缩率 73.02%
+[SACSB] N=284, len(COG_Variation)=141, len(idx_sacsb_keypoints)=41
+[Simplify] N=284, DP_kept=26, SACSB_keypoints=41, merge_kept=63, compression=77.82%
+  简化轨迹 28/251 完成（MMSI=900000029），点数 63，压缩率 77.82%
+[SACSB] N=242, len(COG_Variation)=120, len(idx_sacsb_keypoints)=60
+[Simplify] N=242, DP_kept=27, SACSB_keypoints=60, merge_kept=80, compression=66.94%
+  简化轨迹 29/251 完成（MMSI=900000030），点数 80，压缩率 66.94%
+[SACSB] N=226, len(COG_Variation)=112, len(idx_sacsb_keypoints)=16
+[Simplify] N=226, DP_kept=35, SACSB_keypoints=16, merge_kept=51, compression=77.43%
+  简化轨迹 30/251 完成（MMSI=900000031），点数 51，压缩率 77.43%
+[SACSB] N=328, len(COG_Variation)=163, len(idx_sacsb_keypoints)=77
+[Simplify] N=328, DP_kept=32, SACSB_keypoints=77, merge_kept=104, compression=68.29%
+  简化轨迹 31/251 完成（MMSI=900000032），点数 104，压缩率 68.29%
+[SACSB] N=229, len(COG_Variation)=114, len(idx_sacsb_keypoints)=67
+[Simplify] N=229, DP_kept=32, SACSB_keypoints=67, merge_kept=88, compression=61.57%
+  简化轨迹 32/251 完成（MMSI=900000033），点数 88，压缩率 61.57%
+[SACSB] N=235, len(COG_Variation)=117, len(idx_sacsb_keypoints)=57
+[Simplify] N=235, DP_kept=23, SACSB_keypoints=57, merge_kept=72, compression=69.36%
+  简化轨迹 33/251 完成（MMSI=900000034），点数 72，压缩率 69.36%
+[SACSB] N=235, len(COG_Variation)=117, len(idx_sacsb_keypoints)=38
+[Simplify] N=235, DP_kept=18, SACSB_keypoints=38, merge_kept=55, compression=76.60%
+  简化轨迹 34/251 完成（MMSI=900000035），点数 55，压缩率 76.60%
+[SACSB] N=246, len(COG_Variation)=122, len(idx_sacsb_keypoints)=23
+[Simplify] N=246, DP_kept=6, SACSB_keypoints=23, merge_kept=29, compression=88.21%
+  简化轨迹 35/251 完成（MMSI=900000036），点数 29，压缩率 88.21%
+[SACSB] N=241, len(COG_Variation)=120, len(idx_sacsb_keypoints)=16
+[Simplify] N=241, DP_kept=6, SACSB_keypoints=16, merge_kept=22, compression=90.87%
+  简化轨迹 36/251 完成（MMSI=900000037），点数 22，压缩率 90.87%
+[SACSB] N=243, len(COG_Variation)=121, len(idx_sacsb_keypoints)=54
+[Simplify] N=243, DP_kept=27, SACSB_keypoints=54, merge_kept=73, compression=69.96%
+  简化轨迹 37/251 完成（MMSI=900000038），点数 73，压缩率 69.96%
+[SACSB] N=272, len(COG_Variation)=135, len(idx_sacsb_keypoints)=33
+[Simplify] N=272, DP_kept=29, SACSB_keypoints=33, merge_kept=59, compression=78.31%
+  简化轨迹 38/251 完成（MMSI=900000039），点数 59，压缩率 78.31%
+[SACSB] N=300, len(COG_Variation)=149, len(idx_sacsb_keypoints)=71
+[Simplify] N=300, DP_kept=33, SACSB_keypoints=71, merge_kept=99, compression=67.00%
+  简化轨迹 39/251 完成（MMSI=900000040），点数 99，压缩率 67.00%
+[SACSB] N=228, len(COG_Variation)=113, len(idx_sacsb_keypoints)=39
+[Simplify] N=228, DP_kept=24, SACSB_keypoints=39, merge_kept=60, compression=73.68%
+  简化轨迹 40/251 完成（MMSI=900000042），点数 60，压缩率 73.68%
+[SACSB] N=267, len(COG_Variation)=133, len(idx_sacsb_keypoints)=42
+[Simplify] N=267, DP_kept=30, SACSB_keypoints=42, merge_kept=70, compression=73.78%
+  简化轨迹 41/251 完成（MMSI=900000043），点数 70，压缩率 73.78%
+[SACSB] N=227, len(COG_Variation)=113, len(idx_sacsb_keypoints)=12
+[Simplify] N=227, DP_kept=32, SACSB_keypoints=12, merge_kept=41, compression=81.94%
+  简化轨迹 42/251 完成（MMSI=900000044），点数 41，压缩率 81.94%
+[SACSB] N=234, len(COG_Variation)=116, len(idx_sacsb_keypoints)=58
+[Simplify] N=234, DP_kept=23, SACSB_keypoints=58, merge_kept=72, compression=69.23%
+  简化轨迹 43/251 完成（MMSI=900000045），点数 72，压缩率 69.23%
+[SACSB] N=218, len(COG_Variation)=108, len(idx_sacsb_keypoints)=61
+[Simplify] N=218, DP_kept=28, SACSB_keypoints=61, merge_kept=82, compression=62.39%
+  简化轨迹 44/251 完成（MMSI=900000046），点数 82，压缩率 62.39%
+[SACSB] N=274, len(COG_Variation)=136, len(idx_sacsb_keypoints)=50
+[Simplify] N=274, DP_kept=28, SACSB_keypoints=50, merge_kept=72, compression=73.72%
+  简化轨迹 45/251 完成（MMSI=900000047），点数 72，压缩率 73.72%
+[SACSB] N=222, len(COG_Variation)=110, len(idx_sacsb_keypoints)=43
+[Simplify] N=222, DP_kept=31, SACSB_keypoints=43, merge_kept=64, compression=71.17%
+  简化轨迹 46/251 完成（MMSI=900000048），点数 64，压缩率 71.17%
+[SACSB] N=288, len(COG_Variation)=143, len(idx_sacsb_keypoints)=30
+[Simplify] N=288, DP_kept=49, SACSB_keypoints=30, merge_kept=73, compression=74.65%
+  简化轨迹 47/251 完成（MMSI=900000049），点数 73，压缩率 74.65%
+[SACSB] N=283, len(COG_Variation)=141, len(idx_sacsb_keypoints)=49
+[Simplify] N=283, DP_kept=23, SACSB_keypoints=49, merge_kept=68, compression=75.97%
+  简化轨迹 48/251 完成（MMSI=900000050），点数 68，压缩率 75.97%
+[SACSB] N=235, len(COG_Variation)=117, len(idx_sacsb_keypoints)=16
+[Simplify] N=235, DP_kept=34, SACSB_keypoints=16, merge_kept=48, compression=79.57%
+  简化轨迹 49/251 完成（MMSI=900000051），点数 48，压缩率 79.57%
+[SACSB] N=227, len(COG_Variation)=113, len(idx_sacsb_keypoints)=47
+[Simplify] N=227, DP_kept=28, SACSB_keypoints=47, merge_kept=69, compression=69.60%
+  简化轨迹 50/251 完成（MMSI=900000052），点数 69，压缩率 69.60%
+[SACSB] N=284, len(COG_Variation)=141, len(idx_sacsb_keypoints)=34
+[Simplify] N=284, DP_kept=37, SACSB_keypoints=34, merge_kept=69, compression=75.70%
+  简化轨迹 51/251 完成（MMSI=900000053），点数 69，压缩率 75.70%
+[SACSB] N=253, len(COG_Variation)=126, len(idx_sacsb_keypoints)=29
+[Simplify] N=253, DP_kept=31, SACSB_keypoints=29, merge_kept=59, compression=76.68%
+  简化轨迹 52/251 完成（MMSI=900000054），点数 59，压缩率 76.68%
+[SACSB] N=250, len(COG_Variation)=124, len(idx_sacsb_keypoints)=59
+[Simplify] N=250, DP_kept=32, SACSB_keypoints=59, merge_kept=85, compression=66.00%
+  简化轨迹 53/251 完成（MMSI=900000055），点数 85，压缩率 66.00%
+[SACSB] N=239, len(COG_Variation)=119, len(idx_sacsb_keypoints)=73
+[Simplify] N=239, DP_kept=27, SACSB_keypoints=73, merge_kept=96, compression=59.83%
+  简化轨迹 54/251 完成（MMSI=900000057），点数 96，压缩率 59.83%
+[SACSB] N=263, len(COG_Variation)=131, len(idx_sacsb_keypoints)=30
+[Simplify] N=263, DP_kept=44, SACSB_keypoints=30, merge_kept=62, compression=76.43%
+  简化轨迹 55/251 完成（MMSI=900000058），点数 62，压缩率 76.43%
+[SACSB] N=295, len(COG_Variation)=147, len(idx_sacsb_keypoints)=65
+[Simplify] N=295, DP_kept=45, SACSB_keypoints=65, merge_kept=100, compression=66.10%
+  简化轨迹 56/251 完成（MMSI=900000059），点数 100，压缩率 66.10%
+[SACSB] N=236, len(COG_Variation)=117, len(idx_sacsb_keypoints)=36
+[Simplify] N=236, DP_kept=31, SACSB_keypoints=36, merge_kept=63, compression=73.31%
+  简化轨迹 57/251 完成（MMSI=900000060），点数 63，压缩率 73.31%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=28
+[Simplify] N=224, DP_kept=35, SACSB_keypoints=28, merge_kept=54, compression=75.89%
+  简化轨迹 58/251 完成（MMSI=900000061），点数 54，压缩率 75.89%
+[SACSB] N=251, len(COG_Variation)=125, len(idx_sacsb_keypoints)=33
+[Simplify] N=251, DP_kept=36, SACSB_keypoints=33, merge_kept=65, compression=74.10%
+  简化轨迹 59/251 完成（MMSI=900000062），点数 65，压缩率 74.10%
+[SACSB] N=248, len(COG_Variation)=123, len(idx_sacsb_keypoints)=48
+[Simplify] N=248, DP_kept=43, SACSB_keypoints=48, merge_kept=83, compression=66.53%
+  简化轨迹 60/251 完成（MMSI=900000063），点数 83，压缩率 66.53%
+[SACSB] N=343, len(COG_Variation)=171, len(idx_sacsb_keypoints)=71
+[Simplify] N=343, DP_kept=51, SACSB_keypoints=71, merge_kept=109, compression=68.22%
+  简化轨迹 61/251 完成（MMSI=900000064），点数 109，压缩率 68.22%
+[SACSB] N=274, len(COG_Variation)=136, len(idx_sacsb_keypoints)=17
+[Simplify] N=274, DP_kept=38, SACSB_keypoints=17, merge_kept=51, compression=81.39%
+  简化轨迹 62/251 完成（MMSI=900000065），点数 51，压缩率 81.39%
+[SACSB] N=221, len(COG_Variation)=110, len(idx_sacsb_keypoints)=62
+[Simplify] N=221, DP_kept=28, SACSB_keypoints=62, merge_kept=86, compression=61.09%
+  简化轨迹 63/251 完成（MMSI=900000066），点数 86，压缩率 61.09%
+[SACSB] N=367, len(COG_Variation)=183, len(idx_sacsb_keypoints)=35
+[Simplify] N=367, DP_kept=52, SACSB_keypoints=35, merge_kept=82, compression=77.66%
+  简化轨迹 64/251 完成（MMSI=900000067），点数 82，压缩率 77.66%
+[SACSB] N=255, len(COG_Variation)=127, len(idx_sacsb_keypoints)=16
+[Simplify] N=255, DP_kept=34, SACSB_keypoints=16, merge_kept=46, compression=81.96%
+  简化轨迹 65/251 完成（MMSI=900000068），点数 46，压缩率 81.96%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=40
+[Simplify] N=224, DP_kept=32, SACSB_keypoints=40, merge_kept=62, compression=72.32%
+  简化轨迹 66/251 完成（MMSI=900000069），点数 62，压缩率 72.32%
+[SACSB] N=228, len(COG_Variation)=113, len(idx_sacsb_keypoints)=45
+[Simplify] N=228, DP_kept=23, SACSB_keypoints=45, merge_kept=62, compression=72.81%
+  简化轨迹 67/251 完成（MMSI=900000070），点数 62，压缩率 72.81%
+[SACSB] N=263, len(COG_Variation)=131, len(idx_sacsb_keypoints)=61
+[Simplify] N=263, DP_kept=26, SACSB_keypoints=61, merge_kept=81, compression=69.20%
+  简化轨迹 68/251 完成（MMSI=900000071），点数 81，压缩率 69.20%
+[SACSB] N=292, len(COG_Variation)=145, len(idx_sacsb_keypoints)=75
+[Simplify] N=292, DP_kept=24, SACSB_keypoints=75, merge_kept=92, compression=68.49%
+  简化轨迹 69/251 完成（MMSI=900000072），点数 92，压缩率 68.49%
+[SACSB] N=235, len(COG_Variation)=117, len(idx_sacsb_keypoints)=64
+[Simplify] N=235, DP_kept=25, SACSB_keypoints=64, merge_kept=85, compression=63.83%
+  简化轨迹 70/251 完成（MMSI=900000073），点数 85，压缩率 63.83%
+[SACSB] N=294, len(COG_Variation)=146, len(idx_sacsb_keypoints)=74
+[Simplify] N=294, DP_kept=26, SACSB_keypoints=74, merge_kept=94, compression=68.03%
+  简化轨迹 71/251 完成（MMSI=900000074），点数 94，压缩率 68.03%
+[SACSB] N=295, len(COG_Variation)=147, len(idx_sacsb_keypoints)=78
+[Simplify] N=295, DP_kept=35, SACSB_keypoints=78, merge_kept=106, compression=64.07%
+  简化轨迹 72/251 完成（MMSI=900000075），点数 106，压缩率 64.07%
+[SACSB] N=253, len(COG_Variation)=126, len(idx_sacsb_keypoints)=43
+[Simplify] N=253, DP_kept=50, SACSB_keypoints=43, merge_kept=82, compression=67.59%
+  简化轨迹 73/251 完成（MMSI=900000076），点数 82，压缩率 67.59%
+[SACSB] N=227, len(COG_Variation)=113, len(idx_sacsb_keypoints)=15
+[Simplify] N=227, DP_kept=32, SACSB_keypoints=15, merge_kept=40, compression=82.38%
+  简化轨迹 74/251 完成（MMSI=900000077），点数 40，压缩率 82.38%
+[SACSB] N=260, len(COG_Variation)=129, len(idx_sacsb_keypoints)=33
+[Simplify] N=260, DP_kept=29, SACSB_keypoints=33, merge_kept=60, compression=76.92%
+  简化轨迹 75/251 完成（MMSI=900000078），点数 60，压缩率 76.92%
+[SACSB] N=268, len(COG_Variation)=133, len(idx_sacsb_keypoints)=31
+[Simplify] N=268, DP_kept=26, SACSB_keypoints=31, merge_kept=54, compression=79.85%
+  简化轨迹 76/251 完成（MMSI=900000079），点数 54，压缩率 79.85%
+[SACSB] N=228, len(COG_Variation)=113, len(idx_sacsb_keypoints)=39
+[Simplify] N=228, DP_kept=32, SACSB_keypoints=39, merge_kept=60, compression=73.68%
+  简化轨迹 77/251 完成（MMSI=900000081），点数 60，压缩率 73.68%
+[SACSB] N=231, len(COG_Variation)=115, len(idx_sacsb_keypoints)=37
+[Simplify] N=231, DP_kept=24, SACSB_keypoints=37, merge_kept=58, compression=74.89%
+  简化轨迹 78/251 完成（MMSI=900000082），点数 58，压缩率 74.89%
+[SACSB] N=244, len(COG_Variation)=121, len(idx_sacsb_keypoints)=61
+[Simplify] N=244, DP_kept=25, SACSB_keypoints=61, merge_kept=80, compression=67.21%
+  简化轨迹 79/251 完成（MMSI=900000083），点数 80，压缩率 67.21%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=28
+[Simplify] N=224, DP_kept=30, SACSB_keypoints=28, merge_kept=50, compression=77.68%
+  简化轨迹 80/251 完成（MMSI=900000084），点数 50，压缩率 77.68%
+[SACSB] N=242, len(COG_Variation)=120, len(idx_sacsb_keypoints)=77
+[Simplify] N=242, DP_kept=30, SACSB_keypoints=77, merge_kept=99, compression=59.09%
+  简化轨迹 81/251 完成（MMSI=900000085），点数 99，压缩率 59.09%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=20
+[Simplify] N=224, DP_kept=29, SACSB_keypoints=20, merge_kept=44, compression=80.36%
+  简化轨迹 82/251 完成（MMSI=900000086），点数 44，压缩率 80.36%
+[SACSB] N=302, len(COG_Variation)=150, len(idx_sacsb_keypoints)=77
+[Simplify] N=302, DP_kept=41, SACSB_keypoints=77, merge_kept=105, compression=65.23%
+  简化轨迹 83/251 完成（MMSI=900000087），点数 105，压缩率 65.23%
+[SACSB] N=480, len(COG_Variation)=239, len(idx_sacsb_keypoints)=133
+[Simplify] N=480, DP_kept=44, SACSB_keypoints=133, merge_kept=172, compression=64.17%
+  简化轨迹 84/251 完成（MMSI=900000088），点数 172，压缩率 64.17%
+[SACSB] N=221, len(COG_Variation)=110, len(idx_sacsb_keypoints)=29
+[Simplify] N=221, DP_kept=49, SACSB_keypoints=29, merge_kept=78, compression=64.71%
+  简化轨迹 85/251 完成（MMSI=900000089），点数 78，压缩率 64.71%
+[SACSB] N=244, len(COG_Variation)=121, len(idx_sacsb_keypoints)=20
+[Simplify] N=244, DP_kept=37, SACSB_keypoints=20, merge_kept=54, compression=77.87%
+  简化轨迹 86/251 完成（MMSI=900000090），点数 54，压缩率 77.87%
+[SACSB] N=260, len(COG_Variation)=129, len(idx_sacsb_keypoints)=62
+[Simplify] N=260, DP_kept=24, SACSB_keypoints=62, merge_kept=82, compression=68.46%
+  简化轨迹 87/251 完成（MMSI=900000091），点数 82，压缩率 68.46%
+[SACSB] N=234, len(COG_Variation)=116, len(idx_sacsb_keypoints)=37
+[Simplify] N=234, DP_kept=31, SACSB_keypoints=37, merge_kept=62, compression=73.50%
+  简化轨迹 88/251 完成（MMSI=900000092），点数 62，压缩率 73.50%
+[SACSB] N=256, len(COG_Variation)=127, len(idx_sacsb_keypoints)=33
+[Simplify] N=256, DP_kept=32, SACSB_keypoints=33, merge_kept=59, compression=76.95%
+  简化轨迹 89/251 完成（MMSI=900000093），点数 59，压缩率 76.95%
+[SACSB] N=238, len(COG_Variation)=118, len(idx_sacsb_keypoints)=41
+[Simplify] N=238, DP_kept=34, SACSB_keypoints=41, merge_kept=68, compression=71.43%
+  简化轨迹 90/251 完成（MMSI=900000094），点数 68，压缩率 71.43%
+[SACSB] N=222, len(COG_Variation)=110, len(idx_sacsb_keypoints)=50
+[Simplify] N=222, DP_kept=25, SACSB_keypoints=50, merge_kept=71, compression=68.02%
+  简化轨迹 91/251 完成（MMSI=900000095），点数 71，压缩率 68.02%
+[SACSB] N=241, len(COG_Variation)=120, len(idx_sacsb_keypoints)=40
+[Simplify] N=241, DP_kept=26, SACSB_keypoints=40, merge_kept=62, compression=74.27%
+  简化轨迹 92/251 完成（MMSI=900000096），点数 62，压缩率 74.27%
+[SACSB] N=235, len(COG_Variation)=117, len(idx_sacsb_keypoints)=63
+[Simplify] N=235, DP_kept=32, SACSB_keypoints=63, merge_kept=90, compression=61.70%
+  简化轨迹 93/251 完成（MMSI=900000097），点数 90，压缩率 61.70%
+[SACSB] N=230, len(COG_Variation)=114, len(idx_sacsb_keypoints)=59
+[Simplify] N=230, DP_kept=31, SACSB_keypoints=59, merge_kept=82, compression=64.35%
+  简化轨迹 94/251 完成（MMSI=900000098），点数 82，压缩率 64.35%
+[SACSB] N=253, len(COG_Variation)=126, len(idx_sacsb_keypoints)=41
+[Simplify] N=253, DP_kept=25, SACSB_keypoints=41, merge_kept=63, compression=75.10%
+  简化轨迹 95/251 完成（MMSI=900000099），点数 63，压缩率 75.10%
+[SACSB] N=246, len(COG_Variation)=122, len(idx_sacsb_keypoints)=58
+[Simplify] N=246, DP_kept=46, SACSB_keypoints=58, merge_kept=91, compression=63.01%
+  简化轨迹 96/251 完成（MMSI=900000100），点数 91，压缩率 63.01%
+[SACSB] N=268, len(COG_Variation)=133, len(idx_sacsb_keypoints)=20
+[Simplify] N=268, DP_kept=42, SACSB_keypoints=20, merge_kept=59, compression=77.99%
+  简化轨迹 97/251 完成（MMSI=900000101），点数 59，压缩率 77.99%
+[SACSB] N=227, len(COG_Variation)=113, len(idx_sacsb_keypoints)=30
+[Simplify] N=227, DP_kept=20, SACSB_keypoints=30, merge_kept=43, compression=81.06%
+  简化轨迹 98/251 完成（MMSI=900000102），点数 43，压缩率 81.06%
+[SACSB] N=269, len(COG_Variation)=134, len(idx_sacsb_keypoints)=23
+[Simplify] N=269, DP_kept=26, SACSB_keypoints=23, merge_kept=47, compression=82.53%
+  简化轨迹 99/251 完成（MMSI=900000103），点数 47，压缩率 82.53%
+[SACSB] N=245, len(COG_Variation)=122, len(idx_sacsb_keypoints)=50
+[Simplify] N=245, DP_kept=28, SACSB_keypoints=50, merge_kept=77, compression=68.57%
+  简化轨迹 100/251 完成（MMSI=900000104），点数 77，压缩率 68.57%
+[SACSB] N=254, len(COG_Variation)=126, len(idx_sacsb_keypoints)=61
+[Simplify] N=254, DP_kept=38, SACSB_keypoints=61, merge_kept=86, compression=66.14%
+  简化轨迹 101/251 完成（MMSI=900000105），点数 86，压缩率 66.14%
+[SACSB] N=405, len(COG_Variation)=202, len(idx_sacsb_keypoints)=155
+[Simplify] N=405, DP_kept=32, SACSB_keypoints=155, merge_kept=174, compression=57.04%
+  简化轨迹 102/251 完成（MMSI=900000106），点数 174，压缩率 57.04%
+[SACSB] N=245, len(COG_Variation)=122, len(idx_sacsb_keypoints)=24
+[Simplify] N=245, DP_kept=26, SACSB_keypoints=24, merge_kept=47, compression=80.82%
+  简化轨迹 103/251 完成（MMSI=900000107），点数 47，压缩率 80.82%
+[SACSB] N=235, len(COG_Variation)=117, len(idx_sacsb_keypoints)=38
+[Simplify] N=235, DP_kept=29, SACSB_keypoints=38, merge_kept=61, compression=74.04%
+  简化轨迹 104/251 完成（MMSI=900000108），点数 61，压缩率 74.04%
+[SACSB] N=221, len(COG_Variation)=110, len(idx_sacsb_keypoints)=64
+[Simplify] N=221, DP_kept=26, SACSB_keypoints=64, merge_kept=81, compression=63.35%
+  简化轨迹 105/251 完成（MMSI=900000109），点数 81，压缩率 63.35%
+[SACSB] N=223, len(COG_Variation)=111, len(idx_sacsb_keypoints)=22
+[Simplify] N=223, DP_kept=29, SACSB_keypoints=22, merge_kept=48, compression=78.48%
+  简化轨迹 106/251 完成（MMSI=900000110），点数 48，压缩率 78.48%
+[SACSB] N=223, len(COG_Variation)=111, len(idx_sacsb_keypoints)=26
+[Simplify] N=223, DP_kept=30, SACSB_keypoints=26, merge_kept=53, compression=76.23%
+  简化轨迹 107/251 完成（MMSI=900000111），点数 53，压缩率 76.23%
+[SACSB] N=324, len(COG_Variation)=161, len(idx_sacsb_keypoints)=40
+[Simplify] N=324, DP_kept=27, SACSB_keypoints=40, merge_kept=59, compression=81.79%
+  简化轨迹 108/251 完成（MMSI=900000112），点数 59，压缩率 81.79%
+[SACSB] N=229, len(COG_Variation)=114, len(idx_sacsb_keypoints)=20
+[Simplify] N=229, DP_kept=31, SACSB_keypoints=20, merge_kept=49, compression=78.60%
+  简化轨迹 109/251 完成（MMSI=900000113），点数 49，压缩率 78.60%
+[SACSB] N=233, len(COG_Variation)=116, len(idx_sacsb_keypoints)=21
+[Simplify] N=233, DP_kept=37, SACSB_keypoints=21, merge_kept=54, compression=76.82%
+  简化轨迹 110/251 完成（MMSI=900000114），点数 54，压缩率 76.82%
+[SACSB] N=221, len(COG_Variation)=110, len(idx_sacsb_keypoints)=15
+[Simplify] N=221, DP_kept=25, SACSB_keypoints=15, merge_kept=37, compression=83.26%
+  简化轨迹 111/251 完成（MMSI=900000115），点数 37，压缩率 83.26%
+[SACSB] N=253, len(COG_Variation)=126, len(idx_sacsb_keypoints)=58
+[Simplify] N=253, DP_kept=29, SACSB_keypoints=58, merge_kept=80, compression=68.38%
+  简化轨迹 112/251 完成（MMSI=900000116），点数 80，压缩率 68.38%
+[SACSB] N=296, len(COG_Variation)=147, len(idx_sacsb_keypoints)=41
+[Simplify] N=296, DP_kept=26, SACSB_keypoints=41, merge_kept=67, compression=77.36%
+  简化轨迹 113/251 完成（MMSI=900000117），点数 67，压缩率 77.36%
+[SACSB] N=245, len(COG_Variation)=122, len(idx_sacsb_keypoints)=39
+[Simplify] N=245, DP_kept=27, SACSB_keypoints=39, merge_kept=62, compression=74.69%
+  简化轨迹 114/251 完成（MMSI=900000118），点数 62，压缩率 74.69%
+[SACSB] N=228, len(COG_Variation)=113, len(idx_sacsb_keypoints)=36
+[Simplify] N=228, DP_kept=24, SACSB_keypoints=36, merge_kept=50, compression=78.07%
+  简化轨迹 115/251 完成（MMSI=900000119），点数 50，压缩率 78.07%
+[SACSB] N=240, len(COG_Variation)=119, len(idx_sacsb_keypoints)=27
+[Simplify] N=240, DP_kept=18, SACSB_keypoints=27, merge_kept=43, compression=82.08%
+  简化轨迹 116/251 完成（MMSI=900000120），点数 43，压缩率 82.08%
+[SACSB] N=276, len(COG_Variation)=137, len(idx_sacsb_keypoints)=29
+[Simplify] N=276, DP_kept=33, SACSB_keypoints=29, merge_kept=57, compression=79.35%
+  简化轨迹 117/251 完成（MMSI=900000121），点数 57，压缩率 79.35%
+[SACSB] N=290, len(COG_Variation)=144, len(idx_sacsb_keypoints)=72
+[Simplify] N=290, DP_kept=32, SACSB_keypoints=72, merge_kept=97, compression=66.55%
+  简化轨迹 118/251 完成（MMSI=900000122），点数 97，压缩率 66.55%
+[SACSB] N=252, len(COG_Variation)=125, len(idx_sacsb_keypoints)=39
+[Simplify] N=252, DP_kept=41, SACSB_keypoints=39, merge_kept=76, compression=69.84%
+  简化轨迹 119/251 完成（MMSI=900000123），点数 76，压缩率 69.84%
+[SACSB] N=236, len(COG_Variation)=117, len(idx_sacsb_keypoints)=43
+[Simplify] N=236, DP_kept=41, SACSB_keypoints=43, merge_kept=75, compression=68.22%
+  简化轨迹 120/251 完成（MMSI=900000124），点数 75，压缩率 68.22%
+[SACSB] N=227, len(COG_Variation)=113, len(idx_sacsb_keypoints)=22
+[Simplify] N=227, DP_kept=19, SACSB_keypoints=22, merge_kept=38, compression=83.26%
+  简化轨迹 121/251 完成（MMSI=900000125），点数 38，压缩率 83.26%
+[SACSB] N=228, len(COG_Variation)=113, len(idx_sacsb_keypoints)=14
+[Simplify] N=228, DP_kept=34, SACSB_keypoints=14, merge_kept=46, compression=79.82%
+  简化轨迹 122/251 完成（MMSI=900000126），点数 46，压缩率 79.82%
+[SACSB] N=276, len(COG_Variation)=137, len(idx_sacsb_keypoints)=77
+[Simplify] N=276, DP_kept=38, SACSB_keypoints=77, merge_kept=103, compression=62.68%
+  简化轨迹 123/251 完成（MMSI=900000127），点数 103，压缩率 62.68%
+[SACSB] N=358, len(COG_Variation)=178, len(idx_sacsb_keypoints)=107
+[Simplify] N=358, DP_kept=59, SACSB_keypoints=107, merge_kept=150, compression=58.10%
+  简化轨迹 124/251 完成（MMSI=900000128），点数 150，压缩率 58.10%
+[SACSB] N=234, len(COG_Variation)=116, len(idx_sacsb_keypoints)=49
+[Simplify] N=234, DP_kept=22, SACSB_keypoints=49, merge_kept=66, compression=71.79%
+  简化轨迹 125/251 完成（MMSI=900000129），点数 66，压缩率 71.79%
+[SACSB] N=268, len(COG_Variation)=133, len(idx_sacsb_keypoints)=40
+[Simplify] N=268, DP_kept=33, SACSB_keypoints=40, merge_kept=68, compression=74.63%
+  简化轨迹 126/251 完成（MMSI=900000130），点数 68，压缩率 74.63%
+[SACSB] N=288, len(COG_Variation)=143, len(idx_sacsb_keypoints)=72
+[Simplify] N=288, DP_kept=27, SACSB_keypoints=72, merge_kept=95, compression=67.01%
+  简化轨迹 127/251 完成（MMSI=900000131），点数 95，压缩率 67.01%
+[SACSB] N=253, len(COG_Variation)=126, len(idx_sacsb_keypoints)=42
+[Simplify] N=253, DP_kept=34, SACSB_keypoints=42, merge_kept=71, compression=71.94%
+  简化轨迹 128/251 完成（MMSI=900000132），点数 71，压缩率 71.94%
+[SACSB] N=235, len(COG_Variation)=117, len(idx_sacsb_keypoints)=39
+[Simplify] N=235, DP_kept=27, SACSB_keypoints=39, merge_kept=62, compression=73.62%
+  简化轨迹 129/251 完成（MMSI=900000133），点数 62，压缩率 73.62%
+[SACSB] N=272, len(COG_Variation)=135, len(idx_sacsb_keypoints)=36
+[Simplify] N=272, DP_kept=40, SACSB_keypoints=36, merge_kept=65, compression=76.10%
+  简化轨迹 130/251 完成（MMSI=900000135），点数 65，压缩率 76.10%
+[SACSB] N=240, len(COG_Variation)=119, len(idx_sacsb_keypoints)=45
+[Simplify] N=240, DP_kept=27, SACSB_keypoints=45, merge_kept=65, compression=72.92%
+  简化轨迹 131/251 完成（MMSI=900000136），点数 65，压缩率 72.92%
+[SACSB] N=220, len(COG_Variation)=109, len(idx_sacsb_keypoints)=57
+[Simplify] N=220, DP_kept=19, SACSB_keypoints=57, merge_kept=71, compression=67.73%
+  简化轨迹 132/251 完成（MMSI=900000137），点数 71，压缩率 67.73%
+[SACSB] N=249, len(COG_Variation)=124, len(idx_sacsb_keypoints)=27
+[Simplify] N=249, DP_kept=34, SACSB_keypoints=27, merge_kept=58, compression=76.71%
+  简化轨迹 133/251 完成（MMSI=900000139），点数 58，压缩率 76.71%
+[SACSB] N=223, len(COG_Variation)=111, len(idx_sacsb_keypoints)=15
+[Simplify] N=223, DP_kept=24, SACSB_keypoints=15, merge_kept=38, compression=82.96%
+  简化轨迹 134/251 完成（MMSI=900000140），点数 38，压缩率 82.96%
+[SACSB] N=264, len(COG_Variation)=131, len(idx_sacsb_keypoints)=62
+[Simplify] N=264, DP_kept=29, SACSB_keypoints=62, merge_kept=83, compression=68.56%
+  简化轨迹 135/251 完成（MMSI=900000141），点数 83，压缩率 68.56%
+[SACSB] N=236, len(COG_Variation)=117, len(idx_sacsb_keypoints)=42
+[Simplify] N=236, DP_kept=37, SACSB_keypoints=42, merge_kept=69, compression=70.76%
+  简化轨迹 136/251 完成（MMSI=900000142），点数 69，压缩率 70.76%
+[SACSB] N=222, len(COG_Variation)=110, len(idx_sacsb_keypoints)=43
+[Simplify] N=222, DP_kept=29, SACSB_keypoints=43, merge_kept=65, compression=70.72%
+  简化轨迹 137/251 完成（MMSI=900000143），点数 65，压缩率 70.72%
+[SACSB] N=233, len(COG_Variation)=116, len(idx_sacsb_keypoints)=33
+[Simplify] N=233, DP_kept=23, SACSB_keypoints=33, merge_kept=54, compression=76.82%
+  简化轨迹 138/251 完成（MMSI=900000144），点数 54，压缩率 76.82%
+[SACSB] N=219, len(COG_Variation)=109, len(idx_sacsb_keypoints)=10
+[Simplify] N=219, DP_kept=23, SACSB_keypoints=10, merge_kept=30, compression=86.30%
+  简化轨迹 139/251 完成（MMSI=900000145），点数 30，压缩率 86.30%
+[SACSB] N=239, len(COG_Variation)=119, len(idx_sacsb_keypoints)=30
+[Simplify] N=239, DP_kept=34, SACSB_keypoints=30, merge_kept=59, compression=75.31%
+  简化轨迹 140/251 完成（MMSI=900000146），点数 59，压缩率 75.31%
+[SACSB] N=219, len(COG_Variation)=109, len(idx_sacsb_keypoints)=33
+[Simplify] N=219, DP_kept=29, SACSB_keypoints=33, merge_kept=57, compression=73.97%
+  简化轨迹 141/251 完成（MMSI=900000147），点数 57，压缩率 73.97%
+[SACSB] N=218, len(COG_Variation)=108, len(idx_sacsb_keypoints)=19
+[Simplify] N=218, DP_kept=28, SACSB_keypoints=19, merge_kept=44, compression=79.82%
+  简化轨迹 142/251 完成（MMSI=900000148），点数 44，压缩率 79.82%
+[SACSB] N=280, len(COG_Variation)=139, len(idx_sacsb_keypoints)=49
+[Simplify] N=280, DP_kept=42, SACSB_keypoints=49, merge_kept=80, compression=71.43%
+  简化轨迹 143/251 完成（MMSI=900000149），点数 80，压缩率 71.43%
+[SACSB] N=232, len(COG_Variation)=115, len(idx_sacsb_keypoints)=57
+[Simplify] N=232, DP_kept=27, SACSB_keypoints=57, merge_kept=76, compression=67.24%
+  简化轨迹 144/251 完成（MMSI=900000150），点数 76，压缩率 67.24%
+[SACSB] N=254, len(COG_Variation)=126, len(idx_sacsb_keypoints)=37
+[Simplify] N=254, DP_kept=42, SACSB_keypoints=37, merge_kept=73, compression=71.26%
+  简化轨迹 145/251 完成（MMSI=900000151），点数 73，压缩率 71.26%
+[SACSB] N=220, len(COG_Variation)=109, len(idx_sacsb_keypoints)=5
+[Simplify] N=220, DP_kept=28, SACSB_keypoints=5, merge_kept=32, compression=85.45%
+  简化轨迹 146/251 完成（MMSI=900000152），点数 32，压缩率 85.45%
+[SACSB] N=336, len(COG_Variation)=167, len(idx_sacsb_keypoints)=43
+[Simplify] N=336, DP_kept=54, SACSB_keypoints=43, merge_kept=81, compression=75.89%
+  简化轨迹 147/251 完成（MMSI=900000153），点数 81，压缩率 75.89%
+[SACSB] N=231, len(COG_Variation)=115, len(idx_sacsb_keypoints)=56
+[Simplify] N=231, DP_kept=34, SACSB_keypoints=56, merge_kept=79, compression=65.80%
+  简化轨迹 148/251 完成（MMSI=900000154），点数 79，压缩率 65.80%
+[SACSB] N=308, len(COG_Variation)=153, len(idx_sacsb_keypoints)=101
+[Simplify] N=308, DP_kept=36, SACSB_keypoints=101, merge_kept=128, compression=58.44%
+  简化轨迹 149/251 完成（MMSI=900000155），点数 128，压缩率 58.44%
+[SACSB] N=220, len(COG_Variation)=109, len(idx_sacsb_keypoints)=45
+[Simplify] N=220, DP_kept=28, SACSB_keypoints=45, merge_kept=66, compression=70.00%
+  简化轨迹 150/251 完成（MMSI=900000156），点数 66，压缩率 70.00%
+[SACSB] N=265, len(COG_Variation)=132, len(idx_sacsb_keypoints)=26
+[Simplify] N=265, DP_kept=36, SACSB_keypoints=26, merge_kept=59, compression=77.74%
+  简化轨迹 151/251 完成（MMSI=900000157），点数 59，压缩率 77.74%
+[SACSB] N=230, len(COG_Variation)=114, len(idx_sacsb_keypoints)=10
+[Simplify] N=230, DP_kept=36, SACSB_keypoints=10, merge_kept=43, compression=81.30%
+  简化轨迹 152/251 完成（MMSI=900000158），点数 43，压缩率 81.30%
+[SACSB] N=251, len(COG_Variation)=125, len(idx_sacsb_keypoints)=67
+[Simplify] N=251, DP_kept=26, SACSB_keypoints=67, merge_kept=84, compression=66.53%
+  简化轨迹 153/251 完成（MMSI=900000159），点数 84，压缩率 66.53%
+[SACSB] N=233, len(COG_Variation)=116, len(idx_sacsb_keypoints)=35
+[Simplify] N=233, DP_kept=26, SACSB_keypoints=35, merge_kept=52, compression=77.68%
+  简化轨迹 154/251 完成（MMSI=900000160），点数 52，压缩率 77.68%
+[SACSB] N=265, len(COG_Variation)=132, len(idx_sacsb_keypoints)=33
+[Simplify] N=265, DP_kept=43, SACSB_keypoints=33, merge_kept=69, compression=73.96%
+  简化轨迹 155/251 完成（MMSI=900000161），点数 69，压缩率 73.96%
+[SACSB] N=229, len(COG_Variation)=114, len(idx_sacsb_keypoints)=61
+[Simplify] N=229, DP_kept=26, SACSB_keypoints=61, merge_kept=83, compression=63.76%
+  简化轨迹 156/251 完成（MMSI=900000163），点数 83，压缩率 63.76%
+[SACSB] N=223, len(COG_Variation)=111, len(idx_sacsb_keypoints)=13
+[Simplify] N=223, DP_kept=38, SACSB_keypoints=13, merge_kept=51, compression=77.13%
+  简化轨迹 157/251 完成（MMSI=900000165），点数 51，压缩率 77.13%
+[SACSB] N=279, len(COG_Variation)=139, len(idx_sacsb_keypoints)=86
+[Simplify] N=279, DP_kept=36, SACSB_keypoints=86, merge_kept=113, compression=59.50%
+  简化轨迹 158/251 完成（MMSI=900000166），点数 113，压缩率 59.50%
+[SACSB] N=223, len(COG_Variation)=111, len(idx_sacsb_keypoints)=44
+[Simplify] N=223, DP_kept=29, SACSB_keypoints=44, merge_kept=68, compression=69.51%
+  简化轨迹 159/251 完成（MMSI=900000167），点数 68，压缩率 69.51%
+[SACSB] N=228, len(COG_Variation)=113, len(idx_sacsb_keypoints)=46
+[Simplify] N=228, DP_kept=27, SACSB_keypoints=46, merge_kept=70, compression=69.30%
+  简化轨迹 160/251 完成（MMSI=900000169），点数 70，压缩率 69.30%
+[SACSB] N=238, len(COG_Variation)=118, len(idx_sacsb_keypoints)=50
+[Simplify] N=238, DP_kept=47, SACSB_keypoints=50, merge_kept=88, compression=63.03%
+  简化轨迹 161/251 完成（MMSI=900000170），点数 88，压缩率 63.03%
+[SACSB] N=242, len(COG_Variation)=120, len(idx_sacsb_keypoints)=50
+[Simplify] N=242, DP_kept=22, SACSB_keypoints=50, merge_kept=66, compression=72.73%
+  简化轨迹 162/251 完成（MMSI=900000171），点数 66，压缩率 72.73%
+[SACSB] N=273, len(COG_Variation)=136, len(idx_sacsb_keypoints)=71
+[Simplify] N=273, DP_kept=38, SACSB_keypoints=71, merge_kept=96, compression=64.84%
+  简化轨迹 163/251 完成（MMSI=900000172），点数 96，压缩率 64.84%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=48
+[Simplify] N=224, DP_kept=29, SACSB_keypoints=48, merge_kept=70, compression=68.75%
+  简化轨迹 164/251 完成（MMSI=900000173），点数 70，压缩率 68.75%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=27
+[Simplify] N=224, DP_kept=32, SACSB_keypoints=27, merge_kept=56, compression=75.00%
+  简化轨迹 165/251 完成（MMSI=900000175），点数 56，压缩率 75.00%
+[SACSB] N=226, len(COG_Variation)=112, len(idx_sacsb_keypoints)=34
+[Simplify] N=226, DP_kept=33, SACSB_keypoints=34, merge_kept=63, compression=72.12%
+  简化轨迹 166/251 完成（MMSI=900000176），点数 63，压缩率 72.12%
+[SACSB] N=248, len(COG_Variation)=123, len(idx_sacsb_keypoints)=52
+[Simplify] N=248, DP_kept=37, SACSB_keypoints=52, merge_kept=79, compression=68.15%
+  简化轨迹 167/251 完成（MMSI=900000177），点数 79，压缩率 68.15%
+[SACSB] N=232, len(COG_Variation)=115, len(idx_sacsb_keypoints)=13
+[Simplify] N=232, DP_kept=31, SACSB_keypoints=13, merge_kept=41, compression=82.33%
+  简化轨迹 168/251 完成（MMSI=900000178），点数 41，压缩率 82.33%
+[SACSB] N=234, len(COG_Variation)=116, len(idx_sacsb_keypoints)=22
+[Simplify] N=234, DP_kept=20, SACSB_keypoints=22, merge_kept=40, compression=82.91%
+  简化轨迹 169/251 完成（MMSI=900000180），点数 40，压缩率 82.91%
+[SACSB] N=222, len(COG_Variation)=110, len(idx_sacsb_keypoints)=27
+[Simplify] N=222, DP_kept=45, SACSB_keypoints=27, merge_kept=63, compression=71.62%
+  简化轨迹 170/251 完成（MMSI=900000181），点数 63，压缩率 71.62%
+[SACSB] N=277, len(COG_Variation)=138, len(idx_sacsb_keypoints)=63
+[Simplify] N=277, DP_kept=35, SACSB_keypoints=63, merge_kept=89, compression=67.87%
+  简化轨迹 171/251 完成（MMSI=900000182），点数 89，压缩率 67.87%
+[SACSB] N=241, len(COG_Variation)=120, len(idx_sacsb_keypoints)=40
+[Simplify] N=241, DP_kept=41, SACSB_keypoints=40, merge_kept=76, compression=68.46%
+  简化轨迹 172/251 完成（MMSI=900000183），点数 76，压缩率 68.46%
+[SACSB] N=255, len(COG_Variation)=127, len(idx_sacsb_keypoints)=10
+[Simplify] N=255, DP_kept=23, SACSB_keypoints=10, merge_kept=32, compression=87.45%
+  简化轨迹 173/251 完成（MMSI=900000184），点数 32，压缩率 87.45%
+[SACSB] N=238, len(COG_Variation)=118, len(idx_sacsb_keypoints)=36
+[Simplify] N=238, DP_kept=33, SACSB_keypoints=36, merge_kept=68, compression=71.43%
+  简化轨迹 174/251 完成（MMSI=900000186），点数 68，压缩率 71.43%
+[SACSB] N=227, len(COG_Variation)=113, len(idx_sacsb_keypoints)=58
+[Simplify] N=227, DP_kept=24, SACSB_keypoints=58, merge_kept=79, compression=65.20%
+  简化轨迹 175/251 完成（MMSI=900000187），点数 79，压缩率 65.20%
+[SACSB] N=245, len(COG_Variation)=122, len(idx_sacsb_keypoints)=18
+[Simplify] N=245, DP_kept=34, SACSB_keypoints=18, merge_kept=46, compression=81.22%
+  简化轨迹 176/251 完成（MMSI=900000188），点数 46，压缩率 81.22%
+[SACSB] N=219, len(COG_Variation)=109, len(idx_sacsb_keypoints)=20
+[Simplify] N=219, DP_kept=26, SACSB_keypoints=20, merge_kept=40, compression=81.74%
+  简化轨迹 177/251 完成（MMSI=900000189），点数 40，压缩率 81.74%
+[SACSB] N=479, len(COG_Variation)=239, len(idx_sacsb_keypoints)=66
+[Simplify] N=479, DP_kept=25, SACSB_keypoints=66, merge_kept=83, compression=82.67%
+  简化轨迹 178/251 完成（MMSI=900000190），点数 83，压缩率 82.67%
+[SACSB] N=256, len(COG_Variation)=127, len(idx_sacsb_keypoints)=54
+[Simplify] N=256, DP_kept=32, SACSB_keypoints=54, merge_kept=79, compression=69.14%
+  简化轨迹 179/251 完成（MMSI=900000191），点数 79，压缩率 69.14%
+[SACSB] N=229, len(COG_Variation)=114, len(idx_sacsb_keypoints)=21
+[Simplify] N=229, DP_kept=29, SACSB_keypoints=21, merge_kept=49, compression=78.60%
+  简化轨迹 180/251 完成（MMSI=900000194），点数 49，压缩率 78.60%
+[SACSB] N=232, len(COG_Variation)=115, len(idx_sacsb_keypoints)=19
+[Simplify] N=232, DP_kept=64, SACSB_keypoints=19, merge_kept=77, compression=66.81%
+  简化轨迹 181/251 完成（MMSI=900000195），点数 77，压缩率 66.81%
+[SACSB] N=275, len(COG_Variation)=137, len(idx_sacsb_keypoints)=83
+[Simplify] N=275, DP_kept=43, SACSB_keypoints=83, merge_kept=114, compression=58.55%
+  简化轨迹 182/251 完成（MMSI=900000196），点数 114，压缩率 58.55%
+[SACSB] N=267, len(COG_Variation)=133, len(idx_sacsb_keypoints)=73
+[Simplify] N=267, DP_kept=30, SACSB_keypoints=73, merge_kept=98, compression=63.30%
+  简化轨迹 183/251 完成（MMSI=900000197），点数 98，压缩率 63.30%
+[SACSB] N=229, len(COG_Variation)=114, len(idx_sacsb_keypoints)=49
+[Simplify] N=229, DP_kept=23, SACSB_keypoints=49, merge_kept=70, compression=69.43%
+  简化轨迹 184/251 完成（MMSI=900000198），点数 70，压缩率 69.43%
+[SACSB] N=248, len(COG_Variation)=123, len(idx_sacsb_keypoints)=63
+[Simplify] N=248, DP_kept=27, SACSB_keypoints=63, merge_kept=85, compression=65.73%
+  简化轨迹 185/251 完成（MMSI=900000199），点数 85，压缩率 65.73%
+[SACSB] N=250, len(COG_Variation)=124, len(idx_sacsb_keypoints)=32
+[Simplify] N=250, DP_kept=36, SACSB_keypoints=32, merge_kept=63, compression=74.80%
+  简化轨迹 186/251 完成（MMSI=900000200），点数 63，压缩率 74.80%
+[SACSB] N=284, len(COG_Variation)=141, len(idx_sacsb_keypoints)=59
+[Simplify] N=284, DP_kept=32, SACSB_keypoints=59, merge_kept=85, compression=70.07%
+  简化轨迹 187/251 完成（MMSI=900000201），点数 85，压缩率 70.07%
+[SACSB] N=256, len(COG_Variation)=127, len(idx_sacsb_keypoints)=55
+[Simplify] N=256, DP_kept=34, SACSB_keypoints=55, merge_kept=81, compression=68.36%
+  简化轨迹 188/251 完成（MMSI=900000202），点数 81，压缩率 68.36%
+[SACSB] N=266, len(COG_Variation)=132, len(idx_sacsb_keypoints)=23
+[Simplify] N=266, DP_kept=39, SACSB_keypoints=23, merge_kept=56, compression=78.95%
+  简化轨迹 189/251 完成（MMSI=900000203），点数 56，压缩率 78.95%
+[SACSB] N=232, len(COG_Variation)=115, len(idx_sacsb_keypoints)=6
+[Simplify] N=232, DP_kept=26, SACSB_keypoints=6, merge_kept=32, compression=86.21%
+  简化轨迹 190/251 完成（MMSI=900000204），点数 32，压缩率 86.21%
+[SACSB] N=218, len(COG_Variation)=108, len(idx_sacsb_keypoints)=61
+[Simplify] N=218, DP_kept=26, SACSB_keypoints=61, merge_kept=78, compression=64.22%
+  简化轨迹 191/251 完成（MMSI=900000205），点数 78，压缩率 64.22%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=50
+[Simplify] N=224, DP_kept=20, SACSB_keypoints=50, merge_kept=63, compression=71.88%
+  简化轨迹 192/251 完成（MMSI=900000206），点数 63，压缩率 71.88%
+[SACSB] N=233, len(COG_Variation)=116, len(idx_sacsb_keypoints)=60
+[Simplify] N=233, DP_kept=12, SACSB_keypoints=60, merge_kept=68, compression=70.82%
+  简化轨迹 193/251 完成（MMSI=900000207），点数 68，压缩率 70.82%
+[SACSB] N=226, len(COG_Variation)=112, len(idx_sacsb_keypoints)=22
+[Simplify] N=226, DP_kept=11, SACSB_keypoints=22, merge_kept=32, compression=85.84%
+  简化轨迹 194/251 完成（MMSI=900000208），点数 32，压缩率 85.84%
+[SACSB] N=236, len(COG_Variation)=117, len(idx_sacsb_keypoints)=52
+[Simplify] N=236, DP_kept=24, SACSB_keypoints=52, merge_kept=73, compression=69.07%
+  简化轨迹 195/251 完成（MMSI=900000209），点数 73，压缩率 69.07%
+[SACSB] N=372, len(COG_Variation)=185, len(idx_sacsb_keypoints)=41
+[Simplify] N=372, DP_kept=32, SACSB_keypoints=41, merge_kept=71, compression=80.91%
+  简化轨迹 196/251 完成（MMSI=900000210），点数 71，压缩率 80.91%
+[SACSB] N=231, len(COG_Variation)=115, len(idx_sacsb_keypoints)=25
+[Simplify] N=231, DP_kept=23, SACSB_keypoints=25, merge_kept=46, compression=80.09%
+  简化轨迹 197/251 完成（MMSI=900000211），点数 46，压缩率 80.09%
+[SACSB] N=240, len(COG_Variation)=119, len(idx_sacsb_keypoints)=48
+[Simplify] N=240, DP_kept=37, SACSB_keypoints=48, merge_kept=76, compression=68.33%
+  简化轨迹 198/251 完成（MMSI=900000212），点数 76，压缩率 68.33%
+[SACSB] N=270, len(COG_Variation)=134, len(idx_sacsb_keypoints)=20
+[Simplify] N=270, DP_kept=31, SACSB_keypoints=20, merge_kept=44, compression=83.70%
+  简化轨迹 199/251 完成（MMSI=900000213），点数 44，压缩率 83.70%
+[SACSB] N=234, len(COG_Variation)=116, len(idx_sacsb_keypoints)=26
+[Simplify] N=234, DP_kept=37, SACSB_keypoints=26, merge_kept=60, compression=74.36%
+  简化轨迹 200/251 完成（MMSI=900000214），点数 60，压缩率 74.36%
+[SACSB] N=234, len(COG_Variation)=116, len(idx_sacsb_keypoints)=38
+[Simplify] N=234, DP_kept=34, SACSB_keypoints=38, merge_kept=68, compression=70.94%
+  简化轨迹 201/251 完成（MMSI=900000216），点数 68，压缩率 70.94%
+[SACSB] N=244, len(COG_Variation)=121, len(idx_sacsb_keypoints)=11
+[Simplify] N=244, DP_kept=24, SACSB_keypoints=11, merge_kept=34, compression=86.07%
+  简化轨迹 202/251 完成（MMSI=900000217），点数 34，压缩率 86.07%
+[SACSB] N=313, len(COG_Variation)=156, len(idx_sacsb_keypoints)=70
+[Simplify] N=313, DP_kept=34, SACSB_keypoints=70, merge_kept=97, compression=69.01%
+  简化轨迹 203/251 完成（MMSI=900000218），点数 97，压缩率 69.01%
+[SACSB] N=226, len(COG_Variation)=112, len(idx_sacsb_keypoints)=50
+[Simplify] N=226, DP_kept=18, SACSB_keypoints=50, merge_kept=63, compression=72.12%
+  简化轨迹 204/251 完成（MMSI=900000220），点数 63，压缩率 72.12%
+[SACSB] N=244, len(COG_Variation)=121, len(idx_sacsb_keypoints)=47
+[Simplify] N=244, DP_kept=36, SACSB_keypoints=47, merge_kept=73, compression=70.08%
+  简化轨迹 205/251 完成（MMSI=900000221），点数 73，压缩率 70.08%
+[SACSB] N=365, len(COG_Variation)=182, len(idx_sacsb_keypoints)=68
+[Simplify] N=365, DP_kept=51, SACSB_keypoints=68, merge_kept=106, compression=70.96%
+  简化轨迹 206/251 完成（MMSI=900000222），点数 106，压缩率 70.96%
+[SACSB] N=226, len(COG_Variation)=112, len(idx_sacsb_keypoints)=15
+[Simplify] N=226, DP_kept=35, SACSB_keypoints=15, merge_kept=48, compression=78.76%
+  简化轨迹 207/251 完成（MMSI=900000223），点数 48，压缩率 78.76%
+[SACSB] N=222, len(COG_Variation)=110, len(idx_sacsb_keypoints)=47
+[Simplify] N=222, DP_kept=33, SACSB_keypoints=47, merge_kept=72, compression=67.57%
+  简化轨迹 208/251 完成（MMSI=900000224），点数 72，压缩率 67.57%
+[SACSB] N=233, len(COG_Variation)=116, len(idx_sacsb_keypoints)=9
+[Simplify] N=233, DP_kept=36, SACSB_keypoints=9, merge_kept=41, compression=82.40%
+  简化轨迹 209/251 完成（MMSI=900000225），点数 41，压缩率 82.40%
+[SACSB] N=264, len(COG_Variation)=131, len(idx_sacsb_keypoints)=36
+[Simplify] N=264, DP_kept=41, SACSB_keypoints=36, merge_kept=65, compression=75.38%
+  简化轨迹 210/251 完成（MMSI=900000226），点数 65，压缩率 75.38%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=30
+[Simplify] N=224, DP_kept=26, SACSB_keypoints=30, merge_kept=53, compression=76.34%
+  简化轨迹 211/251 完成（MMSI=900000227），点数 53，压缩率 76.34%
+[SACSB] N=223, len(COG_Variation)=111, len(idx_sacsb_keypoints)=56
+[Simplify] N=223, DP_kept=29, SACSB_keypoints=56, merge_kept=81, compression=63.68%
+  简化轨迹 212/251 完成（MMSI=900000228），点数 81，压缩率 63.68%
+[SACSB] N=219, len(COG_Variation)=109, len(idx_sacsb_keypoints)=15
+[Simplify] N=219, DP_kept=28, SACSB_keypoints=15, merge_kept=41, compression=81.28%
+  简化轨迹 213/251 完成（MMSI=900000229），点数 41，压缩率 81.28%
+[SACSB] N=220, len(COG_Variation)=109, len(idx_sacsb_keypoints)=44
+[Simplify] N=220, DP_kept=23, SACSB_keypoints=44, merge_kept=60, compression=72.73%
+  简化轨迹 214/251 完成（MMSI=900000230），点数 60，压缩率 72.73%
+[SACSB] N=219, len(COG_Variation)=109, len(idx_sacsb_keypoints)=60
+[Simplify] N=219, DP_kept=28, SACSB_keypoints=60, merge_kept=84, compression=61.64%
+  简化轨迹 215/251 完成（MMSI=900000231），点数 84，压缩率 61.64%
+[SACSB] N=282, len(COG_Variation)=140, len(idx_sacsb_keypoints)=38
+[Simplify] N=282, DP_kept=41, SACSB_keypoints=38, merge_kept=76, compression=73.05%
+  简化轨迹 216/251 完成（MMSI=900000232），点数 76，压缩率 73.05%
+[SACSB] N=290, len(COG_Variation)=144, len(idx_sacsb_keypoints)=27
+[Simplify] N=290, DP_kept=45, SACSB_keypoints=27, merge_kept=67, compression=76.90%
+  简化轨迹 217/251 完成（MMSI=900000250），点数 67，压缩率 76.90%
+[SACSB] N=289, len(COG_Variation)=144, len(idx_sacsb_keypoints)=22
+[Simplify] N=289, DP_kept=73, SACSB_keypoints=22, merge_kept=92, compression=68.17%
+  简化轨迹 218/251 完成（MMSI=900000257），点数 92，压缩率 68.17%
+[SACSB] N=237, len(COG_Variation)=118, len(idx_sacsb_keypoints)=21
+[Simplify] N=237, DP_kept=10, SACSB_keypoints=21, merge_kept=31, compression=86.92%
+  简化轨迹 219/251 完成（MMSI=900000258），点数 31，压缩率 86.92%
+[SACSB] N=227, len(COG_Variation)=113, len(idx_sacsb_keypoints)=46
+[Simplify] N=227, DP_kept=9, SACSB_keypoints=46, merge_kept=51, compression=77.53%
+  简化轨迹 220/251 完成（MMSI=900000259），点数 51，压缩率 77.53%
+[SACSB] N=235, len(COG_Variation)=117, len(idx_sacsb_keypoints)=40
+[Simplify] N=235, DP_kept=12, SACSB_keypoints=40, merge_kept=51, compression=78.30%
+  简化轨迹 221/251 完成（MMSI=900000260），点数 51，压缩率 78.30%
+[SACSB] N=249, len(COG_Variation)=124, len(idx_sacsb_keypoints)=57
+[Simplify] N=249, DP_kept=11, SACSB_keypoints=57, merge_kept=63, compression=74.70%
+  简化轨迹 222/251 完成（MMSI=900000261），点数 63，压缩率 74.70%
+[SACSB] N=239, len(COG_Variation)=119, len(idx_sacsb_keypoints)=35
+[Simplify] N=239, DP_kept=24, SACSB_keypoints=35, merge_kept=54, compression=77.41%
+  简化轨迹 223/251 完成（MMSI=900000263），点数 54，压缩率 77.41%
+[SACSB] N=311, len(COG_Variation)=155, len(idx_sacsb_keypoints)=36
+[Simplify] N=311, DP_kept=24, SACSB_keypoints=36, merge_kept=57, compression=81.67%
+  简化轨迹 224/251 完成（MMSI=900000265），点数 57，压缩率 81.67%
+[SACSB] N=241, len(COG_Variation)=120, len(idx_sacsb_keypoints)=26
+[Simplify] N=241, DP_kept=32, SACSB_keypoints=26, merge_kept=56, compression=76.76%
+  简化轨迹 225/251 完成（MMSI=900000266），点数 56，压缩率 76.76%
+[SACSB] N=220, len(COG_Variation)=109, len(idx_sacsb_keypoints)=23
+[Simplify] N=220, DP_kept=24, SACSB_keypoints=23, merge_kept=43, compression=80.45%
+  简化轨迹 226/251 完成（MMSI=900000267），点数 43，压缩率 80.45%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=37
+[Simplify] N=224, DP_kept=37, SACSB_keypoints=37, merge_kept=64, compression=71.43%
+  简化轨迹 227/251 完成（MMSI=900000268），点数 64，压缩率 71.43%
+[SACSB] N=330, len(COG_Variation)=164, len(idx_sacsb_keypoints)=29
+[Simplify] N=330, DP_kept=10, SACSB_keypoints=29, merge_kept=37, compression=88.79%
+  简化轨迹 228/251 完成（MMSI=900000270），点数 37，压缩率 88.79%
+[SACSB] N=226, len(COG_Variation)=112, len(idx_sacsb_keypoints)=22
+[Simplify] N=226, DP_kept=7, SACSB_keypoints=22, merge_kept=28, compression=87.61%
+  简化轨迹 229/251 完成（MMSI=900000271），点数 28，压缩率 87.61%
+[SACSB] N=323, len(COG_Variation)=161, len(idx_sacsb_keypoints)=46
+[Simplify] N=323, DP_kept=11, SACSB_keypoints=46, merge_kept=56, compression=82.66%
+  简化轨迹 230/251 完成（MMSI=900000272），点数 56，压缩率 82.66%
+[SACSB] N=220, len(COG_Variation)=109, len(idx_sacsb_keypoints)=55
+[Simplify] N=220, DP_kept=19, SACSB_keypoints=55, merge_kept=69, compression=68.64%
+  简化轨迹 231/251 完成（MMSI=900000274），点数 69，压缩率 68.64%
+[SACSB] N=236, len(COG_Variation)=117, len(idx_sacsb_keypoints)=36
+[Simplify] N=236, DP_kept=20, SACSB_keypoints=36, merge_kept=56, compression=76.27%
+  简化轨迹 232/251 完成（MMSI=900000275），点数 56，压缩率 76.27%
+[SACSB] N=257, len(COG_Variation)=128, len(idx_sacsb_keypoints)=28
+[Simplify] N=257, DP_kept=15, SACSB_keypoints=28, merge_kept=43, compression=83.27%
+  简化轨迹 233/251 完成（MMSI=900000276），点数 43，压缩率 83.27%
+[SACSB] N=225, len(COG_Variation)=112, len(idx_sacsb_keypoints)=50
+[Simplify] N=225, DP_kept=22, SACSB_keypoints=50, merge_kept=68, compression=69.78%
+  简化轨迹 234/251 完成（MMSI=900000277），点数 68，压缩率 69.78%
+[SACSB] N=226, len(COG_Variation)=112, len(idx_sacsb_keypoints)=40
+[Simplify] N=226, DP_kept=43, SACSB_keypoints=40, merge_kept=76, compression=66.37%
+  简化轨迹 235/251 完成（MMSI=900000278），点数 76，压缩率 66.37%
+[SACSB] N=245, len(COG_Variation)=122, len(idx_sacsb_keypoints)=60
+[Simplify] N=245, DP_kept=31, SACSB_keypoints=60, merge_kept=81, compression=66.94%
+  简化轨迹 236/251 完成（MMSI=900000279），点数 81，压缩率 66.94%
+[SACSB] N=254, len(COG_Variation)=126, len(idx_sacsb_keypoints)=31
+[Simplify] N=254, DP_kept=24, SACSB_keypoints=31, merge_kept=46, compression=81.89%
+  简化轨迹 237/251 完成（MMSI=900000280），点数 46，压缩率 81.89%
+[SACSB] N=260, len(COG_Variation)=129, len(idx_sacsb_keypoints)=64
+[Simplify] N=260, DP_kept=11, SACSB_keypoints=64, merge_kept=72, compression=72.31%
+  简化轨迹 238/251 完成（MMSI=900000282），点数 72，压缩率 72.31%
+[SACSB] N=231, len(COG_Variation)=115, len(idx_sacsb_keypoints)=30
+[Simplify] N=231, DP_kept=10, SACSB_keypoints=30, merge_kept=38, compression=83.55%
+  简化轨迹 239/251 完成（MMSI=900000283），点数 38，压缩率 83.55%
+[SACSB] N=223, len(COG_Variation)=111, len(idx_sacsb_keypoints)=26
+[Simplify] N=223, DP_kept=10, SACSB_keypoints=26, merge_kept=35, compression=84.30%
+  简化轨迹 240/251 完成（MMSI=900000284），点数 35，压缩率 84.30%
+[SACSB] N=233, len(COG_Variation)=116, len(idx_sacsb_keypoints)=34
+[Simplify] N=233, DP_kept=10, SACSB_keypoints=34, merge_kept=41, compression=82.40%
+  简化轨迹 241/251 完成（MMSI=900000285），点数 41，压缩率 82.40%
+[SACSB] N=280, len(COG_Variation)=139, len(idx_sacsb_keypoints)=51
+[Simplify] N=280, DP_kept=12, SACSB_keypoints=51, merge_kept=61, compression=78.21%
+  简化轨迹 242/251 完成（MMSI=900000286），点数 61，压缩率 78.21%
+[SACSB] N=229, len(COG_Variation)=114, len(idx_sacsb_keypoints)=51
+[Simplify] N=229, DP_kept=9, SACSB_keypoints=51, merge_kept=56, compression=75.55%
+  简化轨迹 243/251 完成（MMSI=900000287），点数 56，压缩率 75.55%
+[SACSB] N=218, len(COG_Variation)=108, len(idx_sacsb_keypoints)=39
+[Simplify] N=218, DP_kept=62, SACSB_keypoints=39, merge_kept=87, compression=60.09%
+  简化轨迹 244/251 完成（MMSI=900000290），点数 87，压缩率 60.09%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=23
+[Simplify] N=224, DP_kept=37, SACSB_keypoints=23, merge_kept=57, compression=74.55%
+  简化轨迹 245/251 完成（MMSI=900000291），点数 57，压缩率 74.55%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=54
+[Simplify] N=224, DP_kept=31, SACSB_keypoints=54, merge_kept=74, compression=66.96%
+  简化轨迹 246/251 完成（MMSI=900000292），点数 74，压缩率 66.96%
+[SACSB] N=249, len(COG_Variation)=124, len(idx_sacsb_keypoints)=63
+[Simplify] N=249, DP_kept=30, SACSB_keypoints=63, merge_kept=85, compression=65.86%
+  简化轨迹 247/251 完成（MMSI=900000294），点数 85，压缩率 65.86%
+[SACSB] N=302, len(COG_Variation)=150, len(idx_sacsb_keypoints)=63
+[Simplify] N=302, DP_kept=46, SACSB_keypoints=63, merge_kept=96, compression=68.21%
+  简化轨迹 248/251 完成（MMSI=900000295），点数 96，压缩率 68.21%
+[SACSB] N=225, len(COG_Variation)=112, len(idx_sacsb_keypoints)=60
+[Simplify] N=225, DP_kept=8, SACSB_keypoints=60, merge_kept=67, compression=70.22%
+  简化轨迹 249/251 完成（MMSI=900000297），点数 67，压缩率 70.22%
+[SACSB] N=226, len(COG_Variation)=112, len(idx_sacsb_keypoints)=28
+[Simplify] N=226, DP_kept=26, SACSB_keypoints=28, merge_kept=49, compression=78.32%
+  简化轨迹 250/251 完成（MMSI=900000299），点数 49，压缩率 78.32%
+[SACSB] N=363, len(COG_Variation)=181, len(idx_sacsb_keypoints)=86
+[Simplify] N=363, DP_kept=7, SACSB_keypoints=86, merge_kept=93, compression=74.38%
+  简化轨迹 251/251 完成（MMSI=900000300），点数 93，压缩率 74.38%
+✅ 简化完成，共 251 条轨迹
+
+平均压缩率：72.85%
+💾 轨迹缓存已保存: /Users/lcx/Desktop/毕设/复现/traj_cache/pruned_dataset/dt60_len50_a1.0_dp0.8_minone_msnone/traj_cache.pkl.gz
+   轨迹数: 251, hash: c8da6cf0..., tag: dt60_len50_a1.0_dp0.8_minone_msnone
+
+========================================
+步骤4: 自适应聚类 (统一处理所有轨迹)
+========================================
+  轨迹数: 251 条
+🔍 POA two-stage eps 扫描: coarse_steps=150, refine_steps=300, window_mult=5.00
+
+[All] 自适应聚类 (论文版)...
+
+📊 特征标准化参数诊断（mu/sigma estimated from absolute features）:
+  feature_mode: delta_cog
+  note: lat/lon 先近似投影为米制 (x_m,y_m)，保留绝对位置 (x_abs,y_abs)，避免经纬度不等距导致距离不稳定
+  全局参考点 (lat_ref, lon_ref): (28.560490, -96.206470) [所有轨迹共享此参考点，保证绝对位置可比]
+  mu (均值，来自绝对特征):    [x_abs=-14014.682205, y_abs=-9191.312041, sog=3.706728, delta_cog=0.517134]
+  sigma (标准差，来自绝对特征): [x_abs=7139.070330, y_abs=4431.804354, sog=1.831095, delta_cog=24.508390]
+  mu_delta (对照，仅调试，不用于标准化): [dx=-372.531839, dy=-234.505576, dsog=-0.011818, delta_cog=0.517134]
+  sigma_delta (对照，仅调试，不用于标准化): [dx=638.708456, dy=365.144463, dsog=0.520338, delta_cog=24.508390]
+  ⚠️ 检测到失衡:
+    - x_abs sigma过大(7139.07), 可能主导距离
+    - y_abs sigma过大(4431.80), 可能主导距离
+    - delta_cog sigma过大(24.51), 可能主导距离
+🔄 CSV文件已变化（hash不匹配），需要重新计算DTW矩阵
+   缓存hash: bb464578...
+   当前hash: c8da6cf0...
+🔄 开始计算DTW矩阵（轨迹数量: 251, 特征模式: delta_cog, DTW方法: fastdtw）...
+  DTW 进度: 10/31375
+  DTW 进度: 20/31375
+  DTW 进度: 30/31375
+  DTW 进度: 40/31375
+  DTW 进度: 50/31375
+  DTW 进度: 60/31375
+  DTW 进度: 70/31375
+  DTW 进度: 80/31375
+  DTW 进度: 90/31375
+  DTW 进度: 100/31375
+  DTW 进度: 110/31375
+  DTW 进度: 120/31375
+  DTW 进度: 130/31375
+  DTW 进度: 140/31375
+  DTW 进度: 150/31375
+  DTW 进度: 160/31375
+  DTW 进度: 170/31375
+  DTW 进度: 180/31375
+  DTW 进度: 190/31375
+  DTW 进度: 200/31375
+  DTW 进度: 210/31375
+  DTW 进度: 220/31375
+  DTW 进度: 230/31375
+  DTW 进度: 240/31375
+  DTW 进度: 250/31375
+  DTW 进度: 260/31375
+  DTW 进度: 270/31375
+  DTW 进度: 280/31375
+  DTW 进度: 290/31375
+  DTW 进度: 300/31375
+  DTW 进度: 310/31375
+  DTW 进度: 320/31375
+  DTW 进度: 330/31375
+  DTW 进度: 340/31375
+  DTW 进度: 350/31375
+  DTW 进度: 360/31375
+  DTW 进度: 370/31375
+  DTW 进度: 380/31375
+  DTW 进度: 390/31375
+  DTW 进度: 400/31375
+  DTW 进度: 410/31375
+  DTW 进度: 420/31375
+  DTW 进度: 430/31375
+  DTW 进度: 440/31375
+  DTW 进度: 450/31375
+  DTW 进度: 460/31375
+  DTW 进度: 470/31375
+  DTW 进度: 480/31375
+  DTW 进度: 490/31375
+  DTW 进度: 500/31375
+  DTW 进度: 510/31375
+  DTW 进度: 520/31375
+  DTW 进度: 530/31375
+  DTW 进度: 540/31375
+  DTW 进度: 550/31375
+  DTW 进度: 560/31375
+  DTW 进度: 570/31375
+  DTW 进度: 580/31375
+  DTW 进度: 590/31375
+  DTW 进度: 600/31375
+  DTW 进度: 610/31375
+  DTW 进度: 620/31375
+  DTW 进度: 630/31375
+  DTW 进度: 640/31375
+  DTW 进度: 650/31375
+  DTW 进度: 660/31375
+  DTW 进度: 670/31375
+  DTW 进度: 680/31375
+  DTW 进度: 690/31375
+  DTW 进度: 700/31375
+  DTW 进度: 710/31375
+  DTW 进度: 720/31375
+  DTW 进度: 730/31375
+  DTW 进度: 740/31375
+  DTW 进度: 750/31375
+  DTW 进度: 760/31375
+  DTW 进度: 770/31375
+  DTW 进度: 780/31375
+  DTW 进度: 790/31375
+  DTW 进度: 800/31375
+  DTW 进度: 810/31375
+  DTW 进度: 820/31375
+  DTW 进度: 830/31375
+  DTW 进度: 840/31375
+  DTW 进度: 850/31375
+  DTW 进度: 860/31375
+  DTW 进度: 870/31375
+  DTW 进度: 880/31375
+  DTW 进度: 890/31375
+  DTW 进度: 900/31375
+  DTW 进度: 910/31375
+  DTW 进度: 920/31375
+  DTW 进度: 930/31375
+  DTW 进度: 940/31375
+  DTW 进度: 950/31375
+  DTW 进度: 960/31375
+  DTW 进度: 970/31375
+  DTW 进度: 980/31375
+  DTW 进度: 990/31375
+  DTW 进度: 1000/31375
+  DTW 进度: 1010/31375
+  DTW 进度: 1020/31375
+  DTW 进度: 1030/31375
+  DTW 进度: 1040/31375
+  DTW 进度: 1050/31375
+  DTW 进度: 1060/31375
+  DTW 进度: 1070/31375
+  DTW 进度: 1080/31375
+  DTW 进度: 1090/31375
+  DTW 进度: 1100/31375
+  DTW 进度: 1110/31375
+  DTW 进度: 1120/31375
+  DTW 进度: 1130/31375
+  DTW 进度: 1140/31375
+  DTW 进度: 1150/31375
+  DTW 进度: 1160/31375
+  DTW 进度: 1170/31375
+  DTW 进度: 1180/31375
+  DTW 进度: 1190/31375
+  DTW 进度: 1200/31375
+  DTW 进度: 1210/31375
+  DTW 进度: 1220/31375
+  DTW 进度: 1230/31375
+  DTW 进度: 1240/31375
+  DTW 进度: 1250/31375
+  DTW 进度: 1260/31375
+  DTW 进度: 1270/31375
+  DTW 进度: 1280/31375
+  DTW 进度: 1290/31375
+  DTW 进度: 1300/31375
+  DTW 进度: 1310/31375
+  DTW 进度: 1320/31375
+  DTW 进度: 1330/31375
+  DTW 进度: 1340/31375
+  DTW 进度: 1350/31375
+  DTW 进度: 1360/31375
+  DTW 进度: 1370/31375
+  DTW 进度: 1380/31375
+  DTW 进度: 1390/31375
+  DTW 进度: 1400/31375
+  DTW 进度: 1410/31375
+  DTW 进度: 1420/31375
+  DTW 进度: 1430/31375
+  DTW 进度: 1440/31375
+  DTW 进度: 1450/31375
+  DTW 进度: 1460/31375
+  DTW 进度: 1470/31375
+  DTW 进度: 1480/31375
+  DTW 进度: 1490/31375
+  DTW 进度: 1500/31375
+  DTW 进度: 1510/31375
+  DTW 进度: 1520/31375
+  DTW 进度: 1530/31375
+  DTW 进度: 1540/31375
+  DTW 进度: 1550/31375
+  DTW 进度: 1560/31375
+  DTW 进度: 1570/31375
+  DTW 进度: 1580/31375
+  DTW 进度: 1590/31375
+  DTW 进度: 1600/31375
+  DTW 进度: 1610/31375
+  DTW 进度: 1620/31375
+  DTW 进度: 1630/31375
+  DTW 进度: 1640/31375
+  DTW 进度: 1650/31375
+  DTW 进度: 1660/31375
+  DTW 进度: 1670/31375
+  DTW 进度: 1680/31375
+  DTW 进度: 1690/31375
+  DTW 进度: 1700/31375
+  DTW 进度: 1710/31375
+  DTW 进度: 1720/31375
+  DTW 进度: 1730/31375
+  DTW 进度: 1740/31375
+  DTW 进度: 1750/31375
+  DTW 进度: 1760/31375
+  DTW 进度: 1770/31375
+  DTW 进度: 1780/31375
+  DTW 进度: 1790/31375
+  DTW 进度: 1800/31375
+  DTW 进度: 1810/31375
+  DTW 进度: 1820/31375
+  DTW 进度: 1830/31375
+  DTW 进度: 1840/31375
+  DTW 进度: 1850/31375
+  DTW 进度: 1860/31375
+  DTW 进度: 1870/31375
+  DTW 进度: 1880/31375
+  DTW 进度: 1890/31375
+  DTW 进度: 1900/31375
+  DTW 进度: 1910/31375
+  DTW 进度: 1920/31375
+  DTW 进度: 1930/31375
+  DTW 进度: 1940/31375
+  DTW 进度: 1950/31375
+  DTW 进度: 1960/31375
+  DTW 进度: 1970/31375
+  DTW 进度: 1980/31375
+  DTW 进度: 1990/31375
+  DTW 进度: 2000/31375
+  DTW 进度: 2010/31375
+  DTW 进度: 2020/31375
+  DTW 进度: 2030/31375
+  DTW 进度: 2040/31375
+  DTW 进度: 2050/31375
+  DTW 进度: 2060/31375
+  DTW 进度: 2070/31375
+  DTW 进度: 2080/31375
+  DTW 进度: 2090/31375
+  DTW 进度: 2100/31375
+  DTW 进度: 2110/31375
+  DTW 进度: 2120/31375
+  DTW 进度: 2130/31375
+  DTW 进度: 2140/31375
+  DTW 进度: 2150/31375
+  DTW 进度: 2160/31375
+  DTW 进度: 2170/31375
+  DTW 进度: 2180/31375
+  DTW 进度: 2190/31375
+  DTW 进度: 2200/31375
+  DTW 进度: 2210/31375
+  DTW 进度: 2220/31375
+  DTW 进度: 2230/31375
+  DTW 进度: 2240/31375
+  DTW 进度: 2250/31375
+  DTW 进度: 2260/31375
+  DTW 进度: 2270/31375
+  DTW 进度: 2280/31375
+  DTW 进度: 2290/31375
+  DTW 进度: 2300/31375
+  DTW 进度: 2310/31375
+  DTW 进度: 2320/31375
+  DTW 进度: 2330/31375
+  DTW 进度: 2340/31375
+  DTW 进度: 2350/31375
+  DTW 进度: 2360/31375
+  DTW 进度: 2370/31375
+  DTW 进度: 2380/31375
+  DTW 进度: 2390/31375
+  DTW 进度: 2400/31375
+  DTW 进度: 2410/31375
+  DTW 进度: 2420/31375
+  DTW 进度: 2430/31375
+  DTW 进度: 2440/31375
+  DTW 进度: 2450/31375
+  DTW 进度: 2460/31375
+  DTW 进度: 2470/31375
+  DTW 进度: 2480/31375
+  DTW 进度: 2490/31375
+  DTW 进度: 2500/31375
+  DTW 进度: 2510/31375
+  DTW 进度: 2520/31375
+  DTW 进度: 2530/31375
+  DTW 进度: 2540/31375
+  DTW 进度: 2550/31375
+  DTW 进度: 2560/31375
+  DTW 进度: 2570/31375
+  DTW 进度: 2580/31375
+  DTW 进度: 2590/31375
+  DTW 进度: 2600/31375
+  DTW 进度: 2610/31375
+  DTW 进度: 2620/31375
+  DTW 进度: 2630/31375
+  DTW 进度: 2640/31375
+  DTW 进度: 2650/31375
+  DTW 进度: 2660/31375
+  DTW 进度: 2670/31375
+  DTW 进度: 2680/31375
+  DTW 进度: 2690/31375
+  DTW 进度: 2700/31375
+  DTW 进度: 2710/31375
+  DTW 进度: 2720/31375
+  DTW 进度: 2730/31375
+  DTW 进度: 2740/31375
+  DTW 进度: 2750/31375
+  DTW 进度: 2760/31375
+  DTW 进度: 2770/31375
+  DTW 进度: 2780/31375
+  DTW 进度: 2790/31375
+  DTW 进度: 2800/31375
+  DTW 进度: 2810/31375
+  DTW 进度: 2820/31375
+  DTW 进度: 2830/31375
+  DTW 进度: 2840/31375
+  DTW 进度: 2850/31375
+  DTW 进度: 2860/31375
+  DTW 进度: 2870/31375
+  DTW 进度: 2880/31375
+  DTW 进度: 2890/31375
+  DTW 进度: 2900/31375
+  DTW 进度: 2910/31375
+  DTW 进度: 2920/31375
+  DTW 进度: 2930/31375
+  DTW 进度: 2940/31375
+  DTW 进度: 2950/31375
+  DTW 进度: 2960/31375
+  DTW 进度: 2970/31375
+  DTW 进度: 2980/31375
+  DTW 进度: 2990/31375
+  DTW 进度: 3000/31375
+  DTW 进度: 3010/31375
+  DTW 进度: 3020/31375
+  DTW 进度: 3030/31375
+  DTW 进度: 3040/31375
+  DTW 进度: 3050/31375
+  DTW 进度: 3060/31375
+  DTW 进度: 3070/31375
+  DTW 进度: 3080/31375
+  DTW 进度: 3090/31375
+  DTW 进度: 3100/31375
+  DTW 进度: 3110/31375
+  DTW 进度: 3120/31375
+  DTW 进度: 3130/31375
+  DTW 进度: 3140/31375
+  DTW 进度: 3150/31375
+  DTW 进度: 3160/31375
+  DTW 进度: 3170/31375
+  DTW 进度: 3180/31375
+  DTW 进度: 3190/31375
+  DTW 进度: 3200/31375
+  DTW 进度: 3210/31375
+  DTW 进度: 3220/31375
+  DTW 进度: 3230/31375
+  DTW 进度: 3240/31375
+  DTW 进度: 3250/31375
+  DTW 进度: 3260/31375
+  DTW 进度: 3270/31375
+  DTW 进度: 3280/31375
+  DTW 进度: 3290/31375
+  DTW 进度: 3300/31375
+  DTW 进度: 3310/31375
+  DTW 进度: 3320/31375
+  DTW 进度: 3330/31375
+  DTW 进度: 3340/31375
+  DTW 进度: 3350/31375
+  DTW 进度: 3360/31375
+  DTW 进度: 3370/31375
+  DTW 进度: 3380/31375
+  DTW 进度: 3390/31375
+  DTW 进度: 3400/31375
+  DTW 进度: 3410/31375
+  DTW 进度: 3420/31375
+  DTW 进度: 3430/31375
+  DTW 进度: 3440/31375
+  DTW 进度: 3450/31375
+  DTW 进度: 3460/31375
+  DTW 进度: 3470/31375
+  DTW 进度: 3480/31375
+  DTW 进度: 3490/31375
+  DTW 进度: 3500/31375
+  DTW 进度: 3510/31375
+  DTW 进度: 3520/31375
+  DTW 进度: 3530/31375
+  DTW 进度: 3540/31375
+  DTW 进度: 3550/31375
+  DTW 进度: 3560/31375
+  DTW 进度: 3570/31375
+  DTW 进度: 3580/31375
+  DTW 进度: 3590/31375
+  DTW 进度: 3600/31375
+  DTW 进度: 3610/31375
+  DTW 进度: 3620/31375
+  DTW 进度: 3630/31375
+  DTW 进度: 3640/31375
+  DTW 进度: 3650/31375
+  DTW 进度: 3660/31375
+  DTW 进度: 3670/31375
+  DTW 进度: 3680/31375
+  DTW 进度: 3690/31375
+  DTW 进度: 3700/31375
+  DTW 进度: 3710/31375
+  DTW 进度: 3720/31375
+  DTW 进度: 3730/31375
+  DTW 进度: 3740/31375
+  DTW 进度: 3750/31375
+  DTW 进度: 3760/31375
+  DTW 进度: 3770/31375
+  DTW 进度: 3780/31375
+  DTW 进度: 3790/31375
+  DTW 进度: 3800/31375
+  DTW 进度: 3810/31375
+  DTW 进度: 3820/31375
+  DTW 进度: 3830/31375
+  DTW 进度: 3840/31375
+  DTW 进度: 3850/31375
+  DTW 进度: 3860/31375
+  DTW 进度: 3870/31375
+  DTW 进度: 3880/31375
+  DTW 进度: 3890/31375
+  DTW 进度: 3900/31375
+  DTW 进度: 3910/31375
+  DTW 进度: 3920/31375
+  DTW 进度: 3930/31375
+  DTW 进度: 3940/31375
+  DTW 进度: 3950/31375
+  DTW 进度: 3960/31375
+  DTW 进度: 3970/31375
+  DTW 进度: 3980/31375
+  DTW 进度: 3990/31375
+  DTW 进度: 4000/31375
+  DTW 进度: 4010/31375
+  DTW 进度: 4020/31375
+  DTW 进度: 4030/31375
+  DTW 进度: 4040/31375
+  DTW 进度: 4050/31375
+  DTW 进度: 4060/31375
+  DTW 进度: 4070/31375
+  DTW 进度: 4080/31375
+  DTW 进度: 4090/31375
+  DTW 进度: 4100/31375
+  DTW 进度: 4110/31375
+  DTW 进度: 4120/31375
+  DTW 进度: 4130/31375
+  DTW 进度: 4140/31375
+  DTW 进度: 4150/31375
+  DTW 进度: 4160/31375
+  DTW 进度: 4170/31375
+  DTW 进度: 4180/31375
+  DTW 进度: 4190/31375
+  DTW 进度: 4200/31375
+  DTW 进度: 4210/31375
+  DTW 进度: 4220/31375
+  DTW 进度: 4230/31375
+  DTW 进度: 4240/31375
+  DTW 进度: 4250/31375
+  DTW 进度: 4260/31375
+  DTW 进度: 4270/31375
+  DTW 进度: 4280/31375
+  DTW 进度: 4290/31375
+  DTW 进度: 4300/31375
+  DTW 进度: 4310/31375
+  DTW 进度: 4320/31375
+  DTW 进度: 4330/31375
+  DTW 进度: 4340/31375
+  DTW 进度: 4350/31375
+  DTW 进度: 4360/31375
+  DTW 进度: 4370/31375
+  DTW 进度: 4380/31375
+  DTW 进度: 4390/31375
+  DTW 进度: 4400/31375
+  DTW 进度: 4410/31375
+  DTW 进度: 4420/31375
+  DTW 进度: 4430/31375
+  DTW 进度: 4440/31375
+  DTW 进度: 4450/31375
+  DTW 进度: 4460/31375
+  DTW 进度: 4470/31375
+  DTW 进度: 4480/31375
+  DTW 进度: 4490/31375
+  DTW 进度: 4500/31375
+  DTW 进度: 4510/31375
+  DTW 进度: 4520/31375
+  DTW 进度: 4530/31375
+  DTW 进度: 4540/31375
+  DTW 进度: 4550/31375
+  DTW 进度: 4560/31375
+  DTW 进度: 4570/31375
+  DTW 进度: 4580/31375
+  DTW 进度: 4590/31375
+  DTW 进度: 4600/31375
+  DTW 进度: 4610/31375
+  DTW 进度: 4620/31375
+  DTW 进度: 4630/31375
+  DTW 进度: 4640/31375
+  DTW 进度: 4650/31375
+  DTW 进度: 4660/31375
+  DTW 进度: 4670/31375
+  DTW 进度: 4680/31375
+  DTW 进度: 4690/31375
+  DTW 进度: 4700/31375
+  DTW 进度: 4710/31375
+  DTW 进度: 4720/31375
+  DTW 进度: 4730/31375
+  DTW 进度: 4740/31375
+  DTW 进度: 4750/31375
+  DTW 进度: 4760/31375
+  DTW 进度: 4770/31375
+  DTW 进度: 4780/31375
+  DTW 进度: 4790/31375
+  DTW 进度: 4800/31375
+  DTW 进度: 4810/31375
+  DTW 进度: 4820/31375
+  DTW 进度: 4830/31375
+  DTW 进度: 4840/31375
+  DTW 进度: 4850/31375
+  DTW 进度: 4860/31375
+  DTW 进度: 4870/31375
+  DTW 进度: 4880/31375
+  DTW 进度: 4890/31375
+  DTW 进度: 4900/31375
+  DTW 进度: 4910/31375
+  DTW 进度: 4920/31375
+  DTW 进度: 4930/31375
+  DTW 进度: 4940/31375
+  DTW 进度: 4950/31375
+  DTW 进度: 4960/31375
+  DTW 进度: 4970/31375
+  DTW 进度: 4980/31375
+  DTW 进度: 4990/31375
+  DTW 进度: 5000/31375
+  DTW 进度: 5010/31375
+  DTW 进度: 5020/31375
+  DTW 进度: 5030/31375
+  DTW 进度: 5040/31375
+  DTW 进度: 5050/31375
+  DTW 进度: 5060/31375
+  DTW 进度: 5070/31375
+  DTW 进度: 5080/31375
+  DTW 进度: 5090/31375
+  DTW 进度: 5100/31375
+  DTW 进度: 5110/31375
+  DTW 进度: 5120/31375
+  DTW 进度: 5130/31375
+  DTW 进度: 5140/31375
+  DTW 进度: 5150/31375
+  DTW 进度: 5160/31375
+  DTW 进度: 5170/31375
+  DTW 进度: 5180/31375
+  DTW 进度: 5190/31375
+  DTW 进度: 5200/31375
+  DTW 进度: 5210/31375
+  DTW 进度: 5220/31375
+  DTW 进度: 5230/31375
+  DTW 进度: 5240/31375
+  DTW 进度: 5250/31375
+  DTW 进度: 5260/31375
+  DTW 进度: 5270/31375
+  DTW 进度: 5280/31375
+  DTW 进度: 5290/31375
+  DTW 进度: 5300/31375
+  DTW 进度: 5310/31375
+  DTW 进度: 5320/31375
+  DTW 进度: 5330/31375
+  DTW 进度: 5340/31375
+  DTW 进度: 5350/31375
+  DTW 进度: 5360/31375
+  DTW 进度: 5370/31375
+  DTW 进度: 5380/31375
+  DTW 进度: 5390/31375
+  DTW 进度: 5400/31375
+  DTW 进度: 5410/31375
+  DTW 进度: 5420/31375
+  DTW 进度: 5430/31375
+  DTW 进度: 5440/31375
+  DTW 进度: 5450/31375
+  DTW 进度: 5460/31375
+  DTW 进度: 5470/31375
+  DTW 进度: 5480/31375
+  DTW 进度: 5490/31375
+  DTW 进度: 5500/31375
+  DTW 进度: 5510/31375
+  DTW 进度: 5520/31375
+  DTW 进度: 5530/31375
+  DTW 进度: 5540/31375
+  DTW 进度: 5550/31375
+  DTW 进度: 5560/31375
+  DTW 进度: 5570/31375
+  DTW 进度: 5580/31375
+  DTW 进度: 5590/31375
+  DTW 进度: 5600/31375
+  DTW 进度: 5610/31375
+  DTW 进度: 5620/31375
+  DTW 进度: 5630/31375
+  DTW 进度: 5640/31375
+  DTW 进度: 5650/31375
+  DTW 进度: 5660/31375
+  DTW 进度: 5670/31375
+  DTW 进度: 5680/31375
+  DTW 进度: 5690/31375
+  DTW 进度: 5700/31375
+  DTW 进度: 5710/31375
+  DTW 进度: 5720/31375
+  DTW 进度: 5730/31375
+  DTW 进度: 5740/31375
+  DTW 进度: 5750/31375
+  DTW 进度: 5760/31375
+  DTW 进度: 5770/31375
+  DTW 进度: 5780/31375
+  DTW 进度: 5790/31375
+  DTW 进度: 5800/31375
+  DTW 进度: 5810/31375
+  DTW 进度: 5820/31375
+  DTW 进度: 5830/31375
+  DTW 进度: 5840/31375
+  DTW 进度: 5850/31375
+  DTW 进度: 5860/31375
+  DTW 进度: 5870/31375
+  DTW 进度: 5880/31375
+  DTW 进度: 5890/31375
+  DTW 进度: 5900/31375
+  DTW 进度: 5910/31375
+  DTW 进度: 5920/31375
+  DTW 进度: 5930/31375
+  DTW 进度: 5940/31375
+  DTW 进度: 5950/31375
+  DTW 进度: 5960/31375
+  DTW 进度: 5970/31375
+  DTW 进度: 5980/31375
+  DTW 进度: 5990/31375
+  DTW 进度: 6000/31375
+  DTW 进度: 6010/31375
+  DTW 进度: 6020/31375
+  DTW 进度: 6030/31375
+  DTW 进度: 6040/31375
+  DTW 进度: 6050/31375
+  DTW 进度: 6060/31375
+  DTW 进度: 6070/31375
+  DTW 进度: 6080/31375
+  DTW 进度: 6090/31375
+  DTW 进度: 6100/31375
+  DTW 进度: 6110/31375
+  DTW 进度: 6120/31375
+  DTW 进度: 6130/31375
+  DTW 进度: 6140/31375
+  DTW 进度: 6150/31375
+  DTW 进度: 6160/31375
+  DTW 进度: 6170/31375
+  DTW 进度: 6180/31375
+  DTW 进度: 6190/31375
+  DTW 进度: 6200/31375
+  DTW 进度: 6210/31375
+  DTW 进度: 6220/31375
+  DTW 进度: 6230/31375
+  DTW 进度: 6240/31375
+  DTW 进度: 6250/31375
+  DTW 进度: 6260/31375
+  DTW 进度: 6270/31375
+  DTW 进度: 6280/31375
+  DTW 进度: 6290/31375
+  DTW 进度: 6300/31375
+  DTW 进度: 6310/31375
+  DTW 进度: 6320/31375
+  DTW 进度: 6330/31375
+  DTW 进度: 6340/31375
+  DTW 进度: 6350/31375
+  DTW 进度: 6360/31375
+  DTW 进度: 6370/31375
+  DTW 进度: 6380/31375
+  DTW 进度: 6390/31375
+  DTW 进度: 6400/31375
+  DTW 进度: 6410/31375
+  DTW 进度: 6420/31375
+  DTW 进度: 6430/31375
+  DTW 进度: 6440/31375
+  DTW 进度: 6450/31375
+  DTW 进度: 6460/31375
+  DTW 进度: 6470/31375
+  DTW 进度: 6480/31375
+  DTW 进度: 6490/31375
+  DTW 进度: 6500/31375
+  DTW 进度: 6510/31375
+  DTW 进度: 6520/31375
+  DTW 进度: 6530/31375
+  DTW 进度: 6540/31375
+  DTW 进度: 6550/31375
+  DTW 进度: 6560/31375
+  DTW 进度: 6570/31375
+  DTW 进度: 6580/31375
+  DTW 进度: 6590/31375
+  DTW 进度: 6600/31375
+  DTW 进度: 6610/31375
+  DTW 进度: 6620/31375
+  DTW 进度: 6630/31375
+  DTW 进度: 6640/31375
+  DTW 进度: 6650/31375
+  DTW 进度: 6660/31375
+  DTW 进度: 6670/31375
+  DTW 进度: 6680/31375
+  DTW 进度: 6690/31375
+  DTW 进度: 6700/31375
+  DTW 进度: 6710/31375
+  DTW 进度: 6720/31375
+  DTW 进度: 6730/31375
+  DTW 进度: 6740/31375
+  DTW 进度: 6750/31375
+  DTW 进度: 6760/31375
+  DTW 进度: 6770/31375
+  DTW 进度: 6780/31375
+  DTW 进度: 6790/31375
+  DTW 进度: 6800/31375
+  DTW 进度: 6810/31375
+  DTW 进度: 6820/31375
+  DTW 进度: 6830/31375
+  DTW 进度: 6840/31375
+  DTW 进度: 6850/31375
+  DTW 进度: 6860/31375
+  DTW 进度: 6870/31375
+  DTW 进度: 6880/31375
+  DTW 进度: 6890/31375
+  DTW 进度: 6900/31375
+  DTW 进度: 6910/31375
+  DTW 进度: 6920/31375
+  DTW 进度: 6930/31375
+  DTW 进度: 6940/31375
+  DTW 进度: 6950/31375
+  DTW 进度: 6960/31375
+  DTW 进度: 6970/31375
+  DTW 进度: 6980/31375
+  DTW 进度: 6990/31375
+  DTW 进度: 7000/31375
+  DTW 进度: 7010/31375
+  DTW 进度: 7020/31375
+  DTW 进度: 7030/31375
+  DTW 进度: 7040/31375
+  DTW 进度: 7050/31375
+  DTW 进度: 7060/31375
+  DTW 进度: 7070/31375
+  DTW 进度: 7080/31375
+  DTW 进度: 7090/31375
+  DTW 进度: 7100/31375
+  DTW 进度: 7110/31375
+  DTW 进度: 7120/31375
+  DTW 进度: 7130/31375
+  DTW 进度: 7140/31375
+  DTW 进度: 7150/31375
+  DTW 进度: 7160/31375
+  DTW 进度: 7170/31375
+  DTW 进度: 7180/31375
+  DTW 进度: 7190/31375
+  DTW 进度: 7200/31375
+  DTW 进度: 7210/31375
+  DTW 进度: 7220/31375
+  DTW 进度: 7230/31375
+  DTW 进度: 7240/31375
+  DTW 进度: 7250/31375
+  DTW 进度: 7260/31375
+  DTW 进度: 7270/31375
+  DTW 进度: 7280/31375
+  DTW 进度: 7290/31375
+  DTW 进度: 7300/31375
+  DTW 进度: 7310/31375
+  DTW 进度: 7320/31375
+  DTW 进度: 7330/31375
+  DTW 进度: 7340/31375
+  DTW 进度: 7350/31375
+  DTW 进度: 7360/31375
+  DTW 进度: 7370/31375
+  DTW 进度: 7380/31375
+  DTW 进度: 7390/31375
+  DTW 进度: 7400/31375
+  DTW 进度: 7410/31375
+  DTW 进度: 7420/31375
+  DTW 进度: 7430/31375
+  DTW 进度: 7440/31375
+  DTW 进度: 7450/31375
+  DTW 进度: 7460/31375
+  DTW 进度: 7470/31375
+  DTW 进度: 7480/31375
+  DTW 进度: 7490/31375
+  DTW 进度: 7500/31375
+  DTW 进度: 7510/31375
+  DTW 进度: 7520/31375
+  DTW 进度: 7530/31375
+  DTW 进度: 7540/31375
+  DTW 进度: 7550/31375
+  DTW 进度: 7560/31375
+  DTW 进度: 7570/31375
+  DTW 进度: 7580/31375
+  DTW 进度: 7590/31375
+  DTW 进度: 7600/31375
+  DTW 进度: 7610/31375
+  DTW 进度: 7620/31375
+  DTW 进度: 7630/31375
+  DTW 进度: 7640/31375
+  DTW 进度: 7650/31375
+  DTW 进度: 7660/31375
+  DTW 进度: 7670/31375
+  DTW 进度: 7680/31375
+  DTW 进度: 7690/31375
+  DTW 进度: 7700/31375
+  DTW 进度: 7710/31375
+  DTW 进度: 7720/31375
+  DTW 进度: 7730/31375
+  DTW 进度: 7740/31375
+  DTW 进度: 7750/31375
+  DTW 进度: 7760/31375
+  DTW 进度: 7770/31375
+  DTW 进度: 7780/31375
+  DTW 进度: 7790/31375
+  DTW 进度: 7800/31375
+  DTW 进度: 7810/31375
+  DTW 进度: 7820/31375
+  DTW 进度: 7830/31375
+  DTW 进度: 7840/31375
+  DTW 进度: 7850/31375
+  DTW 进度: 7860/31375
+  DTW 进度: 7870/31375
+  DTW 进度: 7880/31375
+  DTW 进度: 7890/31375
+  DTW 进度: 7900/31375
+  DTW 进度: 7910/31375
+  DTW 进度: 7920/31375
+  DTW 进度: 7930/31375
+  DTW 进度: 7940/31375
+  DTW 进度: 7950/31375
+  DTW 进度: 7960/31375
+  DTW 进度: 7970/31375
+  DTW 进度: 7980/31375
+  DTW 进度: 7990/31375
+  DTW 进度: 8000/31375
+  DTW 进度: 8010/31375
+  DTW 进度: 8020/31375
+  DTW 进度: 8030/31375
+  DTW 进度: 8040/31375
+  DTW 进度: 8050/31375
+  DTW 进度: 8060/31375
+  DTW 进度: 8070/31375
+  DTW 进度: 8080/31375
+  DTW 进度: 8090/31375
+  DTW 进度: 8100/31375
+  DTW 进度: 8110/31375
+  DTW 进度: 8120/31375
+  DTW 进度: 8130/31375
+  DTW 进度: 8140/31375
+  DTW 进度: 8150/31375
+  DTW 进度: 8160/31375
+  DTW 进度: 8170/31375
+  DTW 进度: 8180/31375
+  DTW 进度: 8190/31375
+  DTW 进度: 8200/31375
+  DTW 进度: 8210/31375
+  DTW 进度: 8220/31375
+  DTW 进度: 8230/31375
+  DTW 进度: 8240/31375
+  DTW 进度: 8250/31375
+  DTW 进度: 8260/31375
+  DTW 进度: 8270/31375
+  DTW 进度: 8280/31375
+  DTW 进度: 8290/31375
+  DTW 进度: 8300/31375
+  DTW 进度: 8310/31375
+  DTW 进度: 8320/31375
+  DTW 进度: 8330/31375
+  DTW 进度: 8340/31375
+  DTW 进度: 8350/31375
+  DTW 进度: 8360/31375
+  DTW 进度: 8370/31375
+  DTW 进度: 8380/31375
+  DTW 进度: 8390/31375
+  DTW 进度: 8400/31375
+  DTW 进度: 8410/31375
+  DTW 进度: 8420/31375
+  DTW 进度: 8430/31375
+  DTW 进度: 8440/31375
+  DTW 进度: 8450/31375
+  DTW 进度: 8460/31375
+  DTW 进度: 8470/31375
+  DTW 进度: 8480/31375
+  DTW 进度: 8490/31375
+  DTW 进度: 8500/31375
+  DTW 进度: 8510/31375
+  DTW 进度: 8520/31375
+  DTW 进度: 8530/31375
+  DTW 进度: 8540/31375
+  DTW 进度: 8550/31375
+  DTW 进度: 8560/31375
+  DTW 进度: 8570/31375
+  DTW 进度: 8580/31375
+  DTW 进度: 8590/31375
+  DTW 进度: 8600/31375
+  DTW 进度: 8610/31375
+  DTW 进度: 8620/31375
+  DTW 进度: 8630/31375
+  DTW 进度: 8640/31375
+  DTW 进度: 8650/31375
+  DTW 进度: 8660/31375
+  DTW 进度: 8670/31375
+  DTW 进度: 8680/31375
+  DTW 进度: 8690/31375
+  DTW 进度: 8700/31375
+  DTW 进度: 8710/31375
+  DTW 进度: 8720/31375
+  DTW 进度: 8730/31375
+  DTW 进度: 8740/31375
+  DTW 进度: 8750/31375
+  DTW 进度: 8760/31375
+  DTW 进度: 8770/31375
+  DTW 进度: 8780/31375
+  DTW 进度: 8790/31375
+  DTW 进度: 8800/31375
+  DTW 进度: 8810/31375
+  DTW 进度: 8820/31375
+  DTW 进度: 8830/31375
+  DTW 进度: 8840/31375
+  DTW 进度: 8850/31375
+  DTW 进度: 8860/31375
+  DTW 进度: 8870/31375
+  DTW 进度: 8880/31375
+  DTW 进度: 8890/31375
+  DTW 进度: 8900/31375
+  DTW 进度: 8910/31375
+  DTW 进度: 8920/31375
+  DTW 进度: 8930/31375
+  DTW 进度: 8940/31375
+  DTW 进度: 8950/31375
+  DTW 进度: 8960/31375
+  DTW 进度: 8970/31375
+  DTW 进度: 8980/31375
+  DTW 进度: 8990/31375
+  DTW 进度: 9000/31375
+  DTW 进度: 9010/31375
+  DTW 进度: 9020/31375
+  DTW 进度: 9030/31375
+  DTW 进度: 9040/31375
+  DTW 进度: 9050/31375
+  DTW 进度: 9060/31375
+  DTW 进度: 9070/31375
+  DTW 进度: 9080/31375
+  DTW 进度: 9090/31375
+  DTW 进度: 9100/31375
+  DTW 进度: 9110/31375
+  DTW 进度: 9120/31375
+  DTW 进度: 9130/31375
+  DTW 进度: 9140/31375
+  DTW 进度: 9150/31375
+  DTW 进度: 9160/31375
+  DTW 进度: 9170/31375
+  DTW 进度: 9180/31375
+  DTW 进度: 9190/31375
+  DTW 进度: 9200/31375
+  DTW 进度: 9210/31375
+  DTW 进度: 9220/31375
+  DTW 进度: 9230/31375
+  DTW 进度: 9240/31375
+  DTW 进度: 9250/31375
+  DTW 进度: 9260/31375
+  DTW 进度: 9270/31375
+  DTW 进度: 9280/31375
+  DTW 进度: 9290/31375
+  DTW 进度: 9300/31375
+  DTW 进度: 9310/31375
+  DTW 进度: 9320/31375
+  DTW 进度: 9330/31375
+  DTW 进度: 9340/31375
+  DTW 进度: 9350/31375
+  DTW 进度: 9360/31375
+  DTW 进度: 9370/31375
+  DTW 进度: 9380/31375
+  DTW 进度: 9390/31375
+  DTW 进度: 9400/31375
+  DTW 进度: 9410/31375
+  DTW 进度: 9420/31375
+  DTW 进度: 9430/31375
+  DTW 进度: 9440/31375
+  DTW 进度: 9450/31375
+  DTW 进度: 9460/31375
+  DTW 进度: 9470/31375
+  DTW 进度: 9480/31375
+  DTW 进度: 9490/31375
+  DTW 进度: 9500/31375
+  DTW 进度: 9510/31375
+  DTW 进度: 9520/31375
+  DTW 进度: 9530/31375
+  DTW 进度: 9540/31375
+  DTW 进度: 9550/31375
+  DTW 进度: 9560/31375
+  DTW 进度: 9570/31375
+  DTW 进度: 9580/31375
+  DTW 进度: 9590/31375
+  DTW 进度: 9600/31375
+  DTW 进度: 9610/31375
+  DTW 进度: 9620/31375
+  DTW 进度: 9630/31375
+  DTW 进度: 9640/31375
+  DTW 进度: 9650/31375
+  DTW 进度: 9660/31375
+  DTW 进度: 9670/31375
+  DTW 进度: 9680/31375
+  DTW 进度: 9690/31375
+  DTW 进度: 9700/31375
+  DTW 进度: 9710/31375
+  DTW 进度: 9720/31375
+  DTW 进度: 9730/31375
+  DTW 进度: 9740/31375
+  DTW 进度: 9750/31375
+  DTW 进度: 9760/31375
+  DTW 进度: 9770/31375
+  DTW 进度: 9780/31375
+  DTW 进度: 9790/31375
+  DTW 进度: 9800/31375
+  DTW 进度: 9810/31375
+  DTW 进度: 9820/31375
+  DTW 进度: 9830/31375
+  DTW 进度: 9840/31375
+  DTW 进度: 9850/31375
+  DTW 进度: 9860/31375
+  DTW 进度: 9870/31375
+  DTW 进度: 9880/31375
+  DTW 进度: 9890/31375
+  DTW 进度: 9900/31375
+  DTW 进度: 9910/31375
+  DTW 进度: 9920/31375
+  DTW 进度: 9930/31375
+  DTW 进度: 9940/31375
+  DTW 进度: 9950/31375
+  DTW 进度: 9960/31375
+  DTW 进度: 9970/31375
+  DTW 进度: 9980/31375
+  DTW 进度: 9990/31375
+  DTW 进度: 10000/31375
+  DTW 进度: 10010/31375
+  DTW 进度: 10020/31375
+  DTW 进度: 10030/31375
+  DTW 进度: 10040/31375
+  DTW 进度: 10050/31375
+  DTW 进度: 10060/31375
+  DTW 进度: 10070/31375
+  DTW 进度: 10080/31375
+  DTW 进度: 10090/31375
+  DTW 进度: 10100/31375
+  DTW 进度: 10110/31375
+  DTW 进度: 10120/31375
+  DTW 进度: 10130/31375
+  DTW 进度: 10140/31375
+  DTW 进度: 10150/31375
+  DTW 进度: 10160/31375
+  DTW 进度: 10170/31375
+  DTW 进度: 10180/31375
+  DTW 进度: 10190/31375
+  DTW 进度: 10200/31375
+  DTW 进度: 10210/31375
+  DTW 进度: 10220/31375
+  DTW 进度: 10230/31375
+  DTW 进度: 10240/31375
+  DTW 进度: 10250/31375
+  DTW 进度: 10260/31375
+  DTW 进度: 10270/31375
+  DTW 进度: 10280/31375
+  DTW 进度: 10290/31375
+  DTW 进度: 10300/31375
+  DTW 进度: 10310/31375
+  DTW 进度: 10320/31375
+  DTW 进度: 10330/31375
+  DTW 进度: 10340/31375
+  DTW 进度: 10350/31375
+  DTW 进度: 10360/31375
+  DTW 进度: 10370/31375
+  DTW 进度: 10380/31375
+  DTW 进度: 10390/31375
+  DTW 进度: 10400/31375
+  DTW 进度: 10410/31375
+  DTW 进度: 10420/31375
+  DTW 进度: 10430/31375
+  DTW 进度: 10440/31375
+  DTW 进度: 10450/31375
+  DTW 进度: 10460/31375
+  DTW 进度: 10470/31375
+  DTW 进度: 10480/31375
+  DTW 进度: 10490/31375
+  DTW 进度: 10500/31375
+  DTW 进度: 10510/31375
+  DTW 进度: 10520/31375
+  DTW 进度: 10530/31375
+  DTW 进度: 10540/31375
+  DTW 进度: 10550/31375
+  DTW 进度: 10560/31375
+  DTW 进度: 10570/31375
+  DTW 进度: 10580/31375
+  DTW 进度: 10590/31375
+  DTW 进度: 10600/31375
+  DTW 进度: 10610/31375
+  DTW 进度: 10620/31375
+  DTW 进度: 10630/31375
+  DTW 进度: 10640/31375
+  DTW 进度: 10650/31375
+  DTW 进度: 10660/31375
+  DTW 进度: 10670/31375
+  DTW 进度: 10680/31375
+  DTW 进度: 10690/31375
+  DTW 进度: 10700/31375
+  DTW 进度: 10710/31375
+  DTW 进度: 10720/31375
+  DTW 进度: 10730/31375
+  DTW 进度: 10740/31375
+  DTW 进度: 10750/31375
+  DTW 进度: 10760/31375
+  DTW 进度: 10770/31375
+  DTW 进度: 10780/31375
+  DTW 进度: 10790/31375
+  DTW 进度: 10800/31375
+  DTW 进度: 10810/31375
+  DTW 进度: 10820/31375
+  DTW 进度: 10830/31375
+  DTW 进度: 10840/31375
+  DTW 进度: 10850/31375
+  DTW 进度: 10860/31375
+  DTW 进度: 10870/31375
+  DTW 进度: 10880/31375
+  DTW 进度: 10890/31375
+  DTW 进度: 10900/31375
+  DTW 进度: 10910/31375
+  DTW 进度: 10920/31375
+  DTW 进度: 10930/31375
+  DTW 进度: 10940/31375
+  DTW 进度: 10950/31375
+  DTW 进度: 10960/31375
+  DTW 进度: 10970/31375
+  DTW 进度: 10980/31375
+  DTW 进度: 10990/31375
+  DTW 进度: 11000/31375
+  DTW 进度: 11010/31375
+  DTW 进度: 11020/31375
+  DTW 进度: 11030/31375
+  DTW 进度: 11040/31375
+  DTW 进度: 11050/31375
+  DTW 进度: 11060/31375
+  DTW 进度: 11070/31375
+  DTW 进度: 11080/31375
+  DTW 进度: 11090/31375
+  DTW 进度: 11100/31375
+  DTW 进度: 11110/31375
+  DTW 进度: 11120/31375
+  DTW 进度: 11130/31375
+  DTW 进度: 11140/31375
+  DTW 进度: 11150/31375
+  DTW 进度: 11160/31375
+  DTW 进度: 11170/31375
+  DTW 进度: 11180/31375
+  DTW 进度: 11190/31375
+  DTW 进度: 11200/31375
+  DTW 进度: 11210/31375
+  DTW 进度: 11220/31375
+  DTW 进度: 11230/31375
+  DTW 进度: 11240/31375
+  DTW 进度: 11250/31375
+  DTW 进度: 11260/31375
+  DTW 进度: 11270/31375
+  DTW 进度: 11280/31375
+  DTW 进度: 11290/31375
+  DTW 进度: 11300/31375
+  DTW 进度: 11310/31375
+  DTW 进度: 11320/31375
+  DTW 进度: 11330/31375
+  DTW 进度: 11340/31375
+  DTW 进度: 11350/31375
+  DTW 进度: 11360/31375
+  DTW 进度: 11370/31375
+  DTW 进度: 11380/31375
+  DTW 进度: 11390/31375
+  DTW 进度: 11400/31375
+  DTW 进度: 11410/31375
+  DTW 进度: 11420/31375
+  DTW 进度: 11430/31375
+  DTW 进度: 11440/31375
+  DTW 进度: 11450/31375
+  DTW 进度: 11460/31375
+  DTW 进度: 11470/31375
+  DTW 进度: 11480/31375
+  DTW 进度: 11490/31375
+  DTW 进度: 11500/31375
+  DTW 进度: 11510/31375
+  DTW 进度: 11520/31375
+  DTW 进度: 11530/31375
+  DTW 进度: 11540/31375
+  DTW 进度: 11550/31375
+  DTW 进度: 11560/31375
+  DTW 进度: 11570/31375
+  DTW 进度: 11580/31375
+  DTW 进度: 11590/31375
+  DTW 进度: 11600/31375
+  DTW 进度: 11610/31375
+  DTW 进度: 11620/31375
+  DTW 进度: 11630/31375
+  DTW 进度: 11640/31375
+  DTW 进度: 11650/31375
+  DTW 进度: 11660/31375
+  DTW 进度: 11670/31375
+  DTW 进度: 11680/31375
+  DTW 进度: 11690/31375
+  DTW 进度: 11700/31375
+  DTW 进度: 11710/31375
+  DTW 进度: 11720/31375
+  DTW 进度: 11730/31375
+  DTW 进度: 11740/31375
+  DTW 进度: 11750/31375
+  DTW 进度: 11760/31375
+  DTW 进度: 11770/31375
+  DTW 进度: 11780/31375
+  DTW 进度: 11790/31375
+  DTW 进度: 11800/31375
+  DTW 进度: 11810/31375
+  DTW 进度: 11820/31375
+  DTW 进度: 11830/31375
+  DTW 进度: 11840/31375
+  DTW 进度: 11850/31375
+  DTW 进度: 11860/31375
+  DTW 进度: 11870/31375
+  DTW 进度: 11880/31375
+  DTW 进度: 11890/31375
+  DTW 进度: 11900/31375
+  DTW 进度: 11910/31375
+  DTW 进度: 11920/31375
+  DTW 进度: 11930/31375
+  DTW 进度: 11940/31375
+  DTW 进度: 11950/31375
+  DTW 进度: 11960/31375
+  DTW 进度: 11970/31375
+  DTW 进度: 11980/31375
+  DTW 进度: 11990/31375
+  DTW 进度: 12000/31375
+  DTW 进度: 12010/31375
+  DTW 进度: 12020/31375
+  DTW 进度: 12030/31375
+  DTW 进度: 12040/31375
+  DTW 进度: 12050/31375
+  DTW 进度: 12060/31375
+  DTW 进度: 12070/31375
+  DTW 进度: 12080/31375
+  DTW 进度: 12090/31375
+  DTW 进度: 12100/31375
+  DTW 进度: 12110/31375
+  DTW 进度: 12120/31375
+  DTW 进度: 12130/31375
+  DTW 进度: 12140/31375
+  DTW 进度: 12150/31375
+  DTW 进度: 12160/31375
+  DTW 进度: 12170/31375
+  DTW 进度: 12180/31375
+  DTW 进度: 12190/31375
+  DTW 进度: 12200/31375
+  DTW 进度: 12210/31375
+  DTW 进度: 12220/31375
+  DTW 进度: 12230/31375
+  DTW 进度: 12240/31375
+  DTW 进度: 12250/31375
+  DTW 进度: 12260/31375
+  DTW 进度: 12270/31375
+  DTW 进度: 12280/31375
+  DTW 进度: 12290/31375
+  DTW 进度: 12300/31375
+  DTW 进度: 12310/31375
+  DTW 进度: 12320/31375
+  DTW 进度: 12330/31375
+  DTW 进度: 12340/31375
+  DTW 进度: 12350/31375
+  DTW 进度: 12360/31375
+  DTW 进度: 12370/31375
+  DTW 进度: 12380/31375
+  DTW 进度: 12390/31375
+  DTW 进度: 12400/31375
+  DTW 进度: 12410/31375
+  DTW 进度: 12420/31375
+  DTW 进度: 12430/31375
+  DTW 进度: 12440/31375
+  DTW 进度: 12450/31375
+  DTW 进度: 12460/31375
+  DTW 进度: 12470/31375
+  DTW 进度: 12480/31375
+  DTW 进度: 12490/31375
+  DTW 进度: 12500/31375
+  DTW 进度: 12510/31375
+  DTW 进度: 12520/31375
+  DTW 进度: 12530/31375
+  DTW 进度: 12540/31375
+  DTW 进度: 12550/31375
+  DTW 进度: 12560/31375
+  DTW 进度: 12570/31375
+  DTW 进度: 12580/31375
+  DTW 进度: 12590/31375
+  DTW 进度: 12600/31375
+  DTW 进度: 12610/31375
+  DTW 进度: 12620/31375
+  DTW 进度: 12630/31375
+  DTW 进度: 12640/31375
+  DTW 进度: 12650/31375
+  DTW 进度: 12660/31375
+  DTW 进度: 12670/31375
+  DTW 进度: 12680/31375
+  DTW 进度: 12690/31375
+  DTW 进度: 12700/31375
+  DTW 进度: 12710/31375
+  DTW 进度: 12720/31375
+  DTW 进度: 12730/31375
+  DTW 进度: 12740/31375
+  DTW 进度: 12750/31375
+  DTW 进度: 12760/31375
+  DTW 进度: 12770/31375
+  DTW 进度: 12780/31375
+  DTW 进度: 12790/31375
+  DTW 进度: 12800/31375
+  DTW 进度: 12810/31375
+  DTW 进度: 12820/31375
+  DTW 进度: 12830/31375
+  DTW 进度: 12840/31375
+  DTW 进度: 12850/31375
+  DTW 进度: 12860/31375
+  DTW 进度: 12870/31375
+  DTW 进度: 12880/31375
+  DTW 进度: 12890/31375
+  DTW 进度: 12900/31375
+  DTW 进度: 12910/31375
+  DTW 进度: 12920/31375
+  DTW 进度: 12930/31375
+  DTW 进度: 12940/31375
+  DTW 进度: 12950/31375
+  DTW 进度: 12960/31375
+  DTW 进度: 12970/31375
+  DTW 进度: 12980/31375
+  DTW 进度: 12990/31375
+  DTW 进度: 13000/31375
+  DTW 进度: 13010/31375
+  DTW 进度: 13020/31375
+  DTW 进度: 13030/31375
+  DTW 进度: 13040/31375
+  DTW 进度: 13050/31375
+  DTW 进度: 13060/31375
+  DTW 进度: 13070/31375
+  DTW 进度: 13080/31375
+  DTW 进度: 13090/31375
+  DTW 进度: 13100/31375
+  DTW 进度: 13110/31375
+  DTW 进度: 13120/31375
+  DTW 进度: 13130/31375
+  DTW 进度: 13140/31375
+  DTW 进度: 13150/31375
+  DTW 进度: 13160/31375
+  DTW 进度: 13170/31375
+  DTW 进度: 13180/31375
+  DTW 进度: 13190/31375
+  DTW 进度: 13200/31375
+  DTW 进度: 13210/31375
+  DTW 进度: 13220/31375
+  DTW 进度: 13230/31375
+  DTW 进度: 13240/31375
+  DTW 进度: 13250/31375
+  DTW 进度: 13260/31375
+  DTW 进度: 13270/31375
+  DTW 进度: 13280/31375
+  DTW 进度: 13290/31375
+  DTW 进度: 13300/31375
+  DTW 进度: 13310/31375
+  DTW 进度: 13320/31375
+  DTW 进度: 13330/31375
+  DTW 进度: 13340/31375
+  DTW 进度: 13350/31375
+  DTW 进度: 13360/31375
+  DTW 进度: 13370/31375
+  DTW 进度: 13380/31375
+  DTW 进度: 13390/31375
+  DTW 进度: 13400/31375
+  DTW 进度: 13410/31375
+  DTW 进度: 13420/31375
+  DTW 进度: 13430/31375
+  DTW 进度: 13440/31375
+  DTW 进度: 13450/31375
+  DTW 进度: 13460/31375
+  DTW 进度: 13470/31375
+  DTW 进度: 13480/31375
+  DTW 进度: 13490/31375
+  DTW 进度: 13500/31375
+  DTW 进度: 13510/31375
+  DTW 进度: 13520/31375
+  DTW 进度: 13530/31375
+  DTW 进度: 13540/31375
+  DTW 进度: 13550/31375
+  DTW 进度: 13560/31375
+  DTW 进度: 13570/31375
+  DTW 进度: 13580/31375
+  DTW 进度: 13590/31375
+  DTW 进度: 13600/31375
+  DTW 进度: 13610/31375
+  DTW 进度: 13620/31375
+  DTW 进度: 13630/31375
+  DTW 进度: 13640/31375
+  DTW 进度: 13650/31375
+  DTW 进度: 13660/31375
+  DTW 进度: 13670/31375
+  DTW 进度: 13680/31375
+  DTW 进度: 13690/31375
+  DTW 进度: 13700/31375
+  DTW 进度: 13710/31375
+  DTW 进度: 13720/31375
+  DTW 进度: 13730/31375
+  DTW 进度: 13740/31375
+  DTW 进度: 13750/31375
+  DTW 进度: 13760/31375
+  DTW 进度: 13770/31375
+  DTW 进度: 13780/31375
+  DTW 进度: 13790/31375
+  DTW 进度: 13800/31375
+  DTW 进度: 13810/31375
+  DTW 进度: 13820/31375
+  DTW 进度: 13830/31375
+  DTW 进度: 13840/31375
+  DTW 进度: 13850/31375
+  DTW 进度: 13860/31375
+  DTW 进度: 13870/31375
+  DTW 进度: 13880/31375
+  DTW 进度: 13890/31375
+  DTW 进度: 13900/31375
+  DTW 进度: 13910/31375
+  DTW 进度: 13920/31375
+  DTW 进度: 13930/31375
+  DTW 进度: 13940/31375
+  DTW 进度: 13950/31375
+  DTW 进度: 13960/31375
+  DTW 进度: 13970/31375
+  DTW 进度: 13980/31375
+  DTW 进度: 13990/31375
+  DTW 进度: 14000/31375
+  DTW 进度: 14010/31375
+  DTW 进度: 14020/31375
+  DTW 进度: 14030/31375
+  DTW 进度: 14040/31375
+  DTW 进度: 14050/31375
+  DTW 进度: 14060/31375
+  DTW 进度: 14070/31375
+  DTW 进度: 14080/31375
+  DTW 进度: 14090/31375
+  DTW 进度: 14100/31375
+  DTW 进度: 14110/31375
+  DTW 进度: 14120/31375
+  DTW 进度: 14130/31375
+  DTW 进度: 14140/31375
+  DTW 进度: 14150/31375
+  DTW 进度: 14160/31375
+  DTW 进度: 14170/31375
+  DTW 进度: 14180/31375
+  DTW 进度: 14190/31375
+  DTW 进度: 14200/31375
+  DTW 进度: 14210/31375
+  DTW 进度: 14220/31375
+  DTW 进度: 14230/31375
+  DTW 进度: 14240/31375
+  DTW 进度: 14250/31375
+  DTW 进度: 14260/31375
+  DTW 进度: 14270/31375
+  DTW 进度: 14280/31375
+  DTW 进度: 14290/31375
+  DTW 进度: 14300/31375
+  DTW 进度: 14310/31375
+  DTW 进度: 14320/31375
+  DTW 进度: 14330/31375
+  DTW 进度: 14340/31375
+  DTW 进度: 14350/31375
+  DTW 进度: 14360/31375
+  DTW 进度: 14370/31375
+  DTW 进度: 14380/31375
+  DTW 进度: 14390/31375
+  DTW 进度: 14400/31375
+  DTW 进度: 14410/31375
+  DTW 进度: 14420/31375
+  DTW 进度: 14430/31375
+  DTW 进度: 14440/31375
+  DTW 进度: 14450/31375
+  DTW 进度: 14460/31375
+  DTW 进度: 14470/31375
+  DTW 进度: 14480/31375
+  DTW 进度: 14490/31375
+  DTW 进度: 14500/31375
+  DTW 进度: 14510/31375
+  DTW 进度: 14520/31375
+  DTW 进度: 14530/31375
+  DTW 进度: 14540/31375
+  DTW 进度: 14550/31375
+  DTW 进度: 14560/31375
+  DTW 进度: 14570/31375
+  DTW 进度: 14580/31375
+  DTW 进度: 14590/31375
+  DTW 进度: 14600/31375
+  DTW 进度: 14610/31375
+  DTW 进度: 14620/31375
+  DTW 进度: 14630/31375
+  DTW 进度: 14640/31375
+  DTW 进度: 14650/31375
+  DTW 进度: 14660/31375
+  DTW 进度: 14670/31375
+  DTW 进度: 14680/31375
+  DTW 进度: 14690/31375
+  DTW 进度: 14700/31375
+  DTW 进度: 14710/31375
+  DTW 进度: 14720/31375
+  DTW 进度: 14730/31375
+  DTW 进度: 14740/31375
+  DTW 进度: 14750/31375
+  DTW 进度: 14760/31375
+  DTW 进度: 14770/31375
+  DTW 进度: 14780/31375
+  DTW 进度: 14790/31375
+  DTW 进度: 14800/31375
+  DTW 进度: 14810/31375
+  DTW 进度: 14820/31375
+  DTW 进度: 14830/31375
+  DTW 进度: 14840/31375
+  DTW 进度: 14850/31375
+  DTW 进度: 14860/31375
+  DTW 进度: 14870/31375
+  DTW 进度: 14880/31375
+  DTW 进度: 14890/31375
+  DTW 进度: 14900/31375
+  DTW 进度: 14910/31375
+  DTW 进度: 14920/31375
+  DTW 进度: 14930/31375
+  DTW 进度: 14940/31375
+  DTW 进度: 14950/31375
+  DTW 进度: 14960/31375
+  DTW 进度: 14970/31375
+  DTW 进度: 14980/31375
+  DTW 进度: 14990/31375
+  DTW 进度: 15000/31375
+  DTW 进度: 15010/31375
+  DTW 进度: 15020/31375
+  DTW 进度: 15030/31375
+  DTW 进度: 15040/31375
+  DTW 进度: 15050/31375
+  DTW 进度: 15060/31375
+  DTW 进度: 15070/31375
+  DTW 进度: 15080/31375
+  DTW 进度: 15090/31375
+  DTW 进度: 15100/31375
+  DTW 进度: 15110/31375
+  DTW 进度: 15120/31375
+  DTW 进度: 15130/31375
+  DTW 进度: 15140/31375
+  DTW 进度: 15150/31375
+  DTW 进度: 15160/31375
+  DTW 进度: 15170/31375
+  DTW 进度: 15180/31375
+  DTW 进度: 15190/31375
+  DTW 进度: 15200/31375
+  DTW 进度: 15210/31375
+  DTW 进度: 15220/31375
+  DTW 进度: 15230/31375
+  DTW 进度: 15240/31375
+  DTW 进度: 15250/31375
+  DTW 进度: 15260/31375
+  DTW 进度: 15270/31375
+  DTW 进度: 15280/31375
+  DTW 进度: 15290/31375
+  DTW 进度: 15300/31375
+  DTW 进度: 15310/31375
+  DTW 进度: 15320/31375
+  DTW 进度: 15330/31375
+  DTW 进度: 15340/31375
+  DTW 进度: 15350/31375
+  DTW 进度: 15360/31375
+  DTW 进度: 15370/31375
+  DTW 进度: 15380/31375
+  DTW 进度: 15390/31375
+  DTW 进度: 15400/31375
+  DTW 进度: 15410/31375
+  DTW 进度: 15420/31375
+  DTW 进度: 15430/31375
+  DTW 进度: 15440/31375
+  DTW 进度: 15450/31375
+  DTW 进度: 15460/31375
+  DTW 进度: 15470/31375
+  DTW 进度: 15480/31375
+  DTW 进度: 15490/31375
+  DTW 进度: 15500/31375
+  DTW 进度: 15510/31375
+  DTW 进度: 15520/31375
+  DTW 进度: 15530/31375
+  DTW 进度: 15540/31375
+  DTW 进度: 15550/31375
+  DTW 进度: 15560/31375
+  DTW 进度: 15570/31375
+  DTW 进度: 15580/31375
+  DTW 进度: 15590/31375
+  DTW 进度: 15600/31375
+  DTW 进度: 15610/31375
+  DTW 进度: 15620/31375
+  DTW 进度: 15630/31375
+  DTW 进度: 15640/31375
+  DTW 进度: 15650/31375
+  DTW 进度: 15660/31375
+  DTW 进度: 15670/31375
+  DTW 进度: 15680/31375
+  DTW 进度: 15690/31375
+  DTW 进度: 15700/31375
+  DTW 进度: 15710/31375
+  DTW 进度: 15720/31375
+  DTW 进度: 15730/31375
+  DTW 进度: 15740/31375
+  DTW 进度: 15750/31375
+  DTW 进度: 15760/31375
+  DTW 进度: 15770/31375
+  DTW 进度: 15780/31375
+  DTW 进度: 15790/31375
+  DTW 进度: 15800/31375
+  DTW 进度: 15810/31375
+  DTW 进度: 15820/31375
+  DTW 进度: 15830/31375
+  DTW 进度: 15840/31375
+  DTW 进度: 15850/31375
+  DTW 进度: 15860/31375
+  DTW 进度: 15870/31375
+  DTW 进度: 15880/31375
+  DTW 进度: 15890/31375
+  DTW 进度: 15900/31375
+  DTW 进度: 15910/31375
+  DTW 进度: 15920/31375
+  DTW 进度: 15930/31375
+  DTW 进度: 15940/31375
+  DTW 进度: 15950/31375
+  DTW 进度: 15960/31375
+  DTW 进度: 15970/31375
+  DTW 进度: 15980/31375
+  DTW 进度: 15990/31375
+  DTW 进度: 16000/31375
+  DTW 进度: 16010/31375
+  DTW 进度: 16020/31375
+  DTW 进度: 16030/31375
+  DTW 进度: 16040/31375
+  DTW 进度: 16050/31375
+  DTW 进度: 16060/31375
+  DTW 进度: 16070/31375
+  DTW 进度: 16080/31375
+  DTW 进度: 16090/31375
+  DTW 进度: 16100/31375
+  DTW 进度: 16110/31375
+  DTW 进度: 16120/31375
+  DTW 进度: 16130/31375
+  DTW 进度: 16140/31375
+  DTW 进度: 16150/31375
+  DTW 进度: 16160/31375
+  DTW 进度: 16170/31375
+  DTW 进度: 16180/31375
+  DTW 进度: 16190/31375
+  DTW 进度: 16200/31375
+  DTW 进度: 16210/31375
+  DTW 进度: 16220/31375
+  DTW 进度: 16230/31375
+  DTW 进度: 16240/31375
+  DTW 进度: 16250/31375
+  DTW 进度: 16260/31375
+  DTW 进度: 16270/31375
+  DTW 进度: 16280/31375
+  DTW 进度: 16290/31375
+  DTW 进度: 16300/31375
+  DTW 进度: 16310/31375
+  DTW 进度: 16320/31375
+  DTW 进度: 16330/31375
+  DTW 进度: 16340/31375
+  DTW 进度: 16350/31375
+  DTW 进度: 16360/31375
+  DTW 进度: 16370/31375
+  DTW 进度: 16380/31375
+  DTW 进度: 16390/31375
+  DTW 进度: 16400/31375
+  DTW 进度: 16410/31375
+  DTW 进度: 16420/31375
+  DTW 进度: 16430/31375
+  DTW 进度: 16440/31375
+  DTW 进度: 16450/31375
+  DTW 进度: 16460/31375
+  DTW 进度: 16470/31375
+  DTW 进度: 16480/31375
+  DTW 进度: 16490/31375
+  DTW 进度: 16500/31375
+  DTW 进度: 16510/31375
+  DTW 进度: 16520/31375
+  DTW 进度: 16530/31375
+  DTW 进度: 16540/31375
+  DTW 进度: 16550/31375
+  DTW 进度: 16560/31375
+  DTW 进度: 16570/31375
+  DTW 进度: 16580/31375
+  DTW 进度: 16590/31375
+  DTW 进度: 16600/31375
+  DTW 进度: 16610/31375
+  DTW 进度: 16620/31375
+  DTW 进度: 16630/31375
+  DTW 进度: 16640/31375
+  DTW 进度: 16650/31375
+  DTW 进度: 16660/31375
+  DTW 进度: 16670/31375
+  DTW 进度: 16680/31375
+  DTW 进度: 16690/31375
+  DTW 进度: 16700/31375
+  DTW 进度: 16710/31375
+  DTW 进度: 16720/31375
+  DTW 进度: 16730/31375
+  DTW 进度: 16740/31375
+  DTW 进度: 16750/31375
+  DTW 进度: 16760/31375
+  DTW 进度: 16770/31375
+  DTW 进度: 16780/31375
+  DTW 进度: 16790/31375
+  DTW 进度: 16800/31375
+  DTW 进度: 16810/31375
+  DTW 进度: 16820/31375
+  DTW 进度: 16830/31375
+  DTW 进度: 16840/31375
+  DTW 进度: 16850/31375
+  DTW 进度: 16860/31375
+  DTW 进度: 16870/31375
+  DTW 进度: 16880/31375
+  DTW 进度: 16890/31375
+  DTW 进度: 16900/31375
+  DTW 进度: 16910/31375
+  DTW 进度: 16920/31375
+  DTW 进度: 16930/31375
+  DTW 进度: 16940/31375
+  DTW 进度: 16950/31375
+  DTW 进度: 16960/31375
+  DTW 进度: 16970/31375
+  DTW 进度: 16980/31375
+  DTW 进度: 16990/31375
+  DTW 进度: 17000/31375
+  DTW 进度: 17010/31375
+  DTW 进度: 17020/31375
+  DTW 进度: 17030/31375
+  DTW 进度: 17040/31375
+  DTW 进度: 17050/31375
+  DTW 进度: 17060/31375
+  DTW 进度: 17070/31375
+  DTW 进度: 17080/31375
+  DTW 进度: 17090/31375
+  DTW 进度: 17100/31375
+  DTW 进度: 17110/31375
+  DTW 进度: 17120/31375
+  DTW 进度: 17130/31375
+  DTW 进度: 17140/31375
+  DTW 进度: 17150/31375
+  DTW 进度: 17160/31375
+  DTW 进度: 17170/31375
+  DTW 进度: 17180/31375
+  DTW 进度: 17190/31375
+  DTW 进度: 17200/31375
+  DTW 进度: 17210/31375
+  DTW 进度: 17220/31375
+  DTW 进度: 17230/31375
+  DTW 进度: 17240/31375
+  DTW 进度: 17250/31375
+  DTW 进度: 17260/31375
+  DTW 进度: 17270/31375
+  DTW 进度: 17280/31375
+  DTW 进度: 17290/31375
+  DTW 进度: 17300/31375
+  DTW 进度: 17310/31375
+  DTW 进度: 17320/31375
+  DTW 进度: 17330/31375
+  DTW 进度: 17340/31375
+  DTW 进度: 17350/31375
+  DTW 进度: 17360/31375
+  DTW 进度: 17370/31375
+  DTW 进度: 17380/31375
+  DTW 进度: 17390/31375
+  DTW 进度: 17400/31375
+  DTW 进度: 17410/31375
+  DTW 进度: 17420/31375
+  DTW 进度: 17430/31375
+  DTW 进度: 17440/31375
+  DTW 进度: 17450/31375
+  DTW 进度: 17460/31375
+  DTW 进度: 17470/31375
+  DTW 进度: 17480/31375
+  DTW 进度: 17490/31375
+  DTW 进度: 17500/31375
+  DTW 进度: 17510/31375
+  DTW 进度: 17520/31375
+  DTW 进度: 17530/31375
+  DTW 进度: 17540/31375
+  DTW 进度: 17550/31375
+  DTW 进度: 17560/31375
+  DTW 进度: 17570/31375
+  DTW 进度: 17580/31375
+  DTW 进度: 17590/31375
+  DTW 进度: 17600/31375
+  DTW 进度: 17610/31375
+  DTW 进度: 17620/31375
+  DTW 进度: 17630/31375
+  DTW 进度: 17640/31375
+  DTW 进度: 17650/31375
+  DTW 进度: 17660/31375
+  DTW 进度: 17670/31375
+  DTW 进度: 17680/31375
+  DTW 进度: 17690/31375
+  DTW 进度: 17700/31375
+  DTW 进度: 17710/31375
+  DTW 进度: 17720/31375
+  DTW 进度: 17730/31375
+  DTW 进度: 17740/31375
+  DTW 进度: 17750/31375
+  DTW 进度: 17760/31375
+  DTW 进度: 17770/31375
+  DTW 进度: 17780/31375
+  DTW 进度: 17790/31375
+  DTW 进度: 17800/31375
+  DTW 进度: 17810/31375
+  DTW 进度: 17820/31375
+  DTW 进度: 17830/31375
+  DTW 进度: 17840/31375
+  DTW 进度: 17850/31375
+  DTW 进度: 17860/31375
+  DTW 进度: 17870/31375
+  DTW 进度: 17880/31375
+  DTW 进度: 17890/31375
+  DTW 进度: 17900/31375
+  DTW 进度: 17910/31375
+  DTW 进度: 17920/31375
+  DTW 进度: 17930/31375
+  DTW 进度: 17940/31375
+  DTW 进度: 17950/31375
+  DTW 进度: 17960/31375
+  DTW 进度: 17970/31375
+  DTW 进度: 17980/31375
+  DTW 进度: 17990/31375
+  DTW 进度: 18000/31375
+  DTW 进度: 18010/31375
+  DTW 进度: 18020/31375
+  DTW 进度: 18030/31375
+  DTW 进度: 18040/31375
+  DTW 进度: 18050/31375
+  DTW 进度: 18060/31375
+  DTW 进度: 18070/31375
+  DTW 进度: 18080/31375
+  DTW 进度: 18090/31375
+  DTW 进度: 18100/31375
+  DTW 进度: 18110/31375
+  DTW 进度: 18120/31375
+  DTW 进度: 18130/31375
+  DTW 进度: 18140/31375
+  DTW 进度: 18150/31375
+  DTW 进度: 18160/31375
+  DTW 进度: 18170/31375
+  DTW 进度: 18180/31375
+  DTW 进度: 18190/31375
+  DTW 进度: 18200/31375
+  DTW 进度: 18210/31375
+  DTW 进度: 18220/31375
+  DTW 进度: 18230/31375
+  DTW 进度: 18240/31375
+  DTW 进度: 18250/31375
+  DTW 进度: 18260/31375
+  DTW 进度: 18270/31375
+  DTW 进度: 18280/31375
+  DTW 进度: 18290/31375
+  DTW 进度: 18300/31375
+  DTW 进度: 18310/31375
+  DTW 进度: 18320/31375
+  DTW 进度: 18330/31375
+  DTW 进度: 18340/31375
+  DTW 进度: 18350/31375
+  DTW 进度: 18360/31375
+  DTW 进度: 18370/31375
+  DTW 进度: 18380/31375
+  DTW 进度: 18390/31375
+  DTW 进度: 18400/31375
+  DTW 进度: 18410/31375
+  DTW 进度: 18420/31375
+  DTW 进度: 18430/31375
+  DTW 进度: 18440/31375
+  DTW 进度: 18450/31375
+  DTW 进度: 18460/31375
+  DTW 进度: 18470/31375
+  DTW 进度: 18480/31375
+  DTW 进度: 18490/31375
+  DTW 进度: 18500/31375
+  DTW 进度: 18510/31375
+  DTW 进度: 18520/31375
+  DTW 进度: 18530/31375
+  DTW 进度: 18540/31375
+  DTW 进度: 18550/31375
+  DTW 进度: 18560/31375
+  DTW 进度: 18570/31375
+  DTW 进度: 18580/31375
+  DTW 进度: 18590/31375
+  DTW 进度: 18600/31375
+  DTW 进度: 18610/31375
+  DTW 进度: 18620/31375
+  DTW 进度: 18630/31375
+  DTW 进度: 18640/31375
+  DTW 进度: 18650/31375
+  DTW 进度: 18660/31375
+  DTW 进度: 18670/31375
+  DTW 进度: 18680/31375
+  DTW 进度: 18690/31375
+  DTW 进度: 18700/31375
+  DTW 进度: 18710/31375
+  DTW 进度: 18720/31375
+  DTW 进度: 18730/31375
+  DTW 进度: 18740/31375
+  DTW 进度: 18750/31375
+  DTW 进度: 18760/31375
+  DTW 进度: 18770/31375
+  DTW 进度: 18780/31375
+  DTW 进度: 18790/31375
+  DTW 进度: 18800/31375
+  DTW 进度: 18810/31375
+  DTW 进度: 18820/31375
+  DTW 进度: 18830/31375
+  DTW 进度: 18840/31375
+  DTW 进度: 18850/31375
+  DTW 进度: 18860/31375
+  DTW 进度: 18870/31375
+  DTW 进度: 18880/31375
+  DTW 进度: 18890/31375
+  DTW 进度: 18900/31375
+  DTW 进度: 18910/31375
+  DTW 进度: 18920/31375
+  DTW 进度: 18930/31375
+  DTW 进度: 18940/31375
+  DTW 进度: 18950/31375
+  DTW 进度: 18960/31375
+  DTW 进度: 18970/31375
+  DTW 进度: 18980/31375
+  DTW 进度: 18990/31375
+  DTW 进度: 19000/31375
+  DTW 进度: 19010/31375
+  DTW 进度: 19020/31375
+  DTW 进度: 19030/31375
+  DTW 进度: 19040/31375
+  DTW 进度: 19050/31375
+  DTW 进度: 19060/31375
+  DTW 进度: 19070/31375
+  DTW 进度: 19080/31375
+  DTW 进度: 19090/31375
+  DTW 进度: 19100/31375
+  DTW 进度: 19110/31375
+  DTW 进度: 19120/31375
+  DTW 进度: 19130/31375
+  DTW 进度: 19140/31375
+  DTW 进度: 19150/31375
+  DTW 进度: 19160/31375
+  DTW 进度: 19170/31375
+  DTW 进度: 19180/31375
+  DTW 进度: 19190/31375
+  DTW 进度: 19200/31375
+  DTW 进度: 19210/31375
+  DTW 进度: 19220/31375
+  DTW 进度: 19230/31375
+  DTW 进度: 19240/31375
+  DTW 进度: 19250/31375
+  DTW 进度: 19260/31375
+  DTW 进度: 19270/31375
+  DTW 进度: 19280/31375
+  DTW 进度: 19290/31375
+  DTW 进度: 19300/31375
+  DTW 进度: 19310/31375
+  DTW 进度: 19320/31375
+  DTW 进度: 19330/31375
+  DTW 进度: 19340/31375
+  DTW 进度: 19350/31375
+  DTW 进度: 19360/31375
+  DTW 进度: 19370/31375
+  DTW 进度: 19380/31375
+  DTW 进度: 19390/31375
+  DTW 进度: 19400/31375
+  DTW 进度: 19410/31375
+  DTW 进度: 19420/31375
+  DTW 进度: 19430/31375
+  DTW 进度: 19440/31375
+  DTW 进度: 19450/31375
+  DTW 进度: 19460/31375
+  DTW 进度: 19470/31375
+  DTW 进度: 19480/31375
+  DTW 进度: 19490/31375
+  DTW 进度: 19500/31375
+  DTW 进度: 19510/31375
+  DTW 进度: 19520/31375
+  DTW 进度: 19530/31375
+  DTW 进度: 19540/31375
+  DTW 进度: 19550/31375
+  DTW 进度: 19560/31375
+  DTW 进度: 19570/31375
+  DTW 进度: 19580/31375
+  DTW 进度: 19590/31375
+  DTW 进度: 19600/31375
+  DTW 进度: 19610/31375
+  DTW 进度: 19620/31375
+  DTW 进度: 19630/31375
+  DTW 进度: 19640/31375
+  DTW 进度: 19650/31375
+  DTW 进度: 19660/31375
+  DTW 进度: 19670/31375
+  DTW 进度: 19680/31375
+  DTW 进度: 19690/31375
+  DTW 进度: 19700/31375
+  DTW 进度: 19710/31375
+  DTW 进度: 19720/31375
+  DTW 进度: 19730/31375
+  DTW 进度: 19740/31375
+  DTW 进度: 19750/31375
+  DTW 进度: 19760/31375
+  DTW 进度: 19770/31375
+  DTW 进度: 19780/31375
+  DTW 进度: 19790/31375
+  DTW 进度: 19800/31375
+  DTW 进度: 19810/31375
+  DTW 进度: 19820/31375
+  DTW 进度: 19830/31375
+  DTW 进度: 19840/31375
+  DTW 进度: 19850/31375
+  DTW 进度: 19860/31375
+  DTW 进度: 19870/31375
+  DTW 进度: 19880/31375
+  DTW 进度: 19890/31375
+  DTW 进度: 19900/31375
+  DTW 进度: 19910/31375
+  DTW 进度: 19920/31375
+  DTW 进度: 19930/31375
+  DTW 进度: 19940/31375
+  DTW 进度: 19950/31375
+  DTW 进度: 19960/31375
+  DTW 进度: 19970/31375
+  DTW 进度: 19980/31375
+  DTW 进度: 19990/31375
+  DTW 进度: 20000/31375
+  DTW 进度: 20010/31375
+  DTW 进度: 20020/31375
+  DTW 进度: 20030/31375
+  DTW 进度: 20040/31375
+  DTW 进度: 20050/31375
+  DTW 进度: 20060/31375
+  DTW 进度: 20070/31375
+  DTW 进度: 20080/31375
+  DTW 进度: 20090/31375
+  DTW 进度: 20100/31375
+  DTW 进度: 20110/31375
+  DTW 进度: 20120/31375
+  DTW 进度: 20130/31375
+  DTW 进度: 20140/31375
+  DTW 进度: 20150/31375
+  DTW 进度: 20160/31375
+  DTW 进度: 20170/31375
+  DTW 进度: 20180/31375
+  DTW 进度: 20190/31375
+  DTW 进度: 20200/31375
+  DTW 进度: 20210/31375
+  DTW 进度: 20220/31375
+  DTW 进度: 20230/31375
+  DTW 进度: 20240/31375
+  DTW 进度: 20250/31375
+  DTW 进度: 20260/31375
+  DTW 进度: 20270/31375
+  DTW 进度: 20280/31375
+  DTW 进度: 20290/31375
+  DTW 进度: 20300/31375
+  DTW 进度: 20310/31375
+  DTW 进度: 20320/31375
+  DTW 进度: 20330/31375
+  DTW 进度: 20340/31375
+  DTW 进度: 20350/31375
+  DTW 进度: 20360/31375
+  DTW 进度: 20370/31375
+  DTW 进度: 20380/31375
+  DTW 进度: 20390/31375
+  DTW 进度: 20400/31375
+  DTW 进度: 20410/31375
+  DTW 进度: 20420/31375
+  DTW 进度: 20430/31375
+  DTW 进度: 20440/31375
+  DTW 进度: 20450/31375
+  DTW 进度: 20460/31375
+  DTW 进度: 20470/31375
+  DTW 进度: 20480/31375
+  DTW 进度: 20490/31375
+  DTW 进度: 20500/31375
+  DTW 进度: 20510/31375
+  DTW 进度: 20520/31375
+  DTW 进度: 20530/31375
+  DTW 进度: 20540/31375
+  DTW 进度: 20550/31375
+  DTW 进度: 20560/31375
+  DTW 进度: 20570/31375
+  DTW 进度: 20580/31375
+  DTW 进度: 20590/31375
+  DTW 进度: 20600/31375
+  DTW 进度: 20610/31375
+  DTW 进度: 20620/31375
+  DTW 进度: 20630/31375
+  DTW 进度: 20640/31375
+  DTW 进度: 20650/31375
+  DTW 进度: 20660/31375
+  DTW 进度: 20670/31375
+  DTW 进度: 20680/31375
+  DTW 进度: 20690/31375
+  DTW 进度: 20700/31375
+  DTW 进度: 20710/31375
+  DTW 进度: 20720/31375
+  DTW 进度: 20730/31375
+  DTW 进度: 20740/31375
+  DTW 进度: 20750/31375
+  DTW 进度: 20760/31375
+  DTW 进度: 20770/31375
+  DTW 进度: 20780/31375
+  DTW 进度: 20790/31375
+  DTW 进度: 20800/31375
+  DTW 进度: 20810/31375
+  DTW 进度: 20820/31375
+  DTW 进度: 20830/31375
+  DTW 进度: 20840/31375
+  DTW 进度: 20850/31375
+  DTW 进度: 20860/31375
+  DTW 进度: 20870/31375
+  DTW 进度: 20880/31375
+  DTW 进度: 20890/31375
+  DTW 进度: 20900/31375
+  DTW 进度: 20910/31375
+  DTW 进度: 20920/31375
+  DTW 进度: 20930/31375
+  DTW 进度: 20940/31375
+  DTW 进度: 20950/31375
+  DTW 进度: 20960/31375
+  DTW 进度: 20970/31375
+  DTW 进度: 20980/31375
+  DTW 进度: 20990/31375
+  DTW 进度: 21000/31375
+  DTW 进度: 21010/31375
+  DTW 进度: 21020/31375
+  DTW 进度: 21030/31375
+  DTW 进度: 21040/31375
+  DTW 进度: 21050/31375
+  DTW 进度: 21060/31375
+  DTW 进度: 21070/31375
+  DTW 进度: 21080/31375
+  DTW 进度: 21090/31375
+  DTW 进度: 21100/31375
+  DTW 进度: 21110/31375
+  DTW 进度: 21120/31375
+  DTW 进度: 21130/31375
+  DTW 进度: 21140/31375
+  DTW 进度: 21150/31375
+  DTW 进度: 21160/31375
+  DTW 进度: 21170/31375
+  DTW 进度: 21180/31375
+  DTW 进度: 21190/31375
+  DTW 进度: 21200/31375
+  DTW 进度: 21210/31375
+  DTW 进度: 21220/31375
+  DTW 进度: 21230/31375
+  DTW 进度: 21240/31375
+  DTW 进度: 21250/31375
+  DTW 进度: 21260/31375
+  DTW 进度: 21270/31375
+  DTW 进度: 21280/31375
+  DTW 进度: 21290/31375
+  DTW 进度: 21300/31375
+  DTW 进度: 21310/31375
+  DTW 进度: 21320/31375
+  DTW 进度: 21330/31375
+  DTW 进度: 21340/31375
+  DTW 进度: 21350/31375
+  DTW 进度: 21360/31375
+  DTW 进度: 21370/31375
+  DTW 进度: 21380/31375
+  DTW 进度: 21390/31375
+  DTW 进度: 21400/31375
+  DTW 进度: 21410/31375
+  DTW 进度: 21420/31375
+  DTW 进度: 21430/31375
+  DTW 进度: 21440/31375
+  DTW 进度: 21450/31375
+  DTW 进度: 21460/31375
+  DTW 进度: 21470/31375
+  DTW 进度: 21480/31375
+  DTW 进度: 21490/31375
+  DTW 进度: 21500/31375
+  DTW 进度: 21510/31375
+  DTW 进度: 21520/31375
+  DTW 进度: 21530/31375
+  DTW 进度: 21540/31375
+  DTW 进度: 21550/31375
+  DTW 进度: 21560/31375
+  DTW 进度: 21570/31375
+  DTW 进度: 21580/31375
+  DTW 进度: 21590/31375
+  DTW 进度: 21600/31375
+  DTW 进度: 21610/31375
+  DTW 进度: 21620/31375
+  DTW 进度: 21630/31375
+  DTW 进度: 21640/31375
+  DTW 进度: 21650/31375
+  DTW 进度: 21660/31375
+  DTW 进度: 21670/31375
+  DTW 进度: 21680/31375
+  DTW 进度: 21690/31375
+  DTW 进度: 21700/31375
+  DTW 进度: 21710/31375
+  DTW 进度: 21720/31375
+  DTW 进度: 21730/31375
+  DTW 进度: 21740/31375
+  DTW 进度: 21750/31375
+  DTW 进度: 21760/31375
+  DTW 进度: 21770/31375
+  DTW 进度: 21780/31375
+  DTW 进度: 21790/31375
+  DTW 进度: 21800/31375
+  DTW 进度: 21810/31375
+  DTW 进度: 21820/31375
+  DTW 进度: 21830/31375
+  DTW 进度: 21840/31375
+  DTW 进度: 21850/31375
+  DTW 进度: 21860/31375
+  DTW 进度: 21870/31375
+  DTW 进度: 21880/31375
+  DTW 进度: 21890/31375
+  DTW 进度: 21900/31375
+  DTW 进度: 21910/31375
+  DTW 进度: 21920/31375
+  DTW 进度: 21930/31375
+  DTW 进度: 21940/31375
+  DTW 进度: 21950/31375
+  DTW 进度: 21960/31375
+  DTW 进度: 21970/31375
+  DTW 进度: 21980/31375
+  DTW 进度: 21990/31375
+  DTW 进度: 22000/31375
+  DTW 进度: 22010/31375
+  DTW 进度: 22020/31375
+  DTW 进度: 22030/31375
+  DTW 进度: 22040/31375
+  DTW 进度: 22050/31375
+  DTW 进度: 22060/31375
+  DTW 进度: 22070/31375
+  DTW 进度: 22080/31375
+  DTW 进度: 22090/31375
+  DTW 进度: 22100/31375
+  DTW 进度: 22110/31375
+  DTW 进度: 22120/31375
+  DTW 进度: 22130/31375
+  DTW 进度: 22140/31375
+  DTW 进度: 22150/31375
+  DTW 进度: 22160/31375
+  DTW 进度: 22170/31375
+  DTW 进度: 22180/31375
+  DTW 进度: 22190/31375
+  DTW 进度: 22200/31375
+  DTW 进度: 22210/31375
+  DTW 进度: 22220/31375
+  DTW 进度: 22230/31375
+  DTW 进度: 22240/31375
+  DTW 进度: 22250/31375
+  DTW 进度: 22260/31375
+  DTW 进度: 22270/31375
+  DTW 进度: 22280/31375
+  DTW 进度: 22290/31375
+  DTW 进度: 22300/31375
+  DTW 进度: 22310/31375
+  DTW 进度: 22320/31375
+  DTW 进度: 22330/31375
+  DTW 进度: 22340/31375
+  DTW 进度: 22350/31375
+  DTW 进度: 22360/31375
+  DTW 进度: 22370/31375
+  DTW 进度: 22380/31375
+  DTW 进度: 22390/31375
+  DTW 进度: 22400/31375
+  DTW 进度: 22410/31375
+  DTW 进度: 22420/31375
+  DTW 进度: 22430/31375
+  DTW 进度: 22440/31375
+  DTW 进度: 22450/31375
+  DTW 进度: 22460/31375
+  DTW 进度: 22470/31375
+  DTW 进度: 22480/31375
+  DTW 进度: 22490/31375
+  DTW 进度: 22500/31375
+  DTW 进度: 22510/31375
+  DTW 进度: 22520/31375
+  DTW 进度: 22530/31375
+  DTW 进度: 22540/31375
+  DTW 进度: 22550/31375
+  DTW 进度: 22560/31375
+  DTW 进度: 22570/31375
+  DTW 进度: 22580/31375
+  DTW 进度: 22590/31375
+  DTW 进度: 22600/31375
+  DTW 进度: 22610/31375
+  DTW 进度: 22620/31375
+  DTW 进度: 22630/31375
+  DTW 进度: 22640/31375
+  DTW 进度: 22650/31375
+  DTW 进度: 22660/31375
+  DTW 进度: 22670/31375
+  DTW 进度: 22680/31375
+  DTW 进度: 22690/31375
+  DTW 进度: 22700/31375
+  DTW 进度: 22710/31375
+  DTW 进度: 22720/31375
+  DTW 进度: 22730/31375
+  DTW 进度: 22740/31375
+  DTW 进度: 22750/31375
+  DTW 进度: 22760/31375
+  DTW 进度: 22770/31375
+  DTW 进度: 22780/31375
+  DTW 进度: 22790/31375
+  DTW 进度: 22800/31375
+  DTW 进度: 22810/31375
+  DTW 进度: 22820/31375
+  DTW 进度: 22830/31375
+  DTW 进度: 22840/31375
+  DTW 进度: 22850/31375
+  DTW 进度: 22860/31375
+  DTW 进度: 22870/31375
+  DTW 进度: 22880/31375
+  DTW 进度: 22890/31375
+  DTW 进度: 22900/31375
+  DTW 进度: 22910/31375
+  DTW 进度: 22920/31375
+  DTW 进度: 22930/31375
+  DTW 进度: 22940/31375
+  DTW 进度: 22950/31375
+  DTW 进度: 22960/31375
+  DTW 进度: 22970/31375
+  DTW 进度: 22980/31375
+  DTW 进度: 22990/31375
+  DTW 进度: 23000/31375
+  DTW 进度: 23010/31375
+  DTW 进度: 23020/31375
+  DTW 进度: 23030/31375
+  DTW 进度: 23040/31375
+  DTW 进度: 23050/31375
+  DTW 进度: 23060/31375
+  DTW 进度: 23070/31375
+  DTW 进度: 23080/31375
+  DTW 进度: 23090/31375
+  DTW 进度: 23100/31375
+  DTW 进度: 23110/31375
+  DTW 进度: 23120/31375
+  DTW 进度: 23130/31375
+  DTW 进度: 23140/31375
+  DTW 进度: 23150/31375
+  DTW 进度: 23160/31375
+  DTW 进度: 23170/31375
+  DTW 进度: 23180/31375
+  DTW 进度: 23190/31375
+  DTW 进度: 23200/31375
+  DTW 进度: 23210/31375
+  DTW 进度: 23220/31375
+  DTW 进度: 23230/31375
+  DTW 进度: 23240/31375
+  DTW 进度: 23250/31375
+  DTW 进度: 23260/31375
+  DTW 进度: 23270/31375
+  DTW 进度: 23280/31375
+  DTW 进度: 23290/31375
+  DTW 进度: 23300/31375
+  DTW 进度: 23310/31375
+  DTW 进度: 23320/31375
+  DTW 进度: 23330/31375
+  DTW 进度: 23340/31375
+  DTW 进度: 23350/31375
+  DTW 进度: 23360/31375
+  DTW 进度: 23370/31375
+  DTW 进度: 23380/31375
+  DTW 进度: 23390/31375
+  DTW 进度: 23400/31375
+  DTW 进度: 23410/31375
+  DTW 进度: 23420/31375
+  DTW 进度: 23430/31375
+  DTW 进度: 23440/31375
+  DTW 进度: 23450/31375
+  DTW 进度: 23460/31375
+  DTW 进度: 23470/31375
+  DTW 进度: 23480/31375
+  DTW 进度: 23490/31375
+  DTW 进度: 23500/31375
+  DTW 进度: 23510/31375
+  DTW 进度: 23520/31375
+  DTW 进度: 23530/31375
+  DTW 进度: 23540/31375
+  DTW 进度: 23550/31375
+  DTW 进度: 23560/31375
+  DTW 进度: 23570/31375
+  DTW 进度: 23580/31375
+  DTW 进度: 23590/31375
+  DTW 进度: 23600/31375
+  DTW 进度: 23610/31375
+  DTW 进度: 23620/31375
+  DTW 进度: 23630/31375
+  DTW 进度: 23640/31375
+  DTW 进度: 23650/31375
+  DTW 进度: 23660/31375
+  DTW 进度: 23670/31375
+  DTW 进度: 23680/31375
+  DTW 进度: 23690/31375
+  DTW 进度: 23700/31375
+  DTW 进度: 23710/31375
+  DTW 进度: 23720/31375
+  DTW 进度: 23730/31375
+  DTW 进度: 23740/31375
+  DTW 进度: 23750/31375
+  DTW 进度: 23760/31375
+  DTW 进度: 23770/31375
+  DTW 进度: 23780/31375
+  DTW 进度: 23790/31375
+  DTW 进度: 23800/31375
+  DTW 进度: 23810/31375
+  DTW 进度: 23820/31375
+  DTW 进度: 23830/31375
+  DTW 进度: 23840/31375
+  DTW 进度: 23850/31375
+  DTW 进度: 23860/31375
+  DTW 进度: 23870/31375
+  DTW 进度: 23880/31375
+  DTW 进度: 23890/31375
+  DTW 进度: 23900/31375
+  DTW 进度: 23910/31375
+  DTW 进度: 23920/31375
+  DTW 进度: 23930/31375
+  DTW 进度: 23940/31375
+  DTW 进度: 23950/31375
+  DTW 进度: 23960/31375
+  DTW 进度: 23970/31375
+  DTW 进度: 23980/31375
+  DTW 进度: 23990/31375
+  DTW 进度: 24000/31375
+  DTW 进度: 24010/31375
+  DTW 进度: 24020/31375
+  DTW 进度: 24030/31375
+  DTW 进度: 24040/31375
+  DTW 进度: 24050/31375
+  DTW 进度: 24060/31375
+  DTW 进度: 24070/31375
+  DTW 进度: 24080/31375
+  DTW 进度: 24090/31375
+  DTW 进度: 24100/31375
+  DTW 进度: 24110/31375
+  DTW 进度: 24120/31375
+  DTW 进度: 24130/31375
+  DTW 进度: 24140/31375
+  DTW 进度: 24150/31375
+  DTW 进度: 24160/31375
+  DTW 进度: 24170/31375
+  DTW 进度: 24180/31375
+  DTW 进度: 24190/31375
+  DTW 进度: 24200/31375
+  DTW 进度: 24210/31375
+  DTW 进度: 24220/31375
+  DTW 进度: 24230/31375
+  DTW 进度: 24240/31375
+  DTW 进度: 24250/31375
+  DTW 进度: 24260/31375
+  DTW 进度: 24270/31375
+  DTW 进度: 24280/31375
+  DTW 进度: 24290/31375
+  DTW 进度: 24300/31375
+  DTW 进度: 24310/31375
+  DTW 进度: 24320/31375
+  DTW 进度: 24330/31375
+  DTW 进度: 24340/31375
+  DTW 进度: 24350/31375
+  DTW 进度: 24360/31375
+  DTW 进度: 24370/31375
+  DTW 进度: 24380/31375
+  DTW 进度: 24390/31375
+  DTW 进度: 24400/31375
+  DTW 进度: 24410/31375
+  DTW 进度: 24420/31375
+  DTW 进度: 24430/31375
+  DTW 进度: 24440/31375
+  DTW 进度: 24450/31375
+  DTW 进度: 24460/31375
+  DTW 进度: 24470/31375
+  DTW 进度: 24480/31375
+  DTW 进度: 24490/31375
+  DTW 进度: 24500/31375
+  DTW 进度: 24510/31375
+  DTW 进度: 24520/31375
+  DTW 进度: 24530/31375
+  DTW 进度: 24540/31375
+  DTW 进度: 24550/31375
+  DTW 进度: 24560/31375
+  DTW 进度: 24570/31375
+  DTW 进度: 24580/31375
+  DTW 进度: 24590/31375
+  DTW 进度: 24600/31375
+  DTW 进度: 24610/31375
+  DTW 进度: 24620/31375
+  DTW 进度: 24630/31375
+  DTW 进度: 24640/31375
+  DTW 进度: 24650/31375
+  DTW 进度: 24660/31375
+  DTW 进度: 24670/31375
+  DTW 进度: 24680/31375
+  DTW 进度: 24690/31375
+  DTW 进度: 24700/31375
+  DTW 进度: 24710/31375
+  DTW 进度: 24720/31375
+  DTW 进度: 24730/31375
+  DTW 进度: 24740/31375
+  DTW 进度: 24750/31375
+  DTW 进度: 24760/31375
+  DTW 进度: 24770/31375
+  DTW 进度: 24780/31375
+  DTW 进度: 24790/31375
+  DTW 进度: 24800/31375
+  DTW 进度: 24810/31375
+  DTW 进度: 24820/31375
+  DTW 进度: 24830/31375
+  DTW 进度: 24840/31375
+  DTW 进度: 24850/31375
+  DTW 进度: 24860/31375
+  DTW 进度: 24870/31375
+  DTW 进度: 24880/31375
+  DTW 进度: 24890/31375
+  DTW 进度: 24900/31375
+  DTW 进度: 24910/31375
+  DTW 进度: 24920/31375
+  DTW 进度: 24930/31375
+  DTW 进度: 24940/31375
+  DTW 进度: 24950/31375
+  DTW 进度: 24960/31375
+  DTW 进度: 24970/31375
+  DTW 进度: 24980/31375
+  DTW 进度: 24990/31375
+  DTW 进度: 25000/31375
+  DTW 进度: 25010/31375
+  DTW 进度: 25020/31375
+  DTW 进度: 25030/31375
+  DTW 进度: 25040/31375
+  DTW 进度: 25050/31375
+  DTW 进度: 25060/31375
+  DTW 进度: 25070/31375
+  DTW 进度: 25080/31375
+  DTW 进度: 25090/31375
+  DTW 进度: 25100/31375
+  DTW 进度: 25110/31375
+  DTW 进度: 25120/31375
+  DTW 进度: 25130/31375
+  DTW 进度: 25140/31375
+  DTW 进度: 25150/31375
+  DTW 进度: 25160/31375
+  DTW 进度: 25170/31375
+  DTW 进度: 25180/31375
+  DTW 进度: 25190/31375
+  DTW 进度: 25200/31375
+  DTW 进度: 25210/31375
+  DTW 进度: 25220/31375
+  DTW 进度: 25230/31375
+  DTW 进度: 25240/31375
+  DTW 进度: 25250/31375
+  DTW 进度: 25260/31375
+  DTW 进度: 25270/31375
+  DTW 进度: 25280/31375
+  DTW 进度: 25290/31375
+  DTW 进度: 25300/31375
+  DTW 进度: 25310/31375
+  DTW 进度: 25320/31375
+  DTW 进度: 25330/31375
+  DTW 进度: 25340/31375
+  DTW 进度: 25350/31375
+  DTW 进度: 25360/31375
+  DTW 进度: 25370/31375
+  DTW 进度: 25380/31375
+  DTW 进度: 25390/31375
+  DTW 进度: 25400/31375
+  DTW 进度: 25410/31375
+  DTW 进度: 25420/31375
+  DTW 进度: 25430/31375
+  DTW 进度: 25440/31375
+  DTW 进度: 25450/31375
+  DTW 进度: 25460/31375
+  DTW 进度: 25470/31375
+  DTW 进度: 25480/31375
+  DTW 进度: 25490/31375
+  DTW 进度: 25500/31375
+  DTW 进度: 25510/31375
+  DTW 进度: 25520/31375
+  DTW 进度: 25530/31375
+  DTW 进度: 25540/31375
+  DTW 进度: 25550/31375
+  DTW 进度: 25560/31375
+  DTW 进度: 25570/31375
+  DTW 进度: 25580/31375
+  DTW 进度: 25590/31375
+  DTW 进度: 25600/31375
+  DTW 进度: 25610/31375
+  DTW 进度: 25620/31375
+  DTW 进度: 25630/31375
+  DTW 进度: 25640/31375
+  DTW 进度: 25650/31375
+  DTW 进度: 25660/31375
+  DTW 进度: 25670/31375
+  DTW 进度: 25680/31375
+  DTW 进度: 25690/31375
+  DTW 进度: 25700/31375
+  DTW 进度: 25710/31375
+  DTW 进度: 25720/31375
+  DTW 进度: 25730/31375
+  DTW 进度: 25740/31375
+  DTW 进度: 25750/31375
+  DTW 进度: 25760/31375
+  DTW 进度: 25770/31375
+  DTW 进度: 25780/31375
+  DTW 进度: 25790/31375
+  DTW 进度: 25800/31375
+  DTW 进度: 25810/31375
+  DTW 进度: 25820/31375
+  DTW 进度: 25830/31375
+  DTW 进度: 25840/31375
+  DTW 进度: 25850/31375
+  DTW 进度: 25860/31375
+  DTW 进度: 25870/31375
+  DTW 进度: 25880/31375
+  DTW 进度: 25890/31375
+  DTW 进度: 25900/31375
+  DTW 进度: 25910/31375
+  DTW 进度: 25920/31375
+  DTW 进度: 25930/31375
+  DTW 进度: 25940/31375
+  DTW 进度: 25950/31375
+  DTW 进度: 25960/31375
+  DTW 进度: 25970/31375
+  DTW 进度: 25980/31375
+  DTW 进度: 25990/31375
+  DTW 进度: 26000/31375
+  DTW 进度: 26010/31375
+  DTW 进度: 26020/31375
+  DTW 进度: 26030/31375
+  DTW 进度: 26040/31375
+  DTW 进度: 26050/31375
+  DTW 进度: 26060/31375
+  DTW 进度: 26070/31375
+  DTW 进度: 26080/31375
+  DTW 进度: 26090/31375
+  DTW 进度: 26100/31375
+  DTW 进度: 26110/31375
+  DTW 进度: 26120/31375
+  DTW 进度: 26130/31375
+  DTW 进度: 26140/31375
+  DTW 进度: 26150/31375
+  DTW 进度: 26160/31375
+  DTW 进度: 26170/31375
+  DTW 进度: 26180/31375
+  DTW 进度: 26190/31375
+  DTW 进度: 26200/31375
+  DTW 进度: 26210/31375
+  DTW 进度: 26220/31375
+  DTW 进度: 26230/31375
+  DTW 进度: 26240/31375
+  DTW 进度: 26250/31375
+  DTW 进度: 26260/31375
+  DTW 进度: 26270/31375
+  DTW 进度: 26280/31375
+  DTW 进度: 26290/31375
+  DTW 进度: 26300/31375
+  DTW 进度: 26310/31375
+  DTW 进度: 26320/31375
+  DTW 进度: 26330/31375
+  DTW 进度: 26340/31375
+  DTW 进度: 26350/31375
+  DTW 进度: 26360/31375
+  DTW 进度: 26370/31375
+  DTW 进度: 26380/31375
+  DTW 进度: 26390/31375
+  DTW 进度: 26400/31375
+  DTW 进度: 26410/31375
+  DTW 进度: 26420/31375
+  DTW 进度: 26430/31375
+  DTW 进度: 26440/31375
+  DTW 进度: 26450/31375
+  DTW 进度: 26460/31375
+  DTW 进度: 26470/31375
+  DTW 进度: 26480/31375
+  DTW 进度: 26490/31375
+  DTW 进度: 26500/31375
+  DTW 进度: 26510/31375
+  DTW 进度: 26520/31375
+  DTW 进度: 26530/31375
+  DTW 进度: 26540/31375
+  DTW 进度: 26550/31375
+  DTW 进度: 26560/31375
+  DTW 进度: 26570/31375
+  DTW 进度: 26580/31375
+  DTW 进度: 26590/31375
+  DTW 进度: 26600/31375
+  DTW 进度: 26610/31375
+  DTW 进度: 26620/31375
+  DTW 进度: 26630/31375
+  DTW 进度: 26640/31375
+  DTW 进度: 26650/31375
+  DTW 进度: 26660/31375
+  DTW 进度: 26670/31375
+  DTW 进度: 26680/31375
+  DTW 进度: 26690/31375
+  DTW 进度: 26700/31375
+  DTW 进度: 26710/31375
+  DTW 进度: 26720/31375
+  DTW 进度: 26730/31375
+  DTW 进度: 26740/31375
+  DTW 进度: 26750/31375
+  DTW 进度: 26760/31375
+  DTW 进度: 26770/31375
+  DTW 进度: 26780/31375
+  DTW 进度: 26790/31375
+  DTW 进度: 26800/31375
+  DTW 进度: 26810/31375
+  DTW 进度: 26820/31375
+  DTW 进度: 26830/31375
+  DTW 进度: 26840/31375
+  DTW 进度: 26850/31375
+  DTW 进度: 26860/31375
+  DTW 进度: 26870/31375
+  DTW 进度: 26880/31375
+  DTW 进度: 26890/31375
+  DTW 进度: 26900/31375
+  DTW 进度: 26910/31375
+  DTW 进度: 26920/31375
+  DTW 进度: 26930/31375
+  DTW 进度: 26940/31375
+  DTW 进度: 26950/31375
+  DTW 进度: 26960/31375
+  DTW 进度: 26970/31375
+  DTW 进度: 26980/31375
+  DTW 进度: 26990/31375
+  DTW 进度: 27000/31375
+  DTW 进度: 27010/31375
+  DTW 进度: 27020/31375
+  DTW 进度: 27030/31375
+  DTW 进度: 27040/31375
+  DTW 进度: 27050/31375
+  DTW 进度: 27060/31375
+  DTW 进度: 27070/31375
+  DTW 进度: 27080/31375
+  DTW 进度: 27090/31375
+  DTW 进度: 27100/31375
+  DTW 进度: 27110/31375
+  DTW 进度: 27120/31375
+  DTW 进度: 27130/31375
+  DTW 进度: 27140/31375
+  DTW 进度: 27150/31375
+  DTW 进度: 27160/31375
+  DTW 进度: 27170/31375
+  DTW 进度: 27180/31375
+  DTW 进度: 27190/31375
+  DTW 进度: 27200/31375
+  DTW 进度: 27210/31375
+  DTW 进度: 27220/31375
+  DTW 进度: 27230/31375
+  DTW 进度: 27240/31375
+  DTW 进度: 27250/31375
+  DTW 进度: 27260/31375
+  DTW 进度: 27270/31375
+  DTW 进度: 27280/31375
+  DTW 进度: 27290/31375
+  DTW 进度: 27300/31375
+  DTW 进度: 27310/31375
+  DTW 进度: 27320/31375
+  DTW 进度: 27330/31375
+  DTW 进度: 27340/31375
+  DTW 进度: 27350/31375
+  DTW 进度: 27360/31375
+  DTW 进度: 27370/31375
+  DTW 进度: 27380/31375
+  DTW 进度: 27390/31375
+  DTW 进度: 27400/31375
+  DTW 进度: 27410/31375
+  DTW 进度: 27420/31375
+  DTW 进度: 27430/31375
+  DTW 进度: 27440/31375
+  DTW 进度: 27450/31375
+  DTW 进度: 27460/31375
+  DTW 进度: 27470/31375
+  DTW 进度: 27480/31375
+  DTW 进度: 27490/31375
+  DTW 进度: 27500/31375
+  DTW 进度: 27510/31375
+  DTW 进度: 27520/31375
+  DTW 进度: 27530/31375
+  DTW 进度: 27540/31375
+  DTW 进度: 27550/31375
+  DTW 进度: 27560/31375
+  DTW 进度: 27570/31375
+  DTW 进度: 27580/31375
+  DTW 进度: 27590/31375
+  DTW 进度: 27600/31375
+  DTW 进度: 27610/31375
+  DTW 进度: 27620/31375
+  DTW 进度: 27630/31375
+  DTW 进度: 27640/31375
+  DTW 进度: 27650/31375
+  DTW 进度: 27660/31375
+  DTW 进度: 27670/31375
+  DTW 进度: 27680/31375
+  DTW 进度: 27690/31375
+  DTW 进度: 27700/31375
+  DTW 进度: 27710/31375
+  DTW 进度: 27720/31375
+  DTW 进度: 27730/31375
+  DTW 进度: 27740/31375
+  DTW 进度: 27750/31375
+  DTW 进度: 27760/31375
+  DTW 进度: 27770/31375
+  DTW 进度: 27780/31375
+  DTW 进度: 27790/31375
+  DTW 进度: 27800/31375
+  DTW 进度: 27810/31375
+  DTW 进度: 27820/31375
+  DTW 进度: 27830/31375
+  DTW 进度: 27840/31375
+  DTW 进度: 27850/31375
+  DTW 进度: 27860/31375
+  DTW 进度: 27870/31375
+  DTW 进度: 27880/31375
+  DTW 进度: 27890/31375
+  DTW 进度: 27900/31375
+  DTW 进度: 27910/31375
+  DTW 进度: 27920/31375
+  DTW 进度: 27930/31375
+  DTW 进度: 27940/31375
+  DTW 进度: 27950/31375
+  DTW 进度: 27960/31375
+  DTW 进度: 27970/31375
+  DTW 进度: 27980/31375
+  DTW 进度: 27990/31375
+  DTW 进度: 28000/31375
+  DTW 进度: 28010/31375
+  DTW 进度: 28020/31375
+  DTW 进度: 28030/31375
+  DTW 进度: 28040/31375
+  DTW 进度: 28050/31375
+  DTW 进度: 28060/31375
+  DTW 进度: 28070/31375
+  DTW 进度: 28080/31375
+  DTW 进度: 28090/31375
+  DTW 进度: 28100/31375
+  DTW 进度: 28110/31375
+  DTW 进度: 28120/31375
+  DTW 进度: 28130/31375
+  DTW 进度: 28140/31375
+  DTW 进度: 28150/31375
+  DTW 进度: 28160/31375
+  DTW 进度: 28170/31375
+  DTW 进度: 28180/31375
+  DTW 进度: 28190/31375
+  DTW 进度: 28200/31375
+  DTW 进度: 28210/31375
+  DTW 进度: 28220/31375
+  DTW 进度: 28230/31375
+  DTW 进度: 28240/31375
+  DTW 进度: 28250/31375
+  DTW 进度: 28260/31375
+  DTW 进度: 28270/31375
+  DTW 进度: 28280/31375
+  DTW 进度: 28290/31375
+  DTW 进度: 28300/31375
+  DTW 进度: 28310/31375
+  DTW 进度: 28320/31375
+  DTW 进度: 28330/31375
+  DTW 进度: 28340/31375
+  DTW 进度: 28350/31375
+  DTW 进度: 28360/31375
+  DTW 进度: 28370/31375
+  DTW 进度: 28380/31375
+  DTW 进度: 28390/31375
+  DTW 进度: 28400/31375
+  DTW 进度: 28410/31375
+  DTW 进度: 28420/31375
+  DTW 进度: 28430/31375
+  DTW 进度: 28440/31375
+  DTW 进度: 28450/31375
+  DTW 进度: 28460/31375
+  DTW 进度: 28470/31375
+  DTW 进度: 28480/31375
+  DTW 进度: 28490/31375
+  DTW 进度: 28500/31375
+  DTW 进度: 28510/31375
+  DTW 进度: 28520/31375
+  DTW 进度: 28530/31375
+  DTW 进度: 28540/31375
+  DTW 进度: 28550/31375
+  DTW 进度: 28560/31375
+  DTW 进度: 28570/31375
+  DTW 进度: 28580/31375
+  DTW 进度: 28590/31375
+  DTW 进度: 28600/31375
+  DTW 进度: 28610/31375
+  DTW 进度: 28620/31375
+  DTW 进度: 28630/31375
+  DTW 进度: 28640/31375
+  DTW 进度: 28650/31375
+  DTW 进度: 28660/31375
+  DTW 进度: 28670/31375
+  DTW 进度: 28680/31375
+  DTW 进度: 28690/31375
+  DTW 进度: 28700/31375
+  DTW 进度: 28710/31375
+  DTW 进度: 28720/31375
+  DTW 进度: 28730/31375
+  DTW 进度: 28740/31375
+  DTW 进度: 28750/31375
+  DTW 进度: 28760/31375
+  DTW 进度: 28770/31375
+  DTW 进度: 28780/31375
+  DTW 进度: 28790/31375
+  DTW 进度: 28800/31375
+  DTW 进度: 28810/31375
+  DTW 进度: 28820/31375
+  DTW 进度: 28830/31375
+  DTW 进度: 28840/31375
+  DTW 进度: 28850/31375
+  DTW 进度: 28860/31375
+  DTW 进度: 28870/31375
+  DTW 进度: 28880/31375
+  DTW 进度: 28890/31375
+  DTW 进度: 28900/31375
+  DTW 进度: 28910/31375
+  DTW 进度: 28920/31375
+  DTW 进度: 28930/31375
+  DTW 进度: 28940/31375
+  DTW 进度: 28950/31375
+  DTW 进度: 28960/31375
+  DTW 进度: 28970/31375
+  DTW 进度: 28980/31375
+  DTW 进度: 28990/31375
+  DTW 进度: 29000/31375
+  DTW 进度: 29010/31375
+  DTW 进度: 29020/31375
+  DTW 进度: 29030/31375
+  DTW 进度: 29040/31375
+  DTW 进度: 29050/31375
+  DTW 进度: 29060/31375
+  DTW 进度: 29070/31375
+  DTW 进度: 29080/31375
+  DTW 进度: 29090/31375
+  DTW 进度: 29100/31375
+  DTW 进度: 29110/31375
+  DTW 进度: 29120/31375
+  DTW 进度: 29130/31375
+  DTW 进度: 29140/31375
+  DTW 进度: 29150/31375
+  DTW 进度: 29160/31375
+  DTW 进度: 29170/31375
+  DTW 进度: 29180/31375
+  DTW 进度: 29190/31375
+  DTW 进度: 29200/31375
+  DTW 进度: 29210/31375
+  DTW 进度: 29220/31375
+  DTW 进度: 29230/31375
+  DTW 进度: 29240/31375
+  DTW 进度: 29250/31375
+  DTW 进度: 29260/31375
+  DTW 进度: 29270/31375
+  DTW 进度: 29280/31375
+  DTW 进度: 29290/31375
+  DTW 进度: 29300/31375
+  DTW 进度: 29310/31375
+  DTW 进度: 29320/31375
+  DTW 进度: 29330/31375
+  DTW 进度: 29340/31375
+  DTW 进度: 29350/31375
+  DTW 进度: 29360/31375
+  DTW 进度: 29370/31375
+  DTW 进度: 29380/31375
+  DTW 进度: 29390/31375
+  DTW 进度: 29400/31375
+  DTW 进度: 29410/31375
+  DTW 进度: 29420/31375
+  DTW 进度: 29430/31375
+  DTW 进度: 29440/31375
+  DTW 进度: 29450/31375
+  DTW 进度: 29460/31375
+  DTW 进度: 29470/31375
+  DTW 进度: 29480/31375
+  DTW 进度: 29490/31375
+  DTW 进度: 29500/31375
+  DTW 进度: 29510/31375
+  DTW 进度: 29520/31375
+  DTW 进度: 29530/31375
+  DTW 进度: 29540/31375
+  DTW 进度: 29550/31375
+  DTW 进度: 29560/31375
+  DTW 进度: 29570/31375
+  DTW 进度: 29580/31375
+  DTW 进度: 29590/31375
+  DTW 进度: 29600/31375
+  DTW 进度: 29610/31375
+  DTW 进度: 29620/31375
+  DTW 进度: 29630/31375
+  DTW 进度: 29640/31375
+  DTW 进度: 29650/31375
+  DTW 进度: 29660/31375
+  DTW 进度: 29670/31375
+  DTW 进度: 29680/31375
+  DTW 进度: 29690/31375
+  DTW 进度: 29700/31375
+  DTW 进度: 29710/31375
+  DTW 进度: 29720/31375
+  DTW 进度: 29730/31375
+  DTW 进度: 29740/31375
+  DTW 进度: 29750/31375
+  DTW 进度: 29760/31375
+  DTW 进度: 29770/31375
+  DTW 进度: 29780/31375
+  DTW 进度: 29790/31375
+  DTW 进度: 29800/31375
+  DTW 进度: 29810/31375
+  DTW 进度: 29820/31375
+  DTW 进度: 29830/31375
+  DTW 进度: 29840/31375
+  DTW 进度: 29850/31375
+  DTW 进度: 29860/31375
+  DTW 进度: 29870/31375
+  DTW 进度: 29880/31375
+  DTW 进度: 29890/31375
+  DTW 进度: 29900/31375
+  DTW 进度: 29910/31375
+  DTW 进度: 29920/31375
+  DTW 进度: 29930/31375
+  DTW 进度: 29940/31375
+  DTW 进度: 29950/31375
+  DTW 进度: 29960/31375
+  DTW 进度: 29970/31375
+  DTW 进度: 29980/31375
+  DTW 进度: 29990/31375
+  DTW 进度: 30000/31375
+  DTW 进度: 30010/31375
+  DTW 进度: 30020/31375
+  DTW 进度: 30030/31375
+  DTW 进度: 30040/31375
+  DTW 进度: 30050/31375
+  DTW 进度: 30060/31375
+  DTW 进度: 30070/31375
+  DTW 进度: 30080/31375
+  DTW 进度: 30090/31375
+  DTW 进度: 30100/31375
+  DTW 进度: 30110/31375
+  DTW 进度: 30120/31375
+  DTW 进度: 30130/31375
+  DTW 进度: 30140/31375
+  DTW 进度: 30150/31375
+  DTW 进度: 30160/31375
+  DTW 进度: 30170/31375
+  DTW 进度: 30180/31375
+  DTW 进度: 30190/31375
+  DTW 进度: 30200/31375
+  DTW 进度: 30210/31375
+  DTW 进度: 30220/31375
+  DTW 进度: 30230/31375
+  DTW 进度: 30240/31375
+  DTW 进度: 30250/31375
+  DTW 进度: 30260/31375
+  DTW 进度: 30270/31375
+  DTW 进度: 30280/31375
+  DTW 进度: 30290/31375
+  DTW 进度: 30300/31375
+  DTW 进度: 30310/31375
+  DTW 进度: 30320/31375
+  DTW 进度: 30330/31375
+  DTW 进度: 30340/31375
+  DTW 进度: 30350/31375
+  DTW 进度: 30360/31375
+  DTW 进度: 30370/31375
+  DTW 进度: 30380/31375
+  DTW 进度: 30390/31375
+  DTW 进度: 30400/31375
+  DTW 进度: 30410/31375
+  DTW 进度: 30420/31375
+  DTW 进度: 30430/31375
+  DTW 进度: 30440/31375
+  DTW 进度: 30450/31375
+  DTW 进度: 30460/31375
+  DTW 进度: 30470/31375
+  DTW 进度: 30480/31375
+  DTW 进度: 30490/31375
+  DTW 进度: 30500/31375
+  DTW 进度: 30510/31375
+  DTW 进度: 30520/31375
+  DTW 进度: 30530/31375
+  DTW 进度: 30540/31375
+  DTW 进度: 30550/31375
+  DTW 进度: 30560/31375
+  DTW 进度: 30570/31375
+  DTW 进度: 30580/31375
+  DTW 进度: 30590/31375
+  DTW 进度: 30600/31375
+  DTW 进度: 30610/31375
+  DTW 进度: 30620/31375
+  DTW 进度: 30630/31375
+  DTW 进度: 30640/31375
+  DTW 进度: 30650/31375
+  DTW 进度: 30660/31375
+  DTW 进度: 30670/31375
+  DTW 进度: 30680/31375
+  DTW 进度: 30690/31375
+  DTW 进度: 30700/31375
+  DTW 进度: 30710/31375
+  DTW 进度: 30720/31375
+  DTW 进度: 30730/31375
+  DTW 进度: 30740/31375
+  DTW 进度: 30750/31375
+  DTW 进度: 30760/31375
+  DTW 进度: 30770/31375
+  DTW 进度: 30780/31375
+  DTW 进度: 30790/31375
+  DTW 进度: 30800/31375
+  DTW 进度: 30810/31375
+  DTW 进度: 30820/31375
+  DTW 进度: 30830/31375
+  DTW 进度: 30840/31375
+  DTW 进度: 30850/31375
+  DTW 进度: 30860/31375
+  DTW 进度: 30870/31375
+  DTW 进度: 30880/31375
+  DTW 进度: 30890/31375
+  DTW 进度: 30900/31375
+  DTW 进度: 30910/31375
+  DTW 进度: 30920/31375
+  DTW 进度: 30930/31375
+  DTW 进度: 30940/31375
+  DTW 进度: 30950/31375
+  DTW 进度: 30960/31375
+  DTW 进度: 30970/31375
+  DTW 进度: 30980/31375
+  DTW 进度: 30990/31375
+  DTW 进度: 31000/31375
+  DTW 进度: 31010/31375
+  DTW 进度: 31020/31375
+  DTW 进度: 31030/31375
+  DTW 进度: 31040/31375
+  DTW 进度: 31050/31375
+  DTW 进度: 31060/31375
+  DTW 进度: 31070/31375
+  DTW 进度: 31080/31375
+  DTW 进度: 31090/31375
+  DTW 进度: 31100/31375
+  DTW 进度: 31110/31375
+  DTW 进度: 31120/31375
+  DTW 进度: 31130/31375
+  DTW 进度: 31140/31375
+  DTW 进度: 31150/31375
+  DTW 进度: 31160/31375
+  DTW 进度: 31170/31375
+  DTW 进度: 31180/31375
+  DTW 进度: 31190/31375
+  DTW 进度: 31200/31375
+  DTW 进度: 31210/31375
+  DTW 进度: 31220/31375
+  DTW 进度: 31230/31375
+  DTW 进度: 31240/31375
+  DTW 进度: 31250/31375
+  DTW 进度: 31260/31375
+  DTW 进度: 31270/31375
+  DTW 进度: 31280/31375
+  DTW 进度: 31290/31375
+  DTW 进度: 31300/31375
+  DTW 进度: 31310/31375
+  DTW 进度: 31320/31375
+  DTW 进度: 31330/31375
+  DTW 进度: 31340/31375
+  DTW 进度: 31350/31375
+  DTW 进度: 31360/31375
+  DTW 进度: 31370/31375
+💾 DTW矩阵已保存到缓存: dtw_cache/delta_cog/pruned_dataset_dtw_matrix.npy
+   矩阵形状: (251, 251), 特征模式: delta_cog, DTW方法: fastdtw
+   文件hash: c8da6cf0...
+
+📊 特征标准化参数诊断（mu/sigma estimated from absolute features）:
+  feature_mode: delta_cog
+  note: lat/lon 先近似投影为米制 (x_m,y_m)，保留绝对位置 (x_abs,y_abs)，避免经纬度不等距导致距离不稳定
+  全局参考点 (lat_ref, lon_ref): (28.560490, -96.206470) [所有轨迹共享此参考点，保证绝对位置可比]
+  mu (均值，来自绝对特征):    [x_abs=-14014.682205, y_abs=-9191.312041, sog=3.706728, delta_cog=0.517134]
+  sigma (标准差，来自绝对特征): [x_abs=7139.070330, y_abs=4431.804354, sog=1.831095, delta_cog=24.508390]
+  mu_delta (对照，仅调试，不用于标准化): [dx=-372.531839, dy=-234.505576, dsog=-0.011818, delta_cog=0.517134]
+  sigma_delta (对照，仅调试，不用于标准化): [dx=638.708456, dy=365.144463, dsog=0.520338, delta_cog=24.508390]
+  ⚠️ 检测到失衡:
+    - x_abs sigma过大(7139.07), 可能主导距离
+    - y_abs sigma过大(4431.80), 可能主导距离
+    - delta_cog sigma过大(24.51), 可能主导距离
+📦 使用提供的DTW矩阵，形状: (251, 251)
+
+📏 距离矩阵统计:
+  mean: 1.0896
+  std:  0.4940
+  min:  0.1259
+  max:  3.3775
+  LD(min valid): 0.1259
+  HD(max valid): 3.3775
+  [Two-stage] note: delta_s is NOT used as the scan step here. Scan resolution is controlled by coarse_steps/refine_steps/window_mult.
+  [Two-stage] coarse_steps=150, coarse_step=0.021677
+  [Two-stage] eps_coarse=0.299362, window=[0.190976,0.407748], refine_steps=300, refine_step=0.000723
+  [Two-stage] eps_final=0.274795, Gmax=472.489647
+  [POA Table3] step=0.000723, LD=0.1259, HD=3.3775, Size=300 | Eps=0.2748, MinPt(Eps*Gmax)=129.8377, Gmax=472.489647
+  [minPts@eps] mean(Num)=3.8088, median(Num)=0.0000, use=mean -> 4
+✅ [Paper] K=3, 噪声比=68.53%, eps=0.275, minPts=4
+
+✅ [All] 聚类完成 (Paper): K=3, 噪声比=68.53%, eps=0.2748, minPts=4
+
+========================================
+额外对比: 传统聚类 (K-Means / Agglomerative / Spectral)
+========================================
+[K-Means] MDS降维: 251×251 -> 251×10
+[K-Means] 自动选择最优k (范围: (2, 10))...
+[K-Means] 使用MDS将距离矩阵转换为 10 维特征向量...
+✅ MDS转换完成，特征向量形状: (251, 10)
+  k=2: silhouette=0.3148
+  k=3: silhouette=0.3251
+  k=4: silhouette=0.3178
+  k=5: silhouette=0.2572
+  k=6: silhouette=0.2442
+  k=7: silhouette=0.2366
+  k=8: silhouette=0.1419
+  k=9: silhouette=0.1980
+  k=10: silhouette=0.1421
+✅ 最优 k=3 (method=silhouette)
+[K-Means] 执行聚类，k=3...
+✅ [K-Means] 聚类完成: k=3, silhouette=0.3251
+[KMeans] 自动选择结果: k=3, silhouette=0.3251
+[KMeans]  DBI′: 3.8040
+[KMeans]  CP′ : 0.5110
+[KMeans]  SP′ : 0.2806
+[层次聚类] 自动选择最优簇数 (最大: 10)...
+  n=2: silhouette=0.3445
+  n=3: silhouette=0.2702
+  n=4: silhouette=0.2247
+  n=5: silhouette=0.2128
+  n=6: silhouette=0.2437
+  n=7: silhouette=0.2363
+  n=8: silhouette=0.2265
+  n=9: silhouette=0.2688
+  n=10: silhouette=0.2660
+✅ 最优 n=2 (linkage=average)
+[层次聚类] 执行聚类，n_clusters=2, linkage=average...
+✅ [层次聚类] 聚类完成: k=2, silhouette=0.3445
+[Agglomerative] 自动选择结果: k=2, silhouette=0.3445
+[Agglomerative]  DBI′: 2.9663
+[Agglomerative]  CP′ : 0.8152
+[Agglomerative]  SP′ : 0.5496
+[谱聚类] 构建相似度矩阵，sigma=1.0632...
+[谱聚类] 自动选择最优簇数 (最大: 10)...
+  n=2: silhouette=-0.3538
+  n=3: silhouette=-0.4792
+  n=4: silhouette=-0.5282
+  n=5: silhouette=-0.5353
+  n=6: silhouette=-0.5906
+  n=7: silhouette=-0.6218
+  n=8: silhouette=-0.6280
+  n=9: silhouette=-0.6801
+  n=10: silhouette=-0.7048
+[谱聚类] 执行聚类，n_clusters=2...
+✅ [谱聚类] 聚类完成: k=2, silhouette=-0.3538
+[Spectral] 自动选择结果: k=2, silhouette=-0.3538
+[Spectral]  DBI′: 4.9421
+[Spectral]  CP′ : 0.4942
+[Spectral]  SP′ : 0.2000
+
+========================================
+步骤5: 聚类质量评估
+========================================
+Paper-strict evaluation: Eq.(15)-(18) + Eq.(21)-(22), centre trajectory + DTW.
+DTW window: disabled (Sakoe–Chiba window code commented out)
+[All]  DBI′: 1.5061
+[All]  CP′ : 0.2619
+[All]  SP′ : 0.3826
+
+========================================
+步骤6: 可视化与输出
+========================================
+📈 density_power.png 曲线口径: poa_strict
+
+========================================
+步骤7: 导出轨迹数据
+========================================
+✅ 已导出 251 条原始轨迹到: /Users/lcx/Desktop/毕设/复现/outputs/runtime_compare_twostage_drl/runs/twostage/k_3_2__dataset__pruned_dataset/repeat_01/run_20260425_192737/debug_raw_trajs.csv
+✅ 已导出 251 条简化轨迹到: /Users/lcx/Desktop/毕设/复现/outputs/runtime_compare_twostage_drl/runs/twostage/k_3_2__dataset__pruned_dataset/repeat_01/run_20260425_192737/debug_simplified_trajs.csv
+
+🎉 AMTBRA 流程完成！结果已保存至： /Users/lcx/Desktop/毕设/复现/outputs/runtime_compare_twostage_drl/runs/twostage/k_3_2__dataset__pruned_dataset/repeat_01/run_20260425_192737

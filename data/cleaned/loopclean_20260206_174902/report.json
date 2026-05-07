@@ -1,0 +1,100 @@
+{
+  "seed_info": {
+    "seed_run_dir": "/Users/lcx/Desktop/毕设/复现/outputs/test_cleaning_seed/run_20260206_174317",
+    "ais_csv": "/Users/lcx/Desktop/毕设/复现/data/raw/ais_yuanli.csv",
+    "dtw_npy": "/Users/lcx/Desktop/毕设/复现/dtw_cache/delta_cog/ais_yuanli_dtw_matrix.npy",
+    "feature_mode": "delta_cog"
+  },
+  "target": {
+    "noise_ratio": 0.1,
+    "K_range": [
+      3,
+      5
+    ]
+  },
+  "params": {
+    "minpts_stat": "mean",
+    "poa_two_stage": true,
+    "coarse_steps": 150,
+    "refine_steps": 300,
+    "refine_window_mult": 5.0,
+    "max_iters": 30
+  },
+  "history": [
+    {
+      "iter": 0,
+      "n": 80,
+      "eps": 0.3945264168296604,
+      "minPts": 3,
+      "K": 3,
+      "noise_ratio": 0.5,
+      "removed": 32
+    },
+    {
+      "iter": 1,
+      "n": 48,
+      "eps": 0.39445779282645893,
+      "minPts": 5,
+      "K": 1,
+      "noise_ratio": 0.375,
+      "removed": 14
+    },
+    {
+      "iter": 2,
+      "n": 34,
+      "eps": 0.3232097953882155,
+      "minPts": 4,
+      "K": 1,
+      "noise_ratio": 0.3235294117647059,
+      "removed": 8
+    },
+    {
+      "iter": 3,
+      "n": 26,
+      "eps": 0.2967258577620816,
+      "minPts": 4,
+      "K": 1,
+      "noise_ratio": 0.23076923076923078,
+      "removed": 4
+    },
+    {
+      "iter": 4,
+      "n": 22,
+      "eps": 0.29656647785128504,
+      "minPts": 4,
+      "K": 1,
+      "noise_ratio": 0.09090909090909091,
+      "removed": 1
+    },
+    {
+      "iter": 5,
+      "n": 21,
+      "eps": 0.29656647785128504,
+      "minPts": 4,
+      "K": 1,
+      "noise_ratio": 0.047619047619047616,
+      "removed": 1
+    },
+    {
+      "iter": 6,
+      "n": 20,
+      "eps": 0.29667172501433525,
+      "minPts": 4,
+      "K": 1,
+      "noise_ratio": 0.0,
+      "removed": 0
+    }
+  ],
+  "best_metrics": {
+    "eps": 0.3945264168296604,
+    "minPts": 3,
+    "K": 3,
+    "noise_ratio": 0.5
+  },
+  "final": {
+    "n_keep": 80,
+    "n_total": 80,
+    "final_csv": "/Users/lcx/Desktop/毕设/复现/data/cleaned/loopclean_20260206_174902/final.csv",
+    "final_csv_rows": 1087195
+  }
+}

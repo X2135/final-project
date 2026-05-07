@@ -1,0 +1,10 @@
+{
+  "csv_file": "/Users/lcx/Desktop/毕设/复现/data/subsets/ais_filtered_2021-02-24_bbox_lat45_47.5_lon-130_-120.csv",
+  "file_hash": "9b4c51a210f5b4a66249f63ba62053fd",
+  "matrix_shape": [
+    101,
+    101
+  ],
+  "matrix_dtype": "float64",
+  "feature_tag": "lat,lon,sog,yaw_rate@v1"
+}

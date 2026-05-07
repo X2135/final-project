@@ -1,0 +1,2668 @@
+============================================================
+海洋交通行为模式识别系统 (论文原版复现)
+============================================================
+📌 选参模式: paper
+🧩 特征模式: delta_cog
+✅ 找到AIS文件: /Users/lcx/Desktop/毕设/复现/outputs/ais_sample2_iter_prune_k3_10_v2/pruned_dataset.csv
+
+========================================
+步骤1: 数据加载
+========================================
+✅ 成功加载 190 艘船舶的轨迹数据
+✅ 选择 190 艘船舶进行处理
+
+========================================
+步骤2: 数据预处理
+========================================
+ℹ️  轨迹缓存 file_hash 不一致（忽略）
+处理船舶 900000003 (1/190)...
+处理船舶 900000007 (2/190)...
+处理船舶 900000008 (3/190)...
+处理船舶 900000010 (4/190)...
+处理船舶 900000011 (5/190)...
+处理船舶 900000012 (6/190)...
+处理船舶 900000013 (7/190)...
+处理船舶 900000016 (8/190)...
+处理船舶 900000017 (9/190)...
+处理船舶 900000018 (10/190)...
+处理船舶 900000019 (11/190)...
+处理船舶 900000020 (12/190)...
+处理船舶 900000021 (13/190)...
+处理船舶 900000022 (14/190)...
+处理船舶 900000024 (15/190)...
+处理船舶 900000026 (16/190)...
+处理船舶 900000027 (17/190)...
+处理船舶 900000028 (18/190)...
+处理船舶 900000029 (19/190)...
+处理船舶 900000030 (20/190)...
+处理船舶 900000031 (21/190)...
+处理船舶 900000032 (22/190)...
+处理船舶 900000033 (23/190)...
+处理船舶 900000034 (24/190)...
+处理船舶 900000037 (25/190)...
+处理船舶 900000042 (26/190)...
+处理船舶 900000044 (27/190)...
+处理船舶 900000045 (28/190)...
+处理船舶 900000047 (29/190)...
+处理船舶 900000048 (30/190)...
+处理船舶 900000049 (31/190)...
+处理船舶 900000050 (32/190)...
+处理船舶 900000051 (33/190)...
+处理船舶 900000052 (34/190)...
+处理船舶 900000053 (35/190)...
+处理船舶 900000054 (36/190)...
+处理船舶 900000056 (37/190)...
+处理船舶 900000063 (38/190)...
+处理船舶 900000064 (39/190)...
+处理船舶 900000065 (40/190)...
+处理船舶 900000066 (41/190)...
+处理船舶 900000068 (42/190)...
+处理船舶 900000070 (43/190)...
+处理船舶 900000071 (44/190)...
+处理船舶 900000072 (45/190)...
+处理船舶 900000074 (46/190)...
+处理船舶 900000075 (47/190)...
+处理船舶 900000079 (48/190)...
+处理船舶 900000080 (49/190)...
+处理船舶 900000082 (50/190)...
+处理船舶 900000083 (51/190)...
+处理船舶 900000086 (52/190)...
+处理船舶 900000087 (53/190)...
+处理船舶 900000088 (54/190)...
+处理船舶 900000089 (55/190)...
+处理船舶 900000090 (56/190)...
+处理船舶 900000092 (57/190)...
+处理船舶 900000093 (58/190)...
+处理船舶 900000096 (59/190)...
+处理船舶 900000097 (60/190)...
+处理船舶 900000098 (61/190)...
+处理船舶 900000099 (62/190)...
+处理船舶 900000100 (63/190)...
+处理船舶 900000103 (64/190)...
+处理船舶 900000104 (65/190)...
+处理船舶 900000105 (66/190)...
+处理船舶 900000106 (67/190)...
+处理船舶 900000107 (68/190)...
+处理船舶 900000108 (69/190)...
+处理船舶 900000109 (70/190)...
+处理船舶 900000110 (71/190)...
+处理船舶 900000111 (72/190)...
+处理船舶 900000112 (73/190)...
+处理船舶 900000113 (74/190)...
+处理船舶 900000114 (75/190)...
+处理船舶 900000115 (76/190)...
+处理船舶 900000116 (77/190)...
+处理船舶 900000117 (78/190)...
+处理船舶 900000120 (79/190)...
+处理船舶 900000124 (80/190)...
+处理船舶 900000125 (81/190)...
+处理船舶 900000126 (82/190)...
+处理船舶 900000127 (83/190)...
+处理船舶 900000128 (84/190)...
+处理船舶 900000129 (85/190)...
+处理船舶 900000130 (86/190)...
+处理船舶 900000131 (87/190)...
+处理船舶 900000132 (88/190)...
+处理船舶 900000133 (89/190)...
+处理船舶 900000135 (90/190)...
+处理船舶 900000136 (91/190)...
+处理船舶 900000138 (92/190)...
+处理船舶 900000139 (93/190)...
+处理船舶 900000141 (94/190)...
+处理船舶 900000142 (95/190)...
+处理船舶 900000143 (96/190)...
+处理船舶 900000144 (97/190)...
+处理船舶 900000146 (98/190)...
+处理船舶 900000147 (99/190)...
+处理船舶 900000148 (100/190)...
+处理船舶 900000149 (101/190)...
+处理船舶 900000151 (102/190)...
+处理船舶 900000152 (103/190)...
+处理船舶 900000154 (104/190)...
+处理船舶 900000155 (105/190)...
+处理船舶 900000159 (106/190)...
+处理船舶 900000160 (107/190)...
+处理船舶 900000161 (108/190)...
+处理船舶 900000162 (109/190)...
+处理船舶 900000166 (110/190)...
+处理船舶 900000167 (111/190)...
+处理船舶 900000168 (112/190)...
+处理船舶 900000169 (113/190)...
+处理船舶 900000170 (114/190)...
+处理船舶 900000172 (115/190)...
+处理船舶 900000173 (116/190)...
+处理船舶 900000174 (117/190)...
+处理船舶 900000175 (118/190)...
+处理船舶 900000176 (119/190)...
+处理船舶 900000177 (120/190)...
+处理船舶 900000178 (121/190)...
+处理船舶 900000179 (122/190)...
+处理船舶 900000181 (123/190)...
+处理船舶 900000182 (124/190)...
+处理船舶 900000183 (125/190)...
+处理船舶 900000186 (126/190)...
+处理船舶 900000187 (127/190)...
+处理船舶 900000188 (128/190)...
+处理船舶 900000207 (129/190)...
+处理船舶 900000210 (130/190)...
+处理船舶 900000211 (131/190)...
+处理船舶 900000212 (132/190)...
+处理船舶 900000213 (133/190)...
+处理船舶 900000214 (134/190)...
+处理船舶 900000215 (135/190)...
+处理船舶 900000218 (136/190)...
+处理船舶 900000219 (137/190)...
+处理船舶 900000220 (138/190)...
+处理船舶 900000221 (139/190)...
+处理船舶 900000222 (140/190)...
+处理船舶 900000223 (141/190)...
+处理船舶 900000224 (142/190)...
+处理船舶 900000225 (143/190)...
+处理船舶 900000226 (144/190)...
+处理船舶 900000227 (145/190)...
+处理船舶 900000228 (146/190)...
+处理船舶 900000229 (147/190)...
+处理船舶 900000233 (148/190)...
+处理船舶 900000234 (149/190)...
+处理船舶 900000235 (150/190)...
+处理船舶 900000236 (151/190)...
+处理船舶 900000237 (152/190)...
+处理船舶 900000238 (153/190)...
+处理船舶 900000240 (154/190)...
+处理船舶 900000241 (155/190)...
+处理船舶 900000242 (156/190)...
+处理船舶 900000243 (157/190)...
+处理船舶 900000245 (158/190)...
+处理船舶 900000246 (159/190)...
+处理船舶 900000247 (160/190)...
+处理船舶 900000248 (161/190)...
+处理船舶 900000249 (162/190)...
+处理船舶 900000250 (163/190)...
+处理船舶 900000251 (164/190)...
+处理船舶 900000252 (165/190)...
+处理船舶 900000255 (166/190)...
+处理船舶 900000256 (167/190)...
+处理船舶 900000257 (168/190)...
+处理船舶 900000258 (169/190)...
+处理船舶 900000259 (170/190)...
+处理船舶 900000260 (171/190)...
+处理船舶 900000261 (172/190)...
+处理船舶 900000262 (173/190)...
+处理船舶 900000265 (174/190)...
+处理船舶 900000266 (175/190)...
+处理船舶 900000267 (176/190)...
+处理船舶 900000268 (177/190)...
+处理船舶 900000271 (178/190)...
+处理船舶 900000272 (179/190)...
+处理船舶 900000273 (180/190)...
+处理船舶 900000274 (181/190)...
+处理船舶 900000280 (182/190)...
+处理船舶 900000281 (183/190)...
+处理船舶 900000282 (184/190)...
+处理船舶 900000283 (185/190)...
+处理船舶 900000284 (186/190)...
+处理船舶 900000285 (187/190)...
+处理船舶 900000286 (188/190)...
+处理船舶 900000287 (189/190)...
+处理船舶 900000288 (190/190)...
+✅ 预处理完成，共 190 条轨迹（跳过 0 条）
+
+========================================
+步骤3: 轨迹简化
+========================================
+[SACSB] N=93, len(COG_Variation)=46, len(idx_sacsb_keypoints)=16
+[SACSB] keypoints orig idx (first10)=[3, 5, 7, 9, 11, 13, 15, 17, 19, 27]
+[Simplify] N=93, DP_kept=10, SACSB_keypoints=16, merge_kept=25, compression=73.12%
+  简化轨迹 1/190 完成（MMSI=900000003），点数 25，压缩率 73.12%
+[SACSB] N=103, len(COG_Variation)=51, len(idx_sacsb_keypoints)=14
+[SACSB] keypoints orig idx (first10)=[3, 5, 7, 9, 11, 13, 15, 17, 19, 23]
+[Simplify] N=103, DP_kept=9, SACSB_keypoints=14, merge_kept=23, compression=77.67%
+  简化轨迹 2/190 完成（MMSI=900000007），点数 23，压缩率 77.67%
+[SACSB] N=111, len(COG_Variation)=55, len(idx_sacsb_keypoints)=15
+[SACSB] keypoints orig idx (first10)=[3, 5, 7, 9, 11, 13, 15, 17, 21, 23]
+[Simplify] N=111, DP_kept=9, SACSB_keypoints=15, merge_kept=22, compression=80.18%
+  简化轨迹 3/190 完成（MMSI=900000008），点数 22，压缩率 80.18%
+[SACSB] N=94, len(COG_Variation)=46, len(idx_sacsb_keypoints)=21
+[SACSB] keypoints orig idx (first10)=[5, 31, 33, 35, 37, 39, 55, 59, 63, 65]
+[Simplify] N=94, DP_kept=7, SACSB_keypoints=21, merge_kept=27, compression=71.28%
+  简化轨迹 4/190 完成（MMSI=900000010），点数 27，压缩率 71.28%
+[SACSB] N=252, len(COG_Variation)=125, len(idx_sacsb_keypoints)=69
+[SACSB] keypoints orig idx (first10)=[9, 11, 15, 17, 19, 21, 23, 25, 27, 29]
+[Simplify] N=252, DP_kept=14, SACSB_keypoints=69, merge_kept=78, compression=69.05%
+  简化轨迹 5/190 完成（MMSI=900000011），点数 78，压缩率 69.05%
+[SACSB] N=351, len(COG_Variation)=175, len(idx_sacsb_keypoints)=66
+[Simplify] N=351, DP_kept=21, SACSB_keypoints=66, merge_kept=86, compression=75.50%
+  简化轨迹 6/190 完成（MMSI=900000012），点数 86，压缩率 75.50%
+[SACSB] N=92, len(COG_Variation)=45, len(idx_sacsb_keypoints)=13
+[Simplify] N=92, DP_kept=7, SACSB_keypoints=13, merge_kept=19, compression=79.35%
+  简化轨迹 7/190 完成（MMSI=900000013），点数 19，压缩率 79.35%
+[SACSB] N=480, len(COG_Variation)=239, len(idx_sacsb_keypoints)=92
+[Simplify] N=480, DP_kept=14, SACSB_keypoints=92, merge_kept=100, compression=79.17%
+  简化轨迹 8/190 完成（MMSI=900000016），点数 100，压缩率 79.17%
+[SACSB] N=94, len(COG_Variation)=46, len(idx_sacsb_keypoints)=22
+[Simplify] N=94, DP_kept=8, SACSB_keypoints=22, merge_kept=27, compression=71.28%
+  简化轨迹 9/190 完成（MMSI=900000017），点数 27，压缩率 71.28%
+[SACSB] N=98, len(COG_Variation)=48, len(idx_sacsb_keypoints)=12
+[Simplify] N=98, DP_kept=9, SACSB_keypoints=12, merge_kept=20, compression=79.59%
+  简化轨迹 10/190 完成（MMSI=900000018），点数 20，压缩率 79.59%
+[SACSB] N=130, len(COG_Variation)=64, len(idx_sacsb_keypoints)=21
+[Simplify] N=130, DP_kept=13, SACSB_keypoints=21, merge_kept=32, compression=75.38%
+  简化轨迹 11/190 完成（MMSI=900000019），点数 32，压缩率 75.38%
+[SACSB] N=137, len(COG_Variation)=68, len(idx_sacsb_keypoints)=17
+[Simplify] N=137, DP_kept=18, SACSB_keypoints=17, merge_kept=34, compression=75.18%
+  简化轨迹 12/190 完成（MMSI=900000020），点数 34，压缩率 75.18%
+[SACSB] N=199, len(COG_Variation)=99, len(idx_sacsb_keypoints)=36
+[Simplify] N=199, DP_kept=15, SACSB_keypoints=36, merge_kept=47, compression=76.38%
+  简化轨迹 13/190 完成（MMSI=900000021），点数 47，压缩率 76.38%
+[SACSB] N=113, len(COG_Variation)=56, len(idx_sacsb_keypoints)=20
+[Simplify] N=113, DP_kept=14, SACSB_keypoints=20, merge_kept=34, compression=69.91%
+  简化轨迹 14/190 完成（MMSI=900000022），点数 34，压缩率 69.91%
+[SACSB] N=133, len(COG_Variation)=66, len(idx_sacsb_keypoints)=4
+[Simplify] N=133, DP_kept=38, SACSB_keypoints=4, merge_kept=39, compression=70.68%
+  简化轨迹 15/190 完成（MMSI=900000024），点数 39，压缩率 70.68%
+[SACSB] N=172, len(COG_Variation)=85, len(idx_sacsb_keypoints)=27
+[Simplify] N=172, DP_kept=20, SACSB_keypoints=27, merge_kept=44, compression=74.42%
+  简化轨迹 16/190 完成（MMSI=900000026），点数 44，压缩率 74.42%
+[SACSB] N=202, len(COG_Variation)=100, len(idx_sacsb_keypoints)=49
+[Simplify] N=202, DP_kept=27, SACSB_keypoints=49, merge_kept=73, compression=63.86%
+  简化轨迹 17/190 完成（MMSI=900000027），点数 73，压缩率 63.86%
+[SACSB] N=150, len(COG_Variation)=74, len(idx_sacsb_keypoints)=19
+[Simplify] N=150, DP_kept=23, SACSB_keypoints=19, merge_kept=38, compression=74.67%
+  简化轨迹 18/190 完成（MMSI=900000028），点数 38，压缩率 74.67%
+[SACSB] N=395, len(COG_Variation)=197, len(idx_sacsb_keypoints)=61
+[Simplify] N=395, DP_kept=28, SACSB_keypoints=61, merge_kept=75, compression=81.01%
+  简化轨迹 19/190 完成（MMSI=900000029），点数 75，压缩率 81.01%
+[SACSB] N=141, len(COG_Variation)=70, len(idx_sacsb_keypoints)=14
+[Simplify] N=141, DP_kept=36, SACSB_keypoints=14, merge_kept=45, compression=68.09%
+  简化轨迹 20/190 完成（MMSI=900000030），点数 45，压缩率 68.09%
+[SACSB] N=149, len(COG_Variation)=74, len(idx_sacsb_keypoints)=25
+[Simplify] N=149, DP_kept=23, SACSB_keypoints=25, merge_kept=45, compression=69.80%
+  简化轨迹 21/190 完成（MMSI=900000031），点数 45，压缩率 69.80%
+[SACSB] N=406, len(COG_Variation)=202, len(idx_sacsb_keypoints)=61
+[Simplify] N=406, DP_kept=31, SACSB_keypoints=61, merge_kept=84, compression=79.31%
+  简化轨迹 22/190 完成（MMSI=900000032），点数 84，压缩率 79.31%
+[SACSB] N=224, len(COG_Variation)=111, len(idx_sacsb_keypoints)=45
+[Simplify] N=224, DP_kept=29, SACSB_keypoints=45, merge_kept=62, compression=72.32%
+  简化轨迹 23/190 完成（MMSI=900000033），点数 62，压缩率 72.32%
+[SACSB] N=294, len(COG_Variation)=146, len(idx_sacsb_keypoints)=62
+[Simplify] N=294, DP_kept=32, SACSB_keypoints=62, merge_kept=79, compression=73.13%
+  简化轨迹 24/190 完成（MMSI=900000034），点数 79，压缩率 73.13%
+[SACSB] N=144, len(COG_Variation)=71, len(idx_sacsb_keypoints)=28
+[Simplify] N=144, DP_kept=17, SACSB_keypoints=28, merge_kept=39, compression=72.92%
+  简化轨迹 25/190 完成（MMSI=900000037），点数 39，压缩率 72.92%
+[SACSB] N=99, len(COG_Variation)=49, len(idx_sacsb_keypoints)=11
+[Simplify] N=99, DP_kept=8, SACSB_keypoints=11, merge_kept=17, compression=82.83%
+  简化轨迹 26/190 完成（MMSI=900000042），点数 17，压缩率 82.83%
+[SACSB] N=278, len(COG_Variation)=138, len(idx_sacsb_keypoints)=24
+[Simplify] N=278, DP_kept=27, SACSB_keypoints=24, merge_kept=47, compression=83.09%
+  简化轨迹 27/190 完成（MMSI=900000044），点数 47，压缩率 83.09%
+[SACSB] N=94, len(COG_Variation)=46, len(idx_sacsb_keypoints)=25
+[Simplify] N=94, DP_kept=6, SACSB_keypoints=25, merge_kept=30, compression=68.09%
+  简化轨迹 28/190 完成（MMSI=900000045），点数 30，压缩率 68.09%
+[SACSB] N=332, len(COG_Variation)=165, len(idx_sacsb_keypoints)=63
+[Simplify] N=332, DP_kept=16, SACSB_keypoints=63, merge_kept=68, compression=79.52%
+  简化轨迹 29/190 完成（MMSI=900000047），点数 68，压缩率 79.52%
+[SACSB] N=297, len(COG_Variation)=148, len(idx_sacsb_keypoints)=58
+[Simplify] N=297, DP_kept=29, SACSB_keypoints=58, merge_kept=73, compression=75.42%
+  简化轨迹 30/190 完成（MMSI=900000048），点数 73，压缩率 75.42%
+[SACSB] N=402, len(COG_Variation)=200, len(idx_sacsb_keypoints)=59
+[Simplify] N=402, DP_kept=28, SACSB_keypoints=59, merge_kept=73, compression=81.84%
+  简化轨迹 31/190 完成（MMSI=900000049），点数 73，压缩率 81.84%
+[SACSB] N=417, len(COG_Variation)=208, len(idx_sacsb_keypoints)=60
+[Simplify] N=417, DP_kept=33, SACSB_keypoints=60, merge_kept=76, compression=81.77%
+  简化轨迹 32/190 完成（MMSI=900000050），点数 76，压缩率 81.77%
+[SACSB] N=394, len(COG_Variation)=196, len(idx_sacsb_keypoints)=88
+[Simplify] N=394, DP_kept=32, SACSB_keypoints=88, merge_kept=108, compression=72.59%
+  简化轨迹 33/190 完成（MMSI=900000051），点数 108，压缩率 72.59%
+[SACSB] N=193, len(COG_Variation)=96, len(idx_sacsb_keypoints)=20
+[Simplify] N=193, DP_kept=27, SACSB_keypoints=20, merge_kept=46, compression=76.17%
+  简化轨迹 34/190 完成（MMSI=900000052），点数 46，压缩率 76.17%
+[SACSB] N=286, len(COG_Variation)=142, len(idx_sacsb_keypoints)=52
+[Simplify] N=286, DP_kept=27, SACSB_keypoints=52, merge_kept=66, compression=76.92%
+  简化轨迹 35/190 完成（MMSI=900000053），点数 66，压缩率 76.92%
+[SACSB] N=291, len(COG_Variation)=145, len(idx_sacsb_keypoints)=63
+[Simplify] N=291, DP_kept=27, SACSB_keypoints=63, merge_kept=82, compression=71.82%
+  简化轨迹 36/190 完成（MMSI=900000054），点数 82，压缩率 71.82%
+[SACSB] N=280, len(COG_Variation)=139, len(idx_sacsb_keypoints)=41
+[Simplify] N=280, DP_kept=36, SACSB_keypoints=41, merge_kept=74, compression=73.57%
+  简化轨迹 37/190 完成（MMSI=900000056），点数 74，压缩率 73.57%
+[SACSB] N=447, len(COG_Variation)=223, len(idx_sacsb_keypoints)=94
+[Simplify] N=447, DP_kept=45, SACSB_keypoints=94, merge_kept=119, compression=73.38%
+  简化轨迹 38/190 完成（MMSI=900000063），点数 119，压缩率 73.38%
+[SACSB] N=177, len(COG_Variation)=88, len(idx_sacsb_keypoints)=16
+[Simplify] N=177, DP_kept=17, SACSB_keypoints=16, merge_kept=28, compression=84.18%
+  简化轨迹 39/190 完成（MMSI=900000064），点数 28，压缩率 84.18%
+[SACSB] N=195, len(COG_Variation)=97, len(idx_sacsb_keypoints)=36
+[Simplify] N=195, DP_kept=28, SACSB_keypoints=36, merge_kept=55, compression=71.79%
+  简化轨迹 40/190 完成（MMSI=900000065），点数 55，压缩率 71.79%
+[SACSB] N=192, len(COG_Variation)=95, len(idx_sacsb_keypoints)=33
+[Simplify] N=192, DP_kept=28, SACSB_keypoints=33, merge_kept=51, compression=73.44%
+  简化轨迹 41/190 完成（MMSI=900000066），点数 51，压缩率 73.44%
+[SACSB] N=209, len(COG_Variation)=104, len(idx_sacsb_keypoints)=38
+[Simplify] N=209, DP_kept=25, SACSB_keypoints=38, merge_kept=55, compression=73.68%
+  简化轨迹 42/190 完成（MMSI=900000068），点数 55，压缩率 73.68%
+[SACSB] N=230, len(COG_Variation)=114, len(idx_sacsb_keypoints)=16
+[Simplify] N=230, DP_kept=69, SACSB_keypoints=16, merge_kept=81, compression=64.78%
+  简化轨迹 43/190 完成（MMSI=900000070），点数 81，压缩率 64.78%
+[SACSB] N=444, len(COG_Variation)=221, len(idx_sacsb_keypoints)=97
+[Simplify] N=444, DP_kept=73, SACSB_keypoints=97, merge_kept=145, compression=67.34%
+  简化轨迹 44/190 完成（MMSI=900000071），点数 145，压缩率 67.34%
+[SACSB] N=194, len(COG_Variation)=96, len(idx_sacsb_keypoints)=24
+[Simplify] N=194, DP_kept=63, SACSB_keypoints=24, merge_kept=86, compression=55.67%
+  简化轨迹 45/190 完成（MMSI=900000072），点数 86，压缩率 55.67%
+[SACSB] N=301, len(COG_Variation)=150, len(idx_sacsb_keypoints)=99
+[Simplify] N=301, DP_kept=82, SACSB_keypoints=99, merge_kept=154, compression=48.84%
+  简化轨迹 46/190 完成（MMSI=900000074），点数 154，压缩率 48.84%
+[SACSB] N=138, len(COG_Variation)=68, len(idx_sacsb_keypoints)=25
+[Simplify] N=138, DP_kept=11, SACSB_keypoints=25, merge_kept=32, compression=76.81%
+  简化轨迹 47/190 完成（MMSI=900000075），点数 32，压缩率 76.81%
+[SACSB] N=105, len(COG_Variation)=52, len(idx_sacsb_keypoints)=19
+[Simplify] N=105, DP_kept=11, SACSB_keypoints=19, merge_kept=26, compression=75.24%
+  简化轨迹 48/190 完成（MMSI=900000079），点数 26，压缩率 75.24%
+[SACSB] N=180, len(COG_Variation)=89, len(idx_sacsb_keypoints)=25
+[Simplify] N=180, DP_kept=35, SACSB_keypoints=25, merge_kept=45, compression=75.00%
+  简化轨迹 49/190 完成（MMSI=900000080），点数 45，压缩率 75.00%
+[SACSB] N=130, len(COG_Variation)=64, len(idx_sacsb_keypoints)=15
+[Simplify] N=130, DP_kept=30, SACSB_keypoints=15, merge_kept=42, compression=67.69%
+  简化轨迹 50/190 完成（MMSI=900000082），点数 42，压缩率 67.69%
+[SACSB] N=215, len(COG_Variation)=107, len(idx_sacsb_keypoints)=66
+[Simplify] N=215, DP_kept=32, SACSB_keypoints=66, merge_kept=92, compression=57.21%
+  简化轨迹 51/190 完成（MMSI=900000083），点数 92，压缩率 57.21%
+[SACSB] N=475, len(COG_Variation)=237, len(idx_sacsb_keypoints)=99
+[Simplify] N=475, DP_kept=126, SACSB_keypoints=99, merge_kept=189, compression=60.21%
+  简化轨迹 52/190 完成（MMSI=900000086），点数 189，压缩率 60.21%
+[SACSB] N=299, len(COG_Variation)=149, len(idx_sacsb_keypoints)=17
+[Simplify] N=299, DP_kept=62, SACSB_keypoints=17, merge_kept=76, compression=74.58%
+  简化轨迹 53/190 完成（MMSI=900000087），点数 76，压缩率 74.58%
+[SACSB] N=329, len(COG_Variation)=164, len(idx_sacsb_keypoints)=33
+[Simplify] N=329, DP_kept=56, SACSB_keypoints=33, merge_kept=80, compression=75.68%
+  简化轨迹 54/190 完成（MMSI=900000088），点数 80，压缩率 75.68%
+[SACSB] N=167, len(COG_Variation)=83, len(idx_sacsb_keypoints)=18
+[Simplify] N=167, DP_kept=26, SACSB_keypoints=18, merge_kept=38, compression=77.25%
+  简化轨迹 55/190 完成（MMSI=900000089），点数 38，压缩率 77.25%
+[SACSB] N=161, len(COG_Variation)=80, len(idx_sacsb_keypoints)=31
+[Simplify] N=161, DP_kept=24, SACSB_keypoints=31, merge_kept=51, compression=68.32%
+  简化轨迹 56/190 完成（MMSI=900000090），点数 51，压缩率 68.32%
+[SACSB] N=148, len(COG_Variation)=73, len(idx_sacsb_keypoints)=7
+[Simplify] N=148, DP_kept=21, SACSB_keypoints=7, merge_kept=24, compression=83.78%
+  简化轨迹 57/190 完成（MMSI=900000092），点数 24，压缩率 83.78%
+[SACSB] N=232, len(COG_Variation)=115, len(idx_sacsb_keypoints)=33
+[Simplify] N=232, DP_kept=26, SACSB_keypoints=33, merge_kept=57, compression=75.43%
+  简化轨迹 58/190 完成（MMSI=900000093），点数 57，压缩率 75.43%
+[SACSB] N=402, len(COG_Variation)=200, len(idx_sacsb_keypoints)=55
+[Simplify] N=402, DP_kept=17, SACSB_keypoints=55, merge_kept=65, compression=83.83%
+  简化轨迹 59/190 完成（MMSI=900000096），点数 65，压缩率 83.83%
+[SACSB] N=275, len(COG_Variation)=137, len(idx_sacsb_keypoints)=54
+[Simplify] N=275, DP_kept=13, SACSB_keypoints=54, merge_kept=61, compression=77.82%
+  简化轨迹 60/190 完成（MMSI=900000097），点数 61，压缩率 77.82%
+[SACSB] N=168, len(COG_Variation)=83, len(idx_sacsb_keypoints)=34
+[Simplify] N=168, DP_kept=26, SACSB_keypoints=34, merge_kept=59, compression=64.88%
+  简化轨迹 61/190 完成（MMSI=900000098），点数 59，压缩率 64.88%
+[SACSB] N=416, len(COG_Variation)=207, len(idx_sacsb_keypoints)=57
+[Simplify] N=416, DP_kept=18, SACSB_keypoints=57, merge_kept=68, compression=83.65%
+  简化轨迹 62/190 完成（MMSI=900000099），点数 68，压缩率 83.65%
+[SACSB] N=104, len(COG_Variation)=51, len(idx_sacsb_keypoints)=4
+[Simplify] N=104, DP_kept=22, SACSB_keypoints=4, merge_kept=25, compression=75.96%
+  简化轨迹 63/190 完成（MMSI=900000100），点数 25，压缩率 75.96%
+[SACSB] N=208, len(COG_Variation)=103, len(idx_sacsb_keypoints)=42
+[Simplify] N=208, DP_kept=27, SACSB_keypoints=42, merge_kept=65, compression=68.75%
+  简化轨迹 64/190 完成（MMSI=900000103），点数 65，压缩率 68.75%
+[SACSB] N=430, len(COG_Variation)=214, len(idx_sacsb_keypoints)=67
+[Simplify] N=430, DP_kept=34, SACSB_keypoints=67, merge_kept=88, compression=79.53%
+  简化轨迹 65/190 完成（MMSI=900000104），点数 88，压缩率 79.53%
+[SACSB] N=153, len(COG_Variation)=76, len(idx_sacsb_keypoints)=16
+[Simplify] N=153, DP_kept=27, SACSB_keypoints=16, merge_kept=41, compression=73.20%
+  简化轨迹 66/190 完成（MMSI=900000105），点数 41，压缩率 73.20%
+[SACSB] N=273, len(COG_Variation)=136, len(idx_sacsb_keypoints)=58
+[Simplify] N=273, DP_kept=34, SACSB_keypoints=58, merge_kept=83, compression=69.60%
+  简化轨迹 67/190 完成（MMSI=900000106），点数 83，压缩率 69.60%
+[SACSB] N=148, len(COG_Variation)=73, len(idx_sacsb_keypoints)=30
+[Simplify] N=148, DP_kept=25, SACSB_keypoints=30, merge_kept=53, compression=64.19%
+  简化轨迹 68/190 完成（MMSI=900000107），点数 53，压缩率 64.19%
+[SACSB] N=173, len(COG_Variation)=86, len(idx_sacsb_keypoints)=40
+[Simplify] N=173, DP_kept=26, SACSB_keypoints=40, merge_kept=57, compression=67.05%
+  简化轨迹 69/190 完成（MMSI=900000108），点数 57，压缩率 67.05%
+[SACSB] N=152, len(COG_Variation)=75, len(idx_sacsb_keypoints)=18
+[Simplify] N=152, DP_kept=31, SACSB_keypoints=18, merge_kept=46, compression=69.74%
+  简化轨迹 70/190 完成（MMSI=900000109），点数 46，压缩率 69.74%
+[SACSB] N=141, len(COG_Variation)=70, len(idx_sacsb_keypoints)=17
+[Simplify] N=141, DP_kept=37, SACSB_keypoints=17, merge_kept=48, compression=65.96%
+  简化轨迹 71/190 完成（MMSI=900000110），点数 48，压缩率 65.96%
+[SACSB] N=118, len(COG_Variation)=58, len(idx_sacsb_keypoints)=10
+[Simplify] N=118, DP_kept=24, SACSB_keypoints=10, merge_kept=29, compression=75.42%
+  简化轨迹 72/190 完成（MMSI=900000111），点数 29，压缩率 75.42%
+[SACSB] N=313, len(COG_Variation)=156, len(idx_sacsb_keypoints)=77
+[Simplify] N=313, DP_kept=41, SACSB_keypoints=77, merge_kept=104, compression=66.77%
+  简化轨迹 73/190 完成（MMSI=900000112），点数 104，压缩率 66.77%
+[SACSB] N=359, len(COG_Variation)=179, len(idx_sacsb_keypoints)=56
+[Simplify] N=359, DP_kept=32, SACSB_keypoints=56, merge_kept=74, compression=79.39%
+  简化轨迹 74/190 完成（MMSI=900000113），点数 74，压缩率 79.39%
+[SACSB] N=157, len(COG_Variation)=78, len(idx_sacsb_keypoints)=22
+[Simplify] N=157, DP_kept=34, SACSB_keypoints=22, merge_kept=48, compression=69.43%
+  简化轨迹 75/190 完成（MMSI=900000114），点数 48，压缩率 69.43%
+[SACSB] N=414, len(COG_Variation)=206, len(idx_sacsb_keypoints)=65
+[Simplify] N=414, DP_kept=24, SACSB_keypoints=65, merge_kept=80, compression=80.68%
+  简化轨迹 76/190 完成（MMSI=900000115），点数 80，压缩率 80.68%
+[SACSB] N=141, len(COG_Variation)=70, len(idx_sacsb_keypoints)=14
+[Simplify] N=141, DP_kept=23, SACSB_keypoints=14, merge_kept=33, compression=76.60%
+  简化轨迹 77/190 完成（MMSI=900000116），点数 33，压缩率 76.60%
+[SACSB] N=403, len(COG_Variation)=201, len(idx_sacsb_keypoints)=50
+[Simplify] N=403, DP_kept=13, SACSB_keypoints=50, merge_kept=59, compression=85.36%
+  简化轨迹 78/190 完成（MMSI=900000117），点数 59，压缩率 85.36%
+[SACSB] N=231, len(COG_Variation)=115, len(idx_sacsb_keypoints)=85
+[Simplify] N=231, DP_kept=24, SACSB_keypoints=85, merge_kept=100, compression=56.71%
+  简化轨迹 79/190 完成（MMSI=900000120），点数 100，压缩率 56.71%
+[SACSB] N=173, len(COG_Variation)=86, len(idx_sacsb_keypoints)=20
+[Simplify] N=173, DP_kept=34, SACSB_keypoints=20, merge_kept=52, compression=69.94%
+  简化轨迹 80/190 完成（MMSI=900000124），点数 52，压缩率 69.94%
+[SACSB] N=282, len(COG_Variation)=140, len(idx_sacsb_keypoints)=59
+[Simplify] N=282, DP_kept=30, SACSB_keypoints=59, merge_kept=75, compression=73.40%
+  简化轨迹 81/190 完成（MMSI=900000125），点数 75，压缩率 73.40%
+[SACSB] N=147, len(COG_Variation)=73, len(idx_sacsb_keypoints)=43
+[Simplify] N=147, DP_kept=28, SACSB_keypoints=43, merge_kept=67, compression=54.42%
+  简化轨迹 82/190 完成（MMSI=900000126），点数 67，压缩率 54.42%
+[SACSB] N=275, len(COG_Variation)=137, len(idx_sacsb_keypoints)=58
+[Simplify] N=275, DP_kept=27, SACSB_keypoints=58, merge_kept=74, compression=73.09%
+  简化轨迹 83/190 完成（MMSI=900000127），点数 74，压缩率 73.09%
+[SACSB] N=244, len(COG_Variation)=121, len(idx_sacsb_keypoints)=54
+[Simplify] N=244, DP_kept=44, SACSB_keypoints=54, merge_kept=81, compression=66.80%
+  简化轨迹 84/190 完成（MMSI=900000128），点数 81，压缩率 66.80%
+[SACSB] N=143, len(COG_Variation)=71, len(idx_sacsb_keypoints)=12
+[Simplify] N=143, DP_kept=40, SACSB_keypoints=12, merge_kept=49, compression=65.73%
+  简化轨迹 85/190 完成（MMSI=900000129），点数 49，压缩率 65.73%
+[SACSB] N=189, len(COG_Variation)=94, len(idx_sacsb_keypoints)=9
+[Simplify] N=189, DP_kept=33, SACSB_keypoints=9, merge_kept=38, compression=79.89%
+  简化轨迹 86/190 完成（MMSI=900000130），点数 38，压缩率 79.89%
+[SACSB] N=150, len(COG_Variation)=74, len(idx_sacsb_keypoints)=17
+[Simplify] N=150, DP_kept=36, SACSB_keypoints=17, merge_kept=47, compression=68.67%
+  简化轨迹 87/190 完成（MMSI=900000131），点数 47，压缩率 68.67%
+[SACSB] N=115, len(COG_Variation)=57, len(idx_sacsb_keypoints)=19
+[Simplify] N=115, DP_kept=28, SACSB_keypoints=19, merge_kept=42, compression=63.48%
+  简化轨迹 88/190 完成（MMSI=900000132），点数 42，压缩率 63.48%
+[SACSB] N=461, len(COG_Variation)=230, len(idx_sacsb_keypoints)=86
+[Simplify] N=461, DP_kept=25, SACSB_keypoints=86, merge_kept=100, compression=78.31%
+  简化轨迹 89/190 完成（MMSI=900000133），点数 100，压缩率 78.31%
+[SACSB] N=200, len(COG_Variation)=99, len(idx_sacsb_keypoints)=11
+[Simplify] N=200, DP_kept=23, SACSB_keypoints=11, merge_kept=33, compression=83.50%
+  简化轨迹 90/190 完成（MMSI=900000135），点数 33，压缩率 83.50%
+[SACSB] N=218, len(COG_Variation)=108, len(idx_sacsb_keypoints)=28
+[Simplify] N=218, DP_kept=23, SACSB_keypoints=28, merge_kept=46, compression=78.90%
+  简化轨迹 91/190 完成（MMSI=900000136），点数 46，压缩率 78.90%
+[SACSB] N=190, len(COG_Variation)=94, len(idx_sacsb_keypoints)=41
+[Simplify] N=190, DP_kept=19, SACSB_keypoints=41, merge_kept=56, compression=70.53%
+  简化轨迹 92/190 完成（MMSI=900000138），点数 56，压缩率 70.53%
+[SACSB] N=130, len(COG_Variation)=64, len(idx_sacsb_keypoints)=8
+[Simplify] N=130, DP_kept=17, SACSB_keypoints=8, merge_kept=21, compression=83.85%
+  简化轨迹 93/190 完成（MMSI=900000139），点数 21，压缩率 83.85%
+[SACSB] N=132, len(COG_Variation)=65, len(idx_sacsb_keypoints)=16
+[Simplify] N=132, DP_kept=18, SACSB_keypoints=16, merge_kept=32, compression=75.76%
+  简化轨迹 94/190 完成（MMSI=900000141），点数 32，压缩率 75.76%
+[SACSB] N=174, len(COG_Variation)=86, len(idx_sacsb_keypoints)=36
+[Simplify] N=174, DP_kept=18, SACSB_keypoints=36, merge_kept=51, compression=70.69%
+  简化轨迹 95/190 完成（MMSI=900000142），点数 51，压缩率 70.69%
+[SACSB] N=323, len(COG_Variation)=161, len(idx_sacsb_keypoints)=55
+[Simplify] N=323, DP_kept=12, SACSB_keypoints=55, merge_kept=62, compression=80.80%
+  简化轨迹 96/190 完成（MMSI=900000143），点数 62，压缩率 80.80%
+[SACSB] N=317, len(COG_Variation)=158, len(idx_sacsb_keypoints)=63
+[Simplify] N=317, DP_kept=21, SACSB_keypoints=63, merge_kept=74, compression=76.66%
+  简化轨迹 97/190 完成（MMSI=900000144），点数 74，压缩率 76.66%
+[SACSB] N=148, len(COG_Variation)=73, len(idx_sacsb_keypoints)=31
+[Simplify] N=148, DP_kept=28, SACSB_keypoints=31, merge_kept=47, compression=68.24%
+  简化轨迹 98/190 完成（MMSI=900000146），点数 47，压缩率 68.24%
+[SACSB] N=333, len(COG_Variation)=166, len(idx_sacsb_keypoints)=73
+[Simplify] N=333, DP_kept=30, SACSB_keypoints=73, merge_kept=90, compression=72.97%
+  简化轨迹 99/190 完成（MMSI=900000147），点数 90，压缩率 72.97%
+[SACSB] N=133, len(COG_Variation)=66, len(idx_sacsb_keypoints)=24
+[Simplify] N=133, DP_kept=27, SACSB_keypoints=24, merge_kept=45, compression=66.17%
+  简化轨迹 100/190 完成（MMSI=900000148），点数 45，压缩率 66.17%
+[SACSB] N=144, len(COG_Variation)=71, len(idx_sacsb_keypoints)=10
+[Simplify] N=144, DP_kept=29, SACSB_keypoints=10, merge_kept=37, compression=74.31%
+  简化轨迹 101/190 完成（MMSI=900000149），点数 37，压缩率 74.31%
+[SACSB] N=298, len(COG_Variation)=148, len(idx_sacsb_keypoints)=55
+[Simplify] N=298, DP_kept=35, SACSB_keypoints=55, merge_kept=77, compression=74.16%
+  简化轨迹 102/190 完成（MMSI=900000151），点数 77，压缩率 74.16%
+[SACSB] N=161, len(COG_Variation)=80, len(idx_sacsb_keypoints)=12
+[Simplify] N=161, DP_kept=27, SACSB_keypoints=12, merge_kept=39, compression=75.78%
+  简化轨迹 103/190 完成（MMSI=900000152），点数 39，压缩率 75.78%
+[SACSB] N=168, len(COG_Variation)=83, len(idx_sacsb_keypoints)=36
+[Simplify] N=168, DP_kept=26, SACSB_keypoints=36, merge_kept=59, compression=64.88%
+  简化轨迹 104/190 完成（MMSI=900000154），点数 59，压缩率 64.88%
+[SACSB] N=349, len(COG_Variation)=174, len(idx_sacsb_keypoints)=71
+[Simplify] N=349, DP_kept=27, SACSB_keypoints=71, merge_kept=89, compression=74.50%
+  简化轨迹 105/190 完成（MMSI=900000155），点数 89，压缩率 74.50%
+[SACSB] N=126, len(COG_Variation)=62, len(idx_sacsb_keypoints)=32
+[Simplify] N=126, DP_kept=6, SACSB_keypoints=32, merge_kept=34, compression=73.02%
+  简化轨迹 106/190 完成（MMSI=900000159），点数 34，压缩率 73.02%
+[SACSB] N=146, len(COG_Variation)=72, len(idx_sacsb_keypoints)=16
+[Simplify] N=146, DP_kept=17, SACSB_keypoints=16, merge_kept=32, compression=78.08%
+  简化轨迹 107/190 完成（MMSI=900000160），点数 32，压缩率 78.08%
+[SACSB] N=371, len(COG_Variation)=185, len(idx_sacsb_keypoints)=60
+[Simplify] N=371, DP_kept=34, SACSB_keypoints=60, merge_kept=82, compression=77.90%
+  简化轨迹 108/190 完成（MMSI=900000161），点数 82，压缩率 77.90%
+[SACSB] N=311, len(COG_Variation)=155, len(idx_sacsb_keypoints)=67
+[Simplify] N=311, DP_kept=30, SACSB_keypoints=67, merge_kept=83, compression=73.31%
+  简化轨迹 109/190 完成（MMSI=900000162），点数 83，压缩率 73.31%
+[SACSB] N=336, len(COG_Variation)=167, len(idx_sacsb_keypoints)=61
+[Simplify] N=336, DP_kept=28, SACSB_keypoints=61, merge_kept=76, compression=77.38%
+  简化轨迹 110/190 完成（MMSI=900000166），点数 76，压缩率 77.38%
+[SACSB] N=399, len(COG_Variation)=199, len(idx_sacsb_keypoints)=69
+[Simplify] N=399, DP_kept=25, SACSB_keypoints=69, merge_kept=81, compression=79.70%
+  简化轨迹 111/190 完成（MMSI=900000167），点数 81，压缩率 79.70%
+[SACSB] N=156, len(COG_Variation)=77, len(idx_sacsb_keypoints)=15
+[Simplify] N=156, DP_kept=20, SACSB_keypoints=15, merge_kept=32, compression=79.49%
+  简化轨迹 112/190 完成（MMSI=900000168），点数 32，压缩率 79.49%
+[SACSB] N=196, len(COG_Variation)=97, len(idx_sacsb_keypoints)=15
+[Simplify] N=196, DP_kept=25, SACSB_keypoints=15, merge_kept=37, compression=81.12%
+  简化轨迹 113/190 完成（MMSI=900000169），点数 37，压缩率 81.12%
+[SACSB] N=149, len(COG_Variation)=74, len(idx_sacsb_keypoints)=24
+[Simplify] N=149, DP_kept=16, SACSB_keypoints=24, merge_kept=37, compression=75.17%
+  简化轨迹 114/190 完成（MMSI=900000170），点数 37，压缩率 75.17%
+[SACSB] N=185, len(COG_Variation)=92, len(idx_sacsb_keypoints)=39
+[Simplify] N=185, DP_kept=21, SACSB_keypoints=39, merge_kept=60, compression=67.57%
+  简化轨迹 115/190 完成（MMSI=900000172），点数 60，压缩率 67.57%
+[SACSB] N=279, len(COG_Variation)=139, len(idx_sacsb_keypoints)=57
+[Simplify] N=279, DP_kept=39, SACSB_keypoints=57, merge_kept=81, compression=70.97%
+  简化轨迹 116/190 完成（MMSI=900000173），点数 81，压缩率 70.97%
+[SACSB] N=132, len(COG_Variation)=65, len(idx_sacsb_keypoints)=9
+[Simplify] N=132, DP_kept=32, SACSB_keypoints=9, merge_kept=37, compression=71.97%
+  简化轨迹 117/190 完成（MMSI=900000174），点数 37，压缩率 71.97%
+[SACSB] N=140, len(COG_Variation)=69, len(idx_sacsb_keypoints)=12
+[Simplify] N=140, DP_kept=40, SACSB_keypoints=12, merge_kept=48, compression=65.71%
+  简化轨迹 118/190 完成（MMSI=900000175），点数 48，压缩率 65.71%
+[SACSB] N=315, len(COG_Variation)=157, len(idx_sacsb_keypoints)=65
+[Simplify] N=315, DP_kept=29, SACSB_keypoints=65, merge_kept=83, compression=73.65%
+  简化轨迹 119/190 完成（MMSI=900000176），点数 83，压缩率 73.65%
+[SACSB] N=158, len(COG_Variation)=78, len(idx_sacsb_keypoints)=7
+[Simplify] N=158, DP_kept=32, SACSB_keypoints=7, merge_kept=37, compression=76.58%
+  简化轨迹 120/190 完成（MMSI=900000177），点数 37，压缩率 76.58%
+[SACSB] N=468, len(COG_Variation)=233, len(idx_sacsb_keypoints)=42
+[Simplify] N=468, DP_kept=35, SACSB_keypoints=42, merge_kept=66, compression=85.90%
+  简化轨迹 121/190 完成（MMSI=900000178），点数 66，压缩率 85.90%
+[SACSB] N=221, len(COG_Variation)=110, len(idx_sacsb_keypoints)=45
+[Simplify] N=221, DP_kept=22, SACSB_keypoints=45, merge_kept=59, compression=73.30%
+  简化轨迹 122/190 完成（MMSI=900000179），点数 59，压缩率 73.30%
+[SACSB] N=131, len(COG_Variation)=65, len(idx_sacsb_keypoints)=14
+[Simplify] N=131, DP_kept=32, SACSB_keypoints=14, merge_kept=46, compression=64.89%
+  简化轨迹 123/190 完成（MMSI=900000181），点数 46，压缩率 64.89%
+[SACSB] N=203, len(COG_Variation)=101, len(idx_sacsb_keypoints)=45
+[Simplify] N=203, DP_kept=41, SACSB_keypoints=45, merge_kept=78, compression=61.58%
+  简化轨迹 124/190 完成（MMSI=900000182），点数 78，压缩率 61.58%
+[SACSB] N=138, len(COG_Variation)=68, len(idx_sacsb_keypoints)=15
+[Simplify] N=138, DP_kept=36, SACSB_keypoints=15, merge_kept=46, compression=66.67%
+  简化轨迹 125/190 完成（MMSI=900000183），点数 46，压缩率 66.67%
+[SACSB] N=265, len(COG_Variation)=132, len(idx_sacsb_keypoints)=37
+[Simplify] N=265, DP_kept=21, SACSB_keypoints=37, merge_kept=49, compression=81.51%
+  简化轨迹 126/190 完成（MMSI=900000186），点数 49，压缩率 81.51%
+[SACSB] N=412, len(COG_Variation)=205, len(idx_sacsb_keypoints)=58
+[Simplify] N=412, DP_kept=34, SACSB_keypoints=58, merge_kept=81, compression=80.34%
+  简化轨迹 127/190 完成（MMSI=900000187），点数 81，压缩率 80.34%
+[SACSB] N=198, len(COG_Variation)=98, len(idx_sacsb_keypoints)=26
+[Simplify] N=198, DP_kept=29, SACSB_keypoints=26, merge_kept=51, compression=74.24%
+  简化轨迹 128/190 完成（MMSI=900000188），点数 51，压缩率 74.24%
+[SACSB] N=208, len(COG_Variation)=103, len(idx_sacsb_keypoints)=12
+[Simplify] N=208, DP_kept=38, SACSB_keypoints=12, merge_kept=47, compression=77.40%
+  简化轨迹 129/190 完成（MMSI=900000207），点数 47，压缩率 77.40%
+[SACSB] N=229, len(COG_Variation)=114, len(idx_sacsb_keypoints)=74
+[Simplify] N=229, DP_kept=23, SACSB_keypoints=74, merge_kept=91, compression=60.26%
+  简化轨迹 130/190 完成（MMSI=900000210），点数 91，压缩率 60.26%
+[SACSB] N=195, len(COG_Variation)=97, len(idx_sacsb_keypoints)=32
+[Simplify] N=195, DP_kept=25, SACSB_keypoints=32, merge_kept=55, compression=71.79%
+  简化轨迹 131/190 完成（MMSI=900000211），点数 55，压缩率 71.79%
+[SACSB] N=143, len(COG_Variation)=71, len(idx_sacsb_keypoints)=11
+[Simplify] N=143, DP_kept=24, SACSB_keypoints=11, merge_kept=34, compression=76.22%
+  简化轨迹 132/190 完成（MMSI=900000212），点数 34，压缩率 76.22%
+[SACSB] N=161, len(COG_Variation)=80, len(idx_sacsb_keypoints)=3
+[Simplify] N=161, DP_kept=26, SACSB_keypoints=3, merge_kept=28, compression=82.61%
+  简化轨迹 133/190 完成（MMSI=900000213），点数 28，压缩率 82.61%
+[SACSB] N=139, len(COG_Variation)=69, len(idx_sacsb_keypoints)=28
+[Simplify] N=139, DP_kept=19, SACSB_keypoints=28, merge_kept=41, compression=70.50%
+  简化轨迹 134/190 完成（MMSI=900000214），点数 41，压缩率 70.50%
+[SACSB] N=116, len(COG_Variation)=57, len(idx_sacsb_keypoints)=13
+[Simplify] N=116, DP_kept=18, SACSB_keypoints=13, merge_kept=26, compression=77.59%
+  简化轨迹 135/190 完成（MMSI=900000215），点数 26，压缩率 77.59%
+[SACSB] N=133, len(COG_Variation)=66, len(idx_sacsb_keypoints)=14
+[Simplify] N=133, DP_kept=24, SACSB_keypoints=14, merge_kept=35, compression=73.68%
+  简化轨迹 136/190 完成（MMSI=900000218），点数 35，压缩率 73.68%
+[SACSB] N=291, len(COG_Variation)=145, len(idx_sacsb_keypoints)=56
+[Simplify] N=291, DP_kept=23, SACSB_keypoints=56, merge_kept=70, compression=75.95%
+  简化轨迹 137/190 完成（MMSI=900000219），点数 70，压缩率 75.95%
+[SACSB] N=158, len(COG_Variation)=78, len(idx_sacsb_keypoints)=22
+[Simplify] N=158, DP_kept=22, SACSB_keypoints=22, merge_kept=42, compression=73.42%
+  简化轨迹 138/190 完成（MMSI=900000220），点数 42，压缩率 73.42%
+[SACSB] N=444, len(COG_Variation)=221, len(idx_sacsb_keypoints)=65
+[Simplify] N=444, DP_kept=22, SACSB_keypoints=65, merge_kept=80, compression=81.98%
+  简化轨迹 139/190 完成（MMSI=900000221），点数 80，压缩率 81.98%
+[SACSB] N=334, len(COG_Variation)=166, len(idx_sacsb_keypoints)=60
+[Simplify] N=334, DP_kept=25, SACSB_keypoints=60, merge_kept=73, compression=78.14%
+  简化轨迹 140/190 完成（MMSI=900000222），点数 73，压缩率 78.14%
+[SACSB] N=467, len(COG_Variation)=233, len(idx_sacsb_keypoints)=77
+[Simplify] N=467, DP_kept=32, SACSB_keypoints=77, merge_kept=97, compression=79.23%
+  简化轨迹 141/190 完成（MMSI=900000223），点数 97，压缩率 79.23%
+[SACSB] N=466, len(COG_Variation)=232, len(idx_sacsb_keypoints)=94
+[Simplify] N=466, DP_kept=29, SACSB_keypoints=94, merge_kept=112, compression=75.97%
+  简化轨迹 142/190 完成（MMSI=900000224），点数 112，压缩率 75.97%
+[SACSB] N=214, len(COG_Variation)=106, len(idx_sacsb_keypoints)=34
+[Simplify] N=214, DP_kept=29, SACSB_keypoints=34, merge_kept=62, compression=71.03%
+  简化轨迹 143/190 完成（MMSI=900000225），点数 62，压缩率 71.03%
+[SACSB] N=393, len(COG_Variation)=196, len(idx_sacsb_keypoints)=71
+[Simplify] N=393, DP_kept=24, SACSB_keypoints=71, merge_kept=84, compression=78.63%
+  简化轨迹 144/190 完成（MMSI=900000226），点数 84，压缩率 78.63%
+[SACSB] N=330, len(COG_Variation)=164, len(idx_sacsb_keypoints)=69
+[Simplify] N=330, DP_kept=28, SACSB_keypoints=69, merge_kept=93, compression=71.82%
+  简化轨迹 145/190 完成（MMSI=900000227），点数 93，压缩率 71.82%
+[SACSB] N=313, len(COG_Variation)=156, len(idx_sacsb_keypoints)=44
+[Simplify] N=313, DP_kept=31, SACSB_keypoints=44, merge_kept=74, compression=76.36%
+  简化轨迹 146/190 完成（MMSI=900000228），点数 74，压缩率 76.36%
+[SACSB] N=149, len(COG_Variation)=74, len(idx_sacsb_keypoints)=14
+[Simplify] N=149, DP_kept=24, SACSB_keypoints=14, merge_kept=36, compression=75.84%
+  简化轨迹 147/190 完成（MMSI=900000229），点数 36，压缩率 75.84%
+[SACSB] N=117, len(COG_Variation)=58, len(idx_sacsb_keypoints)=16
+[Simplify] N=117, DP_kept=18, SACSB_keypoints=16, merge_kept=34, compression=70.94%
+  简化轨迹 148/190 完成（MMSI=900000233），点数 34，压缩率 70.94%
+[SACSB] N=167, len(COG_Variation)=83, len(idx_sacsb_keypoints)=31
+[Simplify] N=167, DP_kept=12, SACSB_keypoints=31, merge_kept=38, compression=77.25%
+  简化轨迹 149/190 完成（MMSI=900000234），点数 38，压缩率 77.25%
+[SACSB] N=100, len(COG_Variation)=49, len(idx_sacsb_keypoints)=12
+[Simplify] N=100, DP_kept=5, SACSB_keypoints=12, merge_kept=17, compression=83.00%
+  简化轨迹 150/190 完成（MMSI=900000235），点数 17，压缩率 83.00%
+[SACSB] N=121, len(COG_Variation)=60, len(idx_sacsb_keypoints)=24
+[Simplify] N=121, DP_kept=9, SACSB_keypoints=24, merge_kept=31, compression=74.38%
+  简化轨迹 151/190 完成（MMSI=900000236），点数 31，压缩率 74.38%
+[SACSB] N=122, len(COG_Variation)=60, len(idx_sacsb_keypoints)=7
+[Simplify] N=122, DP_kept=6, SACSB_keypoints=7, merge_kept=12, compression=90.16%
+  简化轨迹 152/190 完成（MMSI=900000237），点数 12，压缩率 90.16%
+[SACSB] N=118, len(COG_Variation)=58, len(idx_sacsb_keypoints)=21
+[Simplify] N=118, DP_kept=10, SACSB_keypoints=21, merge_kept=29, compression=75.42%
+  简化轨迹 153/190 完成（MMSI=900000238），点数 29，压缩率 75.42%
+[SACSB] N=166, len(COG_Variation)=82, len(idx_sacsb_keypoints)=34
+[Simplify] N=166, DP_kept=15, SACSB_keypoints=34, merge_kept=42, compression=74.70%
+  简化轨迹 154/190 完成（MMSI=900000240），点数 42，压缩率 74.70%
+[SACSB] N=338, len(COG_Variation)=168, len(idx_sacsb_keypoints)=46
+[Simplify] N=338, DP_kept=17, SACSB_keypoints=46, merge_kept=57, compression=83.14%
+  简化轨迹 155/190 完成（MMSI=900000241），点数 57，压缩率 83.14%
+[SACSB] N=209, len(COG_Variation)=104, len(idx_sacsb_keypoints)=57
+[Simplify] N=209, DP_kept=15, SACSB_keypoints=57, merge_kept=65, compression=68.90%
+  简化轨迹 156/190 完成（MMSI=900000242），点数 65，压缩率 68.90%
+[SACSB] N=126, len(COG_Variation)=62, len(idx_sacsb_keypoints)=22
+[Simplify] N=126, DP_kept=20, SACSB_keypoints=22, merge_kept=39, compression=69.05%
+  简化轨迹 157/190 完成（MMSI=900000243），点数 39，压缩率 69.05%
+[SACSB] N=133, len(COG_Variation)=66, len(idx_sacsb_keypoints)=25
+[Simplify] N=133, DP_kept=14, SACSB_keypoints=25, merge_kept=37, compression=72.18%
+  简化轨迹 158/190 完成（MMSI=900000245），点数 37，压缩率 72.18%
+[SACSB] N=134, len(COG_Variation)=66, len(idx_sacsb_keypoints)=25
+[Simplify] N=134, DP_kept=12, SACSB_keypoints=25, merge_kept=32, compression=76.12%
+  简化轨迹 159/190 完成（MMSI=900000246），点数 32，压缩率 76.12%
+[SACSB] N=160, len(COG_Variation)=79, len(idx_sacsb_keypoints)=37
+[Simplify] N=160, DP_kept=14, SACSB_keypoints=37, merge_kept=48, compression=70.00%
+  简化轨迹 160/190 完成（MMSI=900000247），点数 48，压缩率 70.00%
+[SACSB] N=128, len(COG_Variation)=63, len(idx_sacsb_keypoints)=32
+[Simplify] N=128, DP_kept=16, SACSB_keypoints=32, merge_kept=44, compression=65.62%
+  简化轨迹 161/190 完成（MMSI=900000248），点数 44，压缩率 65.62%
+[SACSB] N=93, len(COG_Variation)=46, len(idx_sacsb_keypoints)=24
+[Simplify] N=93, DP_kept=10, SACSB_keypoints=24, merge_kept=33, compression=64.52%
+  简化轨迹 162/190 完成（MMSI=900000249），点数 33，压缩率 64.52%
+[SACSB] N=133, len(COG_Variation)=66, len(idx_sacsb_keypoints)=31
+[Simplify] N=133, DP_kept=15, SACSB_keypoints=31, merge_kept=43, compression=67.67%
+  简化轨迹 163/190 完成（MMSI=900000250），点数 43，压缩率 67.67%
+[SACSB] N=94, len(COG_Variation)=46, len(idx_sacsb_keypoints)=17
+[Simplify] N=94, DP_kept=6, SACSB_keypoints=17, merge_kept=21, compression=77.66%
+  简化轨迹 164/190 完成（MMSI=900000251），点数 21，压缩率 77.66%
+[SACSB] N=176, len(COG_Variation)=87, len(idx_sacsb_keypoints)=69
+[Simplify] N=176, DP_kept=14, SACSB_keypoints=69, merge_kept=78, compression=55.68%
+  简化轨迹 165/190 完成（MMSI=900000252），点数 78，压缩率 55.68%
+[SACSB] N=137, len(COG_Variation)=68, len(idx_sacsb_keypoints)=43
+[Simplify] N=137, DP_kept=10, SACSB_keypoints=43, merge_kept=52, compression=62.04%
+  简化轨迹 166/190 完成（MMSI=900000255），点数 52，压缩率 62.04%
+[SACSB] N=277, len(COG_Variation)=138, len(idx_sacsb_keypoints)=51
+[Simplify] N=277, DP_kept=18, SACSB_keypoints=51, merge_kept=62, compression=77.62%
+  简化轨迹 167/190 完成（MMSI=900000256），点数 62，压缩率 77.62%
+[SACSB] N=93, len(COG_Variation)=46, len(idx_sacsb_keypoints)=17
+[Simplify] N=93, DP_kept=7, SACSB_keypoints=17, merge_kept=24, compression=74.19%
+  简化轨迹 168/190 完成（MMSI=900000257），点数 24，压缩率 74.19%
+[SACSB] N=93, len(COG_Variation)=46, len(idx_sacsb_keypoints)=8
+[Simplify] N=93, DP_kept=8, SACSB_keypoints=8, merge_kept=15, compression=83.87%
+  简化轨迹 169/190 完成（MMSI=900000258），点数 15，压缩率 83.87%
+[SACSB] N=107, len(COG_Variation)=53, len(idx_sacsb_keypoints)=17
+[Simplify] N=107, DP_kept=7, SACSB_keypoints=17, merge_kept=22, compression=79.44%
+  简化轨迹 170/190 完成（MMSI=900000259），点数 22，压缩率 79.44%
+[SACSB] N=88, len(COG_Variation)=43, len(idx_sacsb_keypoints)=15
+[Simplify] N=88, DP_kept=11, SACSB_keypoints=15, merge_kept=25, compression=71.59%
+  简化轨迹 171/190 完成（MMSI=900000260），点数 25，压缩率 71.59%
+[SACSB] N=91, len(COG_Variation)=45, len(idx_sacsb_keypoints)=27
+[Simplify] N=91, DP_kept=7, SACSB_keypoints=27, merge_kept=32, compression=64.84%
+  简化轨迹 172/190 完成（MMSI=900000261），点数 32，压缩率 64.84%
+[SACSB] N=91, len(COG_Variation)=45, len(idx_sacsb_keypoints)=20
+[Simplify] N=91, DP_kept=8, SACSB_keypoints=20, merge_kept=27, compression=70.33%
+  简化轨迹 173/190 完成（MMSI=900000262），点数 27，压缩率 70.33%
+[SACSB] N=111, len(COG_Variation)=55, len(idx_sacsb_keypoints)=25
+[Simplify] N=111, DP_kept=9, SACSB_keypoints=25, merge_kept=33, compression=70.27%
+  简化轨迹 174/190 完成（MMSI=900000265），点数 33，压缩率 70.27%
+[SACSB] N=94, len(COG_Variation)=46, len(idx_sacsb_keypoints)=15
+[Simplify] N=94, DP_kept=7, SACSB_keypoints=15, merge_kept=22, compression=76.60%
+  简化轨迹 175/190 完成（MMSI=900000266），点数 22，压缩率 76.60%
+[SACSB] N=98, len(COG_Variation)=48, len(idx_sacsb_keypoints)=20
+[Simplify] N=98, DP_kept=7, SACSB_keypoints=20, merge_kept=26, compression=73.47%
+  简化轨迹 176/190 完成（MMSI=900000267），点数 26，压缩率 73.47%
+[SACSB] N=102, len(COG_Variation)=50, len(idx_sacsb_keypoints)=14
+[Simplify] N=102, DP_kept=9, SACSB_keypoints=14, merge_kept=22, compression=78.43%
+  简化轨迹 177/190 完成（MMSI=900000268），点数 22，压缩率 78.43%
+[SACSB] N=311, len(COG_Variation)=155, len(idx_sacsb_keypoints)=39
+[Simplify] N=311, DP_kept=15, SACSB_keypoints=39, merge_kept=52, compression=83.28%
+  简化轨迹 178/190 完成（MMSI=900000271），点数 52，压缩率 83.28%
+[SACSB] N=180, len(COG_Variation)=89, len(idx_sacsb_keypoints)=10
+[Simplify] N=180, DP_kept=6, SACSB_keypoints=10, merge_kept=15, compression=91.67%
+  简化轨迹 179/190 完成（MMSI=900000272），点数 15，压缩率 91.67%
+[SACSB] N=100, len(COG_Variation)=49, len(idx_sacsb_keypoints)=13
+[Simplify] N=100, DP_kept=7, SACSB_keypoints=13, merge_kept=17, compression=83.00%
+  简化轨迹 180/190 完成（MMSI=900000273），点数 17，压缩率 83.00%
+[SACSB] N=98, len(COG_Variation)=48, len(idx_sacsb_keypoints)=21
+[Simplify] N=98, DP_kept=7, SACSB_keypoints=21, merge_kept=27, compression=72.45%
+  简化轨迹 181/190 完成（MMSI=900000274），点数 27，压缩率 72.45%
+[SACSB] N=129, len(COG_Variation)=64, len(idx_sacsb_keypoints)=16
+[Simplify] N=129, DP_kept=12, SACSB_keypoints=16, merge_kept=28, compression=78.29%
+  简化轨迹 182/190 完成（MMSI=900000280），点数 28，压缩率 78.29%
+[SACSB] N=257, len(COG_Variation)=128, len(idx_sacsb_keypoints)=55
+[Simplify] N=257, DP_kept=22, SACSB_keypoints=55, merge_kept=73, compression=71.60%
+  简化轨迹 183/190 完成（MMSI=900000281），点数 73，压缩率 71.60%
+[SACSB] N=143, len(COG_Variation)=71, len(idx_sacsb_keypoints)=29
+[Simplify] N=143, DP_kept=14, SACSB_keypoints=29, merge_kept=42, compression=70.63%
+  简化轨迹 184/190 完成（MMSI=900000282），点数 42，压缩率 70.63%
+[SACSB] N=92, len(COG_Variation)=45, len(idx_sacsb_keypoints)=22
+[Simplify] N=92, DP_kept=8, SACSB_keypoints=22, merge_kept=26, compression=71.74%
+  简化轨迹 185/190 完成（MMSI=900000283），点数 26，压缩率 71.74%
+[SACSB] N=122, len(COG_Variation)=60, len(idx_sacsb_keypoints)=22
+[Simplify] N=122, DP_kept=15, SACSB_keypoints=22, merge_kept=35, compression=71.31%
+  简化轨迹 186/190 完成（MMSI=900000284），点数 35，压缩率 71.31%
+[SACSB] N=122, len(COG_Variation)=60, len(idx_sacsb_keypoints)=18
+[Simplify] N=122, DP_kept=8, SACSB_keypoints=18, merge_kept=24, compression=80.33%
+  简化轨迹 187/190 完成（MMSI=900000285），点数 24，压缩率 80.33%
+[SACSB] N=185, len(COG_Variation)=92, len(idx_sacsb_keypoints)=47
+[Simplify] N=185, DP_kept=15, SACSB_keypoints=47, merge_kept=61, compression=67.03%
+  简化轨迹 188/190 完成（MMSI=900000286），点数 61，压缩率 67.03%
+[SACSB] N=161, len(COG_Variation)=80, len(idx_sacsb_keypoints)=36
+[Simplify] N=161, DP_kept=14, SACSB_keypoints=36, merge_kept=47, compression=70.81%
+  简化轨迹 189/190 完成（MMSI=900000287），点数 47，压缩率 70.81%
+[SACSB] N=117, len(COG_Variation)=58, len(idx_sacsb_keypoints)=15
+[Simplify] N=117, DP_kept=11, SACSB_keypoints=15, merge_kept=26, compression=77.78%
+  简化轨迹 190/190 完成（MMSI=900000288），点数 26，压缩率 77.78%
+✅ 简化完成，共 190 条轨迹
+
+平均压缩率：73.71%
+💾 轨迹缓存已保存: /Users/lcx/Desktop/毕设/复现/traj_cache/pruned_dataset/dt60_len50_a1.0_dp0.8_minone_msnone/traj_cache.pkl.gz
+   轨迹数: 190, hash: cdd53b23..., tag: dt60_len50_a1.0_dp0.8_minone_msnone
+
+========================================
+步骤4: 自适应聚类 (统一处理所有轨迹)
+========================================
+  轨迹数: 190 条
+🔍 POA two-stage eps 扫描: coarse_steps=150, refine_steps=300, window_mult=5.00
+
+[All] 自适应聚类 (论文版)...
+
+📊 特征标准化参数诊断（mu/sigma estimated from absolute features）:
+  feature_mode: delta_cog
+  note: lat/lon 先近似投影为米制 (x_m,y_m)，保留绝对位置 (x_abs,y_abs)，避免经纬度不等距导致距离不稳定
+  全局参考点 (lat_ref, lon_ref): (42.283360, -71.056870) [所有轨迹共享此参考点，保证绝对位置可比]
+  mu (均值，来自绝对特征):    [x_abs=-11763.407000, y_abs=-43633.020065, sog=6.467366, delta_cog=-0.104787]
+  sigma (标准差，来自绝对特征): [x_abs=24702.022766, y_abs=56451.321068, sog=3.857984, delta_cog=29.610551]
+  mu_delta (对照，仅调试，不用于标准化): [dx=-32.130952, dy=-52.675439, dsog=0.013757, delta_cog=-0.104787]
+  sigma_delta (对照，仅调试，不用于标准化): [dx=954.532305, dy=819.152673, dsog=0.879851, delta_cog=29.610551]
+  ⚠️ 检测到失衡:
+    - x_abs sigma过大(24702.02), 可能主导距离
+    - y_abs sigma过大(56451.32), 可能主导距离
+    - delta_cog sigma过大(29.61), 可能主导距离
+🔄 CSV文件已变化（hash不匹配），需要重新计算DTW矩阵
+   缓存hash: c8da6cf0...
+   当前hash: cdd53b23...
+🔄 开始计算DTW矩阵（轨迹数量: 190, 特征模式: delta_cog, DTW方法: fastdtw）...
+  DTW 进度: 10/17955
+  DTW 进度: 20/17955
+  DTW 进度: 30/17955
+  DTW 进度: 40/17955
+  DTW 进度: 50/17955
+  DTW 进度: 60/17955
+  DTW 进度: 70/17955
+  DTW 进度: 80/17955
+  DTW 进度: 90/17955
+  DTW 进度: 100/17955
+  DTW 进度: 110/17955
+  DTW 进度: 120/17955
+  DTW 进度: 130/17955
+  DTW 进度: 140/17955
+  DTW 进度: 150/17955
+  DTW 进度: 160/17955
+  DTW 进度: 170/17955
+  DTW 进度: 180/17955
+  DTW 进度: 190/17955
+  DTW 进度: 200/17955
+  DTW 进度: 210/17955
+  DTW 进度: 220/17955
+  DTW 进度: 230/17955
+  DTW 进度: 240/17955
+  DTW 进度: 250/17955
+  DTW 进度: 260/17955
+  DTW 进度: 270/17955
+  DTW 进度: 280/17955
+  DTW 进度: 290/17955
+  DTW 进度: 300/17955
+  DTW 进度: 310/17955
+  DTW 进度: 320/17955
+  DTW 进度: 330/17955
+  DTW 进度: 340/17955
+  DTW 进度: 350/17955
+  DTW 进度: 360/17955
+  DTW 进度: 370/17955
+  DTW 进度: 380/17955
+  DTW 进度: 390/17955
+  DTW 进度: 400/17955
+  DTW 进度: 410/17955
+  DTW 进度: 420/17955
+  DTW 进度: 430/17955
+  DTW 进度: 440/17955
+  DTW 进度: 450/17955
+  DTW 进度: 460/17955
+  DTW 进度: 470/17955
+  DTW 进度: 480/17955
+  DTW 进度: 490/17955
+  DTW 进度: 500/17955
+  DTW 进度: 510/17955
+  DTW 进度: 520/17955
+  DTW 进度: 530/17955
+  DTW 进度: 540/17955
+  DTW 进度: 550/17955
+  DTW 进度: 560/17955
+  DTW 进度: 570/17955
+  DTW 进度: 580/17955
+  DTW 进度: 590/17955
+  DTW 进度: 600/17955
+  DTW 进度: 610/17955
+  DTW 进度: 620/17955
+  DTW 进度: 630/17955
+  DTW 进度: 640/17955
+  DTW 进度: 650/17955
+  DTW 进度: 660/17955
+  DTW 进度: 670/17955
+  DTW 进度: 680/17955
+  DTW 进度: 690/17955
+  DTW 进度: 700/17955
+  DTW 进度: 710/17955
+  DTW 进度: 720/17955
+  DTW 进度: 730/17955
+  DTW 进度: 740/17955
+  DTW 进度: 750/17955
+  DTW 进度: 760/17955
+  DTW 进度: 770/17955
+  DTW 进度: 780/17955
+  DTW 进度: 790/17955
+  DTW 进度: 800/17955
+  DTW 进度: 810/17955
+  DTW 进度: 820/17955
+  DTW 进度: 830/17955
+  DTW 进度: 840/17955
+  DTW 进度: 850/17955
+  DTW 进度: 860/17955
+  DTW 进度: 870/17955
+  DTW 进度: 880/17955
+  DTW 进度: 890/17955
+  DTW 进度: 900/17955
+  DTW 进度: 910/17955
+  DTW 进度: 920/17955
+  DTW 进度: 930/17955
+  DTW 进度: 940/17955
+  DTW 进度: 950/17955
+  DTW 进度: 960/17955
+  DTW 进度: 970/17955
+  DTW 进度: 980/17955
+  DTW 进度: 990/17955
+  DTW 进度: 1000/17955
+  DTW 进度: 1010/17955
+  DTW 进度: 1020/17955
+  DTW 进度: 1030/17955
+  DTW 进度: 1040/17955
+  DTW 进度: 1050/17955
+  DTW 进度: 1060/17955
+  DTW 进度: 1070/17955
+  DTW 进度: 1080/17955
+  DTW 进度: 1090/17955
+  DTW 进度: 1100/17955
+  DTW 进度: 1110/17955
+  DTW 进度: 1120/17955
+  DTW 进度: 1130/17955
+  DTW 进度: 1140/17955
+  DTW 进度: 1150/17955
+  DTW 进度: 1160/17955
+  DTW 进度: 1170/17955
+  DTW 进度: 1180/17955
+  DTW 进度: 1190/17955
+  DTW 进度: 1200/17955
+  DTW 进度: 1210/17955
+  DTW 进度: 1220/17955
+  DTW 进度: 1230/17955
+  DTW 进度: 1240/17955
+  DTW 进度: 1250/17955
+  DTW 进度: 1260/17955
+  DTW 进度: 1270/17955
+  DTW 进度: 1280/17955
+  DTW 进度: 1290/17955
+  DTW 进度: 1300/17955
+  DTW 进度: 1310/17955
+  DTW 进度: 1320/17955
+  DTW 进度: 1330/17955
+  DTW 进度: 1340/17955
+  DTW 进度: 1350/17955
+  DTW 进度: 1360/17955
+  DTW 进度: 1370/17955
+  DTW 进度: 1380/17955
+  DTW 进度: 1390/17955
+  DTW 进度: 1400/17955
+  DTW 进度: 1410/17955
+  DTW 进度: 1420/17955
+  DTW 进度: 1430/17955
+  DTW 进度: 1440/17955
+  DTW 进度: 1450/17955
+  DTW 进度: 1460/17955
+  DTW 进度: 1470/17955
+  DTW 进度: 1480/17955
+  DTW 进度: 1490/17955
+  DTW 进度: 1500/17955
+  DTW 进度: 1510/17955
+  DTW 进度: 1520/17955
+  DTW 进度: 1530/17955
+  DTW 进度: 1540/17955
+  DTW 进度: 1550/17955
+  DTW 进度: 1560/17955
+  DTW 进度: 1570/17955
+  DTW 进度: 1580/17955
+  DTW 进度: 1590/17955
+  DTW 进度: 1600/17955
+  DTW 进度: 1610/17955
+  DTW 进度: 1620/17955
+  DTW 进度: 1630/17955
+  DTW 进度: 1640/17955
+  DTW 进度: 1650/17955
+  DTW 进度: 1660/17955
+  DTW 进度: 1670/17955
+  DTW 进度: 1680/17955
+  DTW 进度: 1690/17955
+  DTW 进度: 1700/17955
+  DTW 进度: 1710/17955
+  DTW 进度: 1720/17955
+  DTW 进度: 1730/17955
+  DTW 进度: 1740/17955
+  DTW 进度: 1750/17955
+  DTW 进度: 1760/17955
+  DTW 进度: 1770/17955
+  DTW 进度: 1780/17955
+  DTW 进度: 1790/17955
+  DTW 进度: 1800/17955
+  DTW 进度: 1810/17955
+  DTW 进度: 1820/17955
+  DTW 进度: 1830/17955
+  DTW 进度: 1840/17955
+  DTW 进度: 1850/17955
+  DTW 进度: 1860/17955
+  DTW 进度: 1870/17955
+  DTW 进度: 1880/17955
+  DTW 进度: 1890/17955
+  DTW 进度: 1900/17955
+  DTW 进度: 1910/17955
+  DTW 进度: 1920/17955
+  DTW 进度: 1930/17955
+  DTW 进度: 1940/17955
+  DTW 进度: 1950/17955
+  DTW 进度: 1960/17955
+  DTW 进度: 1970/17955
+  DTW 进度: 1980/17955
+  DTW 进度: 1990/17955
+  DTW 进度: 2000/17955
+  DTW 进度: 2010/17955
+  DTW 进度: 2020/17955
+  DTW 进度: 2030/17955
+  DTW 进度: 2040/17955
+  DTW 进度: 2050/17955
+  DTW 进度: 2060/17955
+  DTW 进度: 2070/17955
+  DTW 进度: 2080/17955
+  DTW 进度: 2090/17955
+  DTW 进度: 2100/17955
+  DTW 进度: 2110/17955
+  DTW 进度: 2120/17955
+  DTW 进度: 2130/17955
+  DTW 进度: 2140/17955
+  DTW 进度: 2150/17955
+  DTW 进度: 2160/17955
+  DTW 进度: 2170/17955
+  DTW 进度: 2180/17955
+  DTW 进度: 2190/17955
+  DTW 进度: 2200/17955
+  DTW 进度: 2210/17955
+  DTW 进度: 2220/17955
+  DTW 进度: 2230/17955
+  DTW 进度: 2240/17955
+  DTW 进度: 2250/17955
+  DTW 进度: 2260/17955
+  DTW 进度: 2270/17955
+  DTW 进度: 2280/17955
+  DTW 进度: 2290/17955
+  DTW 进度: 2300/17955
+  DTW 进度: 2310/17955
+  DTW 进度: 2320/17955
+  DTW 进度: 2330/17955
+  DTW 进度: 2340/17955
+  DTW 进度: 2350/17955
+  DTW 进度: 2360/17955
+  DTW 进度: 2370/17955
+  DTW 进度: 2380/17955
+  DTW 进度: 2390/17955
+  DTW 进度: 2400/17955
+  DTW 进度: 2410/17955
+  DTW 进度: 2420/17955
+  DTW 进度: 2430/17955
+  DTW 进度: 2440/17955
+  DTW 进度: 2450/17955
+  DTW 进度: 2460/17955
+  DTW 进度: 2470/17955
+  DTW 进度: 2480/17955
+  DTW 进度: 2490/17955
+  DTW 进度: 2500/17955
+  DTW 进度: 2510/17955
+  DTW 进度: 2520/17955
+  DTW 进度: 2530/17955
+  DTW 进度: 2540/17955
+  DTW 进度: 2550/17955
+  DTW 进度: 2560/17955
+  DTW 进度: 2570/17955
+  DTW 进度: 2580/17955
+  DTW 进度: 2590/17955
+  DTW 进度: 2600/17955
+  DTW 进度: 2610/17955
+  DTW 进度: 2620/17955
+  DTW 进度: 2630/17955
+  DTW 进度: 2640/17955
+  DTW 进度: 2650/17955
+  DTW 进度: 2660/17955
+  DTW 进度: 2670/17955
+  DTW 进度: 2680/17955
+  DTW 进度: 2690/17955
+  DTW 进度: 2700/17955
+  DTW 进度: 2710/17955
+  DTW 进度: 2720/17955
+  DTW 进度: 2730/17955
+  DTW 进度: 2740/17955
+  DTW 进度: 2750/17955
+  DTW 进度: 2760/17955
+  DTW 进度: 2770/17955
+  DTW 进度: 2780/17955
+  DTW 进度: 2790/17955
+  DTW 进度: 2800/17955
+  DTW 进度: 2810/17955
+  DTW 进度: 2820/17955
+  DTW 进度: 2830/17955
+  DTW 进度: 2840/17955
+  DTW 进度: 2850/17955
+  DTW 进度: 2860/17955
+  DTW 进度: 2870/17955
+  DTW 进度: 2880/17955
+  DTW 进度: 2890/17955
+  DTW 进度: 2900/17955
+  DTW 进度: 2910/17955
+  DTW 进度: 2920/17955
+  DTW 进度: 2930/17955
+  DTW 进度: 2940/17955
+  DTW 进度: 2950/17955
+  DTW 进度: 2960/17955
+  DTW 进度: 2970/17955
+  DTW 进度: 2980/17955
+  DTW 进度: 2990/17955
+  DTW 进度: 3000/17955
+  DTW 进度: 3010/17955
+  DTW 进度: 3020/17955
+  DTW 进度: 3030/17955
+  DTW 进度: 3040/17955
+  DTW 进度: 3050/17955
+  DTW 进度: 3060/17955
+  DTW 进度: 3070/17955
+  DTW 进度: 3080/17955
+  DTW 进度: 3090/17955
+  DTW 进度: 3100/17955
+  DTW 进度: 3110/17955
+  DTW 进度: 3120/17955
+  DTW 进度: 3130/17955
+  DTW 进度: 3140/17955
+  DTW 进度: 3150/17955
+  DTW 进度: 3160/17955
+  DTW 进度: 3170/17955
+  DTW 进度: 3180/17955
+  DTW 进度: 3190/17955
+  DTW 进度: 3200/17955
+  DTW 进度: 3210/17955
+  DTW 进度: 3220/17955
+  DTW 进度: 3230/17955
+  DTW 进度: 3240/17955
+  DTW 进度: 3250/17955
+  DTW 进度: 3260/17955
+  DTW 进度: 3270/17955
+  DTW 进度: 3280/17955
+  DTW 进度: 3290/17955
+  DTW 进度: 3300/17955
+  DTW 进度: 3310/17955
+  DTW 进度: 3320/17955
+  DTW 进度: 3330/17955
+  DTW 进度: 3340/17955
+  DTW 进度: 3350/17955
+  DTW 进度: 3360/17955
+  DTW 进度: 3370/17955
+  DTW 进度: 3380/17955
+  DTW 进度: 3390/17955
+  DTW 进度: 3400/17955
+  DTW 进度: 3410/17955
+  DTW 进度: 3420/17955
+  DTW 进度: 3430/17955
+  DTW 进度: 3440/17955
+  DTW 进度: 3450/17955
+  DTW 进度: 3460/17955
+  DTW 进度: 3470/17955
+  DTW 进度: 3480/17955
+  DTW 进度: 3490/17955
+  DTW 进度: 3500/17955
+  DTW 进度: 3510/17955
+  DTW 进度: 3520/17955
+  DTW 进度: 3530/17955
+  DTW 进度: 3540/17955
+  DTW 进度: 3550/17955
+  DTW 进度: 3560/17955
+  DTW 进度: 3570/17955
+  DTW 进度: 3580/17955
+  DTW 进度: 3590/17955
+  DTW 进度: 3600/17955
+  DTW 进度: 3610/17955
+  DTW 进度: 3620/17955
+  DTW 进度: 3630/17955
+  DTW 进度: 3640/17955
+  DTW 进度: 3650/17955
+  DTW 进度: 3660/17955
+  DTW 进度: 3670/17955
+  DTW 进度: 3680/17955
+  DTW 进度: 3690/17955
+  DTW 进度: 3700/17955
+  DTW 进度: 3710/17955
+  DTW 进度: 3720/17955
+  DTW 进度: 3730/17955
+  DTW 进度: 3740/17955
+  DTW 进度: 3750/17955
+  DTW 进度: 3760/17955
+  DTW 进度: 3770/17955
+  DTW 进度: 3780/17955
+  DTW 进度: 3790/17955
+  DTW 进度: 3800/17955
+  DTW 进度: 3810/17955
+  DTW 进度: 3820/17955
+  DTW 进度: 3830/17955
+  DTW 进度: 3840/17955
+  DTW 进度: 3850/17955
+  DTW 进度: 3860/17955
+  DTW 进度: 3870/17955
+  DTW 进度: 3880/17955
+  DTW 进度: 3890/17955
+  DTW 进度: 3900/17955
+  DTW 进度: 3910/17955
+  DTW 进度: 3920/17955
+  DTW 进度: 3930/17955
+  DTW 进度: 3940/17955
+  DTW 进度: 3950/17955
+  DTW 进度: 3960/17955
+  DTW 进度: 3970/17955
+  DTW 进度: 3980/17955
+  DTW 进度: 3990/17955
+  DTW 进度: 4000/17955
+  DTW 进度: 4010/17955
+  DTW 进度: 4020/17955
+  DTW 进度: 4030/17955
+  DTW 进度: 4040/17955
+  DTW 进度: 4050/17955
+  DTW 进度: 4060/17955
+  DTW 进度: 4070/17955
+  DTW 进度: 4080/17955
+  DTW 进度: 4090/17955
+  DTW 进度: 4100/17955
+  DTW 进度: 4110/17955
+  DTW 进度: 4120/17955
+  DTW 进度: 4130/17955
+  DTW 进度: 4140/17955
+  DTW 进度: 4150/17955
+  DTW 进度: 4160/17955
+  DTW 进度: 4170/17955
+  DTW 进度: 4180/17955
+  DTW 进度: 4190/17955
+  DTW 进度: 4200/17955
+  DTW 进度: 4210/17955
+  DTW 进度: 4220/17955
+  DTW 进度: 4230/17955
+  DTW 进度: 4240/17955
+  DTW 进度: 4250/17955
+  DTW 进度: 4260/17955
+  DTW 进度: 4270/17955
+  DTW 进度: 4280/17955
+  DTW 进度: 4290/17955
+  DTW 进度: 4300/17955
+  DTW 进度: 4310/17955
+  DTW 进度: 4320/17955
+  DTW 进度: 4330/17955
+  DTW 进度: 4340/17955
+  DTW 进度: 4350/17955
+  DTW 进度: 4360/17955
+  DTW 进度: 4370/17955
+  DTW 进度: 4380/17955
+  DTW 进度: 4390/17955
+  DTW 进度: 4400/17955
+  DTW 进度: 4410/17955
+  DTW 进度: 4420/17955
+  DTW 进度: 4430/17955
+  DTW 进度: 4440/17955
+  DTW 进度: 4450/17955
+  DTW 进度: 4460/17955
+  DTW 进度: 4470/17955
+  DTW 进度: 4480/17955
+  DTW 进度: 4490/17955
+  DTW 进度: 4500/17955
+  DTW 进度: 4510/17955
+  DTW 进度: 4520/17955
+  DTW 进度: 4530/17955
+  DTW 进度: 4540/17955
+  DTW 进度: 4550/17955
+  DTW 进度: 4560/17955
+  DTW 进度: 4570/17955
+  DTW 进度: 4580/17955
+  DTW 进度: 4590/17955
+  DTW 进度: 4600/17955
+  DTW 进度: 4610/17955
+  DTW 进度: 4620/17955
+  DTW 进度: 4630/17955
+  DTW 进度: 4640/17955
+  DTW 进度: 4650/17955
+  DTW 进度: 4660/17955
+  DTW 进度: 4670/17955
+  DTW 进度: 4680/17955
+  DTW 进度: 4690/17955
+  DTW 进度: 4700/17955
+  DTW 进度: 4710/17955
+  DTW 进度: 4720/17955
+  DTW 进度: 4730/17955
+  DTW 进度: 4740/17955
+  DTW 进度: 4750/17955
+  DTW 进度: 4760/17955
+  DTW 进度: 4770/17955
+  DTW 进度: 4780/17955
+  DTW 进度: 4790/17955
+  DTW 进度: 4800/17955
+  DTW 进度: 4810/17955
+  DTW 进度: 4820/17955
+  DTW 进度: 4830/17955
+  DTW 进度: 4840/17955
+  DTW 进度: 4850/17955
+  DTW 进度: 4860/17955
+  DTW 进度: 4870/17955
+  DTW 进度: 4880/17955
+  DTW 进度: 4890/17955
+  DTW 进度: 4900/17955
+  DTW 进度: 4910/17955
+  DTW 进度: 4920/17955
+  DTW 进度: 4930/17955
+  DTW 进度: 4940/17955
+  DTW 进度: 4950/17955
+  DTW 进度: 4960/17955
+  DTW 进度: 4970/17955
+  DTW 进度: 4980/17955
+  DTW 进度: 4990/17955
+  DTW 进度: 5000/17955
+  DTW 进度: 5010/17955
+  DTW 进度: 5020/17955
+  DTW 进度: 5030/17955
+  DTW 进度: 5040/17955
+  DTW 进度: 5050/17955
+  DTW 进度: 5060/17955
+  DTW 进度: 5070/17955
+  DTW 进度: 5080/17955
+  DTW 进度: 5090/17955
+  DTW 进度: 5100/17955
+  DTW 进度: 5110/17955
+  DTW 进度: 5120/17955
+  DTW 进度: 5130/17955
+  DTW 进度: 5140/17955
+  DTW 进度: 5150/17955
+  DTW 进度: 5160/17955
+  DTW 进度: 5170/17955
+  DTW 进度: 5180/17955
+  DTW 进度: 5190/17955
+  DTW 进度: 5200/17955
+  DTW 进度: 5210/17955
+  DTW 进度: 5220/17955
+  DTW 进度: 5230/17955
+  DTW 进度: 5240/17955
+  DTW 进度: 5250/17955
+  DTW 进度: 5260/17955
+  DTW 进度: 5270/17955
+  DTW 进度: 5280/17955
+  DTW 进度: 5290/17955
+  DTW 进度: 5300/17955
+  DTW 进度: 5310/17955
+  DTW 进度: 5320/17955
+  DTW 进度: 5330/17955
+  DTW 进度: 5340/17955
+  DTW 进度: 5350/17955
+  DTW 进度: 5360/17955
+  DTW 进度: 5370/17955
+  DTW 进度: 5380/17955
+  DTW 进度: 5390/17955
+  DTW 进度: 5400/17955
+  DTW 进度: 5410/17955
+  DTW 进度: 5420/17955
+  DTW 进度: 5430/17955
+  DTW 进度: 5440/17955
+  DTW 进度: 5450/17955
+  DTW 进度: 5460/17955
+  DTW 进度: 5470/17955
+  DTW 进度: 5480/17955
+  DTW 进度: 5490/17955
+  DTW 进度: 5500/17955
+  DTW 进度: 5510/17955
+  DTW 进度: 5520/17955
+  DTW 进度: 5530/17955
+  DTW 进度: 5540/17955
+  DTW 进度: 5550/17955
+  DTW 进度: 5560/17955
+  DTW 进度: 5570/17955
+  DTW 进度: 5580/17955
+  DTW 进度: 5590/17955
+  DTW 进度: 5600/17955
+  DTW 进度: 5610/17955
+  DTW 进度: 5620/17955
+  DTW 进度: 5630/17955
+  DTW 进度: 5640/17955
+  DTW 进度: 5650/17955
+  DTW 进度: 5660/17955
+  DTW 进度: 5670/17955
+  DTW 进度: 5680/17955
+  DTW 进度: 5690/17955
+  DTW 进度: 5700/17955
+  DTW 进度: 5710/17955
+  DTW 进度: 5720/17955
+  DTW 进度: 5730/17955
+  DTW 进度: 5740/17955
+  DTW 进度: 5750/17955
+  DTW 进度: 5760/17955
+  DTW 进度: 5770/17955
+  DTW 进度: 5780/17955
+  DTW 进度: 5790/17955
+  DTW 进度: 5800/17955
+  DTW 进度: 5810/17955
+  DTW 进度: 5820/17955
+  DTW 进度: 5830/17955
+  DTW 进度: 5840/17955
+  DTW 进度: 5850/17955
+  DTW 进度: 5860/17955
+  DTW 进度: 5870/17955
+  DTW 进度: 5880/17955
+  DTW 进度: 5890/17955
+  DTW 进度: 5900/17955
+  DTW 进度: 5910/17955
+  DTW 进度: 5920/17955
+  DTW 进度: 5930/17955
+  DTW 进度: 5940/17955
+  DTW 进度: 5950/17955
+  DTW 进度: 5960/17955
+  DTW 进度: 5970/17955
+  DTW 进度: 5980/17955
+  DTW 进度: 5990/17955
+  DTW 进度: 6000/17955
+  DTW 进度: 6010/17955
+  DTW 进度: 6020/17955
+  DTW 进度: 6030/17955
+  DTW 进度: 6040/17955
+  DTW 进度: 6050/17955
+  DTW 进度: 6060/17955
+  DTW 进度: 6070/17955
+  DTW 进度: 6080/17955
+  DTW 进度: 6090/17955
+  DTW 进度: 6100/17955
+  DTW 进度: 6110/17955
+  DTW 进度: 6120/17955
+  DTW 进度: 6130/17955
+  DTW 进度: 6140/17955
+  DTW 进度: 6150/17955
+  DTW 进度: 6160/17955
+  DTW 进度: 6170/17955
+  DTW 进度: 6180/17955
+  DTW 进度: 6190/17955
+  DTW 进度: 6200/17955
+  DTW 进度: 6210/17955
+  DTW 进度: 6220/17955
+  DTW 进度: 6230/17955
+  DTW 进度: 6240/17955
+  DTW 进度: 6250/17955
+  DTW 进度: 6260/17955
+  DTW 进度: 6270/17955
+  DTW 进度: 6280/17955
+  DTW 进度: 6290/17955
+  DTW 进度: 6300/17955
+  DTW 进度: 6310/17955
+  DTW 进度: 6320/17955
+  DTW 进度: 6330/17955
+  DTW 进度: 6340/17955
+  DTW 进度: 6350/17955
+  DTW 进度: 6360/17955
+  DTW 进度: 6370/17955
+  DTW 进度: 6380/17955
+  DTW 进度: 6390/17955
+  DTW 进度: 6400/17955
+  DTW 进度: 6410/17955
+  DTW 进度: 6420/17955
+  DTW 进度: 6430/17955
+  DTW 进度: 6440/17955
+  DTW 进度: 6450/17955
+  DTW 进度: 6460/17955
+  DTW 进度: 6470/17955
+  DTW 进度: 6480/17955
+  DTW 进度: 6490/17955
+  DTW 进度: 6500/17955
+  DTW 进度: 6510/17955
+  DTW 进度: 6520/17955
+  DTW 进度: 6530/17955
+  DTW 进度: 6540/17955
+  DTW 进度: 6550/17955
+  DTW 进度: 6560/17955
+  DTW 进度: 6570/17955
+  DTW 进度: 6580/17955
+  DTW 进度: 6590/17955
+  DTW 进度: 6600/17955
+  DTW 进度: 6610/17955
+  DTW 进度: 6620/17955
+  DTW 进度: 6630/17955
+  DTW 进度: 6640/17955
+  DTW 进度: 6650/17955
+  DTW 进度: 6660/17955
+  DTW 进度: 6670/17955
+  DTW 进度: 6680/17955
+  DTW 进度: 6690/17955
+  DTW 进度: 6700/17955
+  DTW 进度: 6710/17955
+  DTW 进度: 6720/17955
+  DTW 进度: 6730/17955
+  DTW 进度: 6740/17955
+  DTW 进度: 6750/17955
+  DTW 进度: 6760/17955
+  DTW 进度: 6770/17955
+  DTW 进度: 6780/17955
+  DTW 进度: 6790/17955
+  DTW 进度: 6800/17955
+  DTW 进度: 6810/17955
+  DTW 进度: 6820/17955
+  DTW 进度: 6830/17955
+  DTW 进度: 6840/17955
+  DTW 进度: 6850/17955
+  DTW 进度: 6860/17955
+  DTW 进度: 6870/17955
+  DTW 进度: 6880/17955
+  DTW 进度: 6890/17955
+  DTW 进度: 6900/17955
+  DTW 进度: 6910/17955
+  DTW 进度: 6920/17955
+  DTW 进度: 6930/17955
+  DTW 进度: 6940/17955
+  DTW 进度: 6950/17955
+  DTW 进度: 6960/17955
+  DTW 进度: 6970/17955
+  DTW 进度: 6980/17955
+  DTW 进度: 6990/17955
+  DTW 进度: 7000/17955
+  DTW 进度: 7010/17955
+  DTW 进度: 7020/17955
+  DTW 进度: 7030/17955
+  DTW 进度: 7040/17955
+  DTW 进度: 7050/17955
+  DTW 进度: 7060/17955
+  DTW 进度: 7070/17955
+  DTW 进度: 7080/17955
+  DTW 进度: 7090/17955
+  DTW 进度: 7100/17955
+  DTW 进度: 7110/17955
+  DTW 进度: 7120/17955
+  DTW 进度: 7130/17955
+  DTW 进度: 7140/17955
+  DTW 进度: 7150/17955
+  DTW 进度: 7160/17955
+  DTW 进度: 7170/17955
+  DTW 进度: 7180/17955
+  DTW 进度: 7190/17955
+  DTW 进度: 7200/17955
+  DTW 进度: 7210/17955
+  DTW 进度: 7220/17955
+  DTW 进度: 7230/17955
+  DTW 进度: 7240/17955
+  DTW 进度: 7250/17955
+  DTW 进度: 7260/17955
+  DTW 进度: 7270/17955
+  DTW 进度: 7280/17955
+  DTW 进度: 7290/17955
+  DTW 进度: 7300/17955
+  DTW 进度: 7310/17955
+  DTW 进度: 7320/17955
+  DTW 进度: 7330/17955
+  DTW 进度: 7340/17955
+  DTW 进度: 7350/17955
+  DTW 进度: 7360/17955
+  DTW 进度: 7370/17955
+  DTW 进度: 7380/17955
+  DTW 进度: 7390/17955
+  DTW 进度: 7400/17955
+  DTW 进度: 7410/17955
+  DTW 进度: 7420/17955
+  DTW 进度: 7430/17955
+  DTW 进度: 7440/17955
+  DTW 进度: 7450/17955
+  DTW 进度: 7460/17955
+  DTW 进度: 7470/17955
+  DTW 进度: 7480/17955
+  DTW 进度: 7490/17955
+  DTW 进度: 7500/17955
+  DTW 进度: 7510/17955
+  DTW 进度: 7520/17955
+  DTW 进度: 7530/17955
+  DTW 进度: 7540/17955
+  DTW 进度: 7550/17955
+  DTW 进度: 7560/17955
+  DTW 进度: 7570/17955
+  DTW 进度: 7580/17955
+  DTW 进度: 7590/17955
+  DTW 进度: 7600/17955
+  DTW 进度: 7610/17955
+  DTW 进度: 7620/17955
+  DTW 进度: 7630/17955
+  DTW 进度: 7640/17955
+  DTW 进度: 7650/17955
+  DTW 进度: 7660/17955
+  DTW 进度: 7670/17955
+  DTW 进度: 7680/17955
+  DTW 进度: 7690/17955
+  DTW 进度: 7700/17955
+  DTW 进度: 7710/17955
+  DTW 进度: 7720/17955
+  DTW 进度: 7730/17955
+  DTW 进度: 7740/17955
+  DTW 进度: 7750/17955
+  DTW 进度: 7760/17955
+  DTW 进度: 7770/17955
+  DTW 进度: 7780/17955
+  DTW 进度: 7790/17955
+  DTW 进度: 7800/17955
+  DTW 进度: 7810/17955
+  DTW 进度: 7820/17955
+  DTW 进度: 7830/17955
+  DTW 进度: 7840/17955
+  DTW 进度: 7850/17955
+  DTW 进度: 7860/17955
+  DTW 进度: 7870/17955
+  DTW 进度: 7880/17955
+  DTW 进度: 7890/17955
+  DTW 进度: 7900/17955
+  DTW 进度: 7910/17955
+  DTW 进度: 7920/17955
+  DTW 进度: 7930/17955
+  DTW 进度: 7940/17955
+  DTW 进度: 7950/17955
+  DTW 进度: 7960/17955
+  DTW 进度: 7970/17955
+  DTW 进度: 7980/17955
+  DTW 进度: 7990/17955
+  DTW 进度: 8000/17955
+  DTW 进度: 8010/17955
+  DTW 进度: 8020/17955
+  DTW 进度: 8030/17955
+  DTW 进度: 8040/17955
+  DTW 进度: 8050/17955
+  DTW 进度: 8060/17955
+  DTW 进度: 8070/17955
+  DTW 进度: 8080/17955
+  DTW 进度: 8090/17955
+  DTW 进度: 8100/17955
+  DTW 进度: 8110/17955
+  DTW 进度: 8120/17955
+  DTW 进度: 8130/17955
+  DTW 进度: 8140/17955
+  DTW 进度: 8150/17955
+  DTW 进度: 8160/17955
+  DTW 进度: 8170/17955
+  DTW 进度: 8180/17955
+  DTW 进度: 8190/17955
+  DTW 进度: 8200/17955
+  DTW 进度: 8210/17955
+  DTW 进度: 8220/17955
+  DTW 进度: 8230/17955
+  DTW 进度: 8240/17955
+  DTW 进度: 8250/17955
+  DTW 进度: 8260/17955
+  DTW 进度: 8270/17955
+  DTW 进度: 8280/17955
+  DTW 进度: 8290/17955
+  DTW 进度: 8300/17955
+  DTW 进度: 8310/17955
+  DTW 进度: 8320/17955
+  DTW 进度: 8330/17955
+  DTW 进度: 8340/17955
+  DTW 进度: 8350/17955
+  DTW 进度: 8360/17955
+  DTW 进度: 8370/17955
+  DTW 进度: 8380/17955
+  DTW 进度: 8390/17955
+  DTW 进度: 8400/17955
+  DTW 进度: 8410/17955
+  DTW 进度: 8420/17955
+  DTW 进度: 8430/17955
+  DTW 进度: 8440/17955
+  DTW 进度: 8450/17955
+  DTW 进度: 8460/17955
+  DTW 进度: 8470/17955
+  DTW 进度: 8480/17955
+  DTW 进度: 8490/17955
+  DTW 进度: 8500/17955
+  DTW 进度: 8510/17955
+  DTW 进度: 8520/17955
+  DTW 进度: 8530/17955
+  DTW 进度: 8540/17955
+  DTW 进度: 8550/17955
+  DTW 进度: 8560/17955
+  DTW 进度: 8570/17955
+  DTW 进度: 8580/17955
+  DTW 进度: 8590/17955
+  DTW 进度: 8600/17955
+  DTW 进度: 8610/17955
+  DTW 进度: 8620/17955
+  DTW 进度: 8630/17955
+  DTW 进度: 8640/17955
+  DTW 进度: 8650/17955
+  DTW 进度: 8660/17955
+  DTW 进度: 8670/17955
+  DTW 进度: 8680/17955
+  DTW 进度: 8690/17955
+  DTW 进度: 8700/17955
+  DTW 进度: 8710/17955
+  DTW 进度: 8720/17955
+  DTW 进度: 8730/17955
+  DTW 进度: 8740/17955
+  DTW 进度: 8750/17955
+  DTW 进度: 8760/17955
+  DTW 进度: 8770/17955
+  DTW 进度: 8780/17955
+  DTW 进度: 8790/17955
+  DTW 进度: 8800/17955
+  DTW 进度: 8810/17955
+  DTW 进度: 8820/17955
+  DTW 进度: 8830/17955
+  DTW 进度: 8840/17955
+  DTW 进度: 8850/17955
+  DTW 进度: 8860/17955
+  DTW 进度: 8870/17955
+  DTW 进度: 8880/17955
+  DTW 进度: 8890/17955
+  DTW 进度: 8900/17955
+  DTW 进度: 8910/17955
+  DTW 进度: 8920/17955
+  DTW 进度: 8930/17955
+  DTW 进度: 8940/17955
+  DTW 进度: 8950/17955
+  DTW 进度: 8960/17955
+  DTW 进度: 8970/17955
+  DTW 进度: 8980/17955
+  DTW 进度: 8990/17955
+  DTW 进度: 9000/17955
+  DTW 进度: 9010/17955
+  DTW 进度: 9020/17955
+  DTW 进度: 9030/17955
+  DTW 进度: 9040/17955
+  DTW 进度: 9050/17955
+  DTW 进度: 9060/17955
+  DTW 进度: 9070/17955
+  DTW 进度: 9080/17955
+  DTW 进度: 9090/17955
+  DTW 进度: 9100/17955
+  DTW 进度: 9110/17955
+  DTW 进度: 9120/17955
+  DTW 进度: 9130/17955
+  DTW 进度: 9140/17955
+  DTW 进度: 9150/17955
+  DTW 进度: 9160/17955
+  DTW 进度: 9170/17955
+  DTW 进度: 9180/17955
+  DTW 进度: 9190/17955
+  DTW 进度: 9200/17955
+  DTW 进度: 9210/17955
+  DTW 进度: 9220/17955
+  DTW 进度: 9230/17955
+  DTW 进度: 9240/17955
+  DTW 进度: 9250/17955
+  DTW 进度: 9260/17955
+  DTW 进度: 9270/17955
+  DTW 进度: 9280/17955
+  DTW 进度: 9290/17955
+  DTW 进度: 9300/17955
+  DTW 进度: 9310/17955
+  DTW 进度: 9320/17955
+  DTW 进度: 9330/17955
+  DTW 进度: 9340/17955
+  DTW 进度: 9350/17955
+  DTW 进度: 9360/17955
+  DTW 进度: 9370/17955
+  DTW 进度: 9380/17955
+  DTW 进度: 9390/17955
+  DTW 进度: 9400/17955
+  DTW 进度: 9410/17955
+  DTW 进度: 9420/17955
+  DTW 进度: 9430/17955
+  DTW 进度: 9440/17955
+  DTW 进度: 9450/17955
+  DTW 进度: 9460/17955
+  DTW 进度: 9470/17955
+  DTW 进度: 9480/17955
+  DTW 进度: 9490/17955
+  DTW 进度: 9500/17955
+  DTW 进度: 9510/17955
+  DTW 进度: 9520/17955
+  DTW 进度: 9530/17955
+  DTW 进度: 9540/17955
+  DTW 进度: 9550/17955
+  DTW 进度: 9560/17955
+  DTW 进度: 9570/17955
+  DTW 进度: 9580/17955
+  DTW 进度: 9590/17955
+  DTW 进度: 9600/17955
+  DTW 进度: 9610/17955
+  DTW 进度: 9620/17955
+  DTW 进度: 9630/17955
+  DTW 进度: 9640/17955
+  DTW 进度: 9650/17955
+  DTW 进度: 9660/17955
+  DTW 进度: 9670/17955
+  DTW 进度: 9680/17955
+  DTW 进度: 9690/17955
+  DTW 进度: 9700/17955
+  DTW 进度: 9710/17955
+  DTW 进度: 9720/17955
+  DTW 进度: 9730/17955
+  DTW 进度: 9740/17955
+  DTW 进度: 9750/17955
+  DTW 进度: 9760/17955
+  DTW 进度: 9770/17955
+  DTW 进度: 9780/17955
+  DTW 进度: 9790/17955
+  DTW 进度: 9800/17955
+  DTW 进度: 9810/17955
+  DTW 进度: 9820/17955
+  DTW 进度: 9830/17955
+  DTW 进度: 9840/17955
+  DTW 进度: 9850/17955
+  DTW 进度: 9860/17955
+  DTW 进度: 9870/17955
+  DTW 进度: 9880/17955
+  DTW 进度: 9890/17955
+  DTW 进度: 9900/17955
+  DTW 进度: 9910/17955
+  DTW 进度: 9920/17955
+  DTW 进度: 9930/17955
+  DTW 进度: 9940/17955
+  DTW 进度: 9950/17955
+  DTW 进度: 9960/17955
+  DTW 进度: 9970/17955
+  DTW 进度: 9980/17955
+  DTW 进度: 9990/17955
+  DTW 进度: 10000/17955
+  DTW 进度: 10010/17955
+  DTW 进度: 10020/17955
+  DTW 进度: 10030/17955
+  DTW 进度: 10040/17955
+  DTW 进度: 10050/17955
+  DTW 进度: 10060/17955
+  DTW 进度: 10070/17955
+  DTW 进度: 10080/17955
+  DTW 进度: 10090/17955
+  DTW 进度: 10100/17955
+  DTW 进度: 10110/17955
+  DTW 进度: 10120/17955
+  DTW 进度: 10130/17955
+  DTW 进度: 10140/17955
+  DTW 进度: 10150/17955
+  DTW 进度: 10160/17955
+  DTW 进度: 10170/17955
+  DTW 进度: 10180/17955
+  DTW 进度: 10190/17955
+  DTW 进度: 10200/17955
+  DTW 进度: 10210/17955
+  DTW 进度: 10220/17955
+  DTW 进度: 10230/17955
+  DTW 进度: 10240/17955
+  DTW 进度: 10250/17955
+  DTW 进度: 10260/17955
+  DTW 进度: 10270/17955
+  DTW 进度: 10280/17955
+  DTW 进度: 10290/17955
+  DTW 进度: 10300/17955
+  DTW 进度: 10310/17955
+  DTW 进度: 10320/17955
+  DTW 进度: 10330/17955
+  DTW 进度: 10340/17955
+  DTW 进度: 10350/17955
+  DTW 进度: 10360/17955
+  DTW 进度: 10370/17955
+  DTW 进度: 10380/17955
+  DTW 进度: 10390/17955
+  DTW 进度: 10400/17955
+  DTW 进度: 10410/17955
+  DTW 进度: 10420/17955
+  DTW 进度: 10430/17955
+  DTW 进度: 10440/17955
+  DTW 进度: 10450/17955
+  DTW 进度: 10460/17955
+  DTW 进度: 10470/17955
+  DTW 进度: 10480/17955
+  DTW 进度: 10490/17955
+  DTW 进度: 10500/17955
+  DTW 进度: 10510/17955
+  DTW 进度: 10520/17955
+  DTW 进度: 10530/17955
+  DTW 进度: 10540/17955
+  DTW 进度: 10550/17955
+  DTW 进度: 10560/17955
+  DTW 进度: 10570/17955
+  DTW 进度: 10580/17955
+  DTW 进度: 10590/17955
+  DTW 进度: 10600/17955
+  DTW 进度: 10610/17955
+  DTW 进度: 10620/17955
+  DTW 进度: 10630/17955
+  DTW 进度: 10640/17955
+  DTW 进度: 10650/17955
+  DTW 进度: 10660/17955
+  DTW 进度: 10670/17955
+  DTW 进度: 10680/17955
+  DTW 进度: 10690/17955
+  DTW 进度: 10700/17955
+  DTW 进度: 10710/17955
+  DTW 进度: 10720/17955
+  DTW 进度: 10730/17955
+  DTW 进度: 10740/17955
+  DTW 进度: 10750/17955
+  DTW 进度: 10760/17955
+  DTW 进度: 10770/17955
+  DTW 进度: 10780/17955
+  DTW 进度: 10790/17955
+  DTW 进度: 10800/17955
+  DTW 进度: 10810/17955
+  DTW 进度: 10820/17955
+  DTW 进度: 10830/17955
+  DTW 进度: 10840/17955
+  DTW 进度: 10850/17955
+  DTW 进度: 10860/17955
+  DTW 进度: 10870/17955
+  DTW 进度: 10880/17955
+  DTW 进度: 10890/17955
+  DTW 进度: 10900/17955
+  DTW 进度: 10910/17955
+  DTW 进度: 10920/17955
+  DTW 进度: 10930/17955
+  DTW 进度: 10940/17955
+  DTW 进度: 10950/17955
+  DTW 进度: 10960/17955
+  DTW 进度: 10970/17955
+  DTW 进度: 10980/17955
+  DTW 进度: 10990/17955
+  DTW 进度: 11000/17955
+  DTW 进度: 11010/17955
+  DTW 进度: 11020/17955
+  DTW 进度: 11030/17955
+  DTW 进度: 11040/17955
+  DTW 进度: 11050/17955
+  DTW 进度: 11060/17955
+  DTW 进度: 11070/17955
+  DTW 进度: 11080/17955
+  DTW 进度: 11090/17955
+  DTW 进度: 11100/17955
+  DTW 进度: 11110/17955
+  DTW 进度: 11120/17955
+  DTW 进度: 11130/17955
+  DTW 进度: 11140/17955
+  DTW 进度: 11150/17955
+  DTW 进度: 11160/17955
+  DTW 进度: 11170/17955
+  DTW 进度: 11180/17955
+  DTW 进度: 11190/17955
+  DTW 进度: 11200/17955
+  DTW 进度: 11210/17955
+  DTW 进度: 11220/17955
+  DTW 进度: 11230/17955
+  DTW 进度: 11240/17955
+  DTW 进度: 11250/17955
+  DTW 进度: 11260/17955
+  DTW 进度: 11270/17955
+  DTW 进度: 11280/17955
+  DTW 进度: 11290/17955
+  DTW 进度: 11300/17955
+  DTW 进度: 11310/17955
+  DTW 进度: 11320/17955
+  DTW 进度: 11330/17955
+  DTW 进度: 11340/17955
+  DTW 进度: 11350/17955
+  DTW 进度: 11360/17955
+  DTW 进度: 11370/17955
+  DTW 进度: 11380/17955
+  DTW 进度: 11390/17955
+  DTW 进度: 11400/17955
+  DTW 进度: 11410/17955
+  DTW 进度: 11420/17955
+  DTW 进度: 11430/17955
+  DTW 进度: 11440/17955
+  DTW 进度: 11450/17955
+  DTW 进度: 11460/17955
+  DTW 进度: 11470/17955
+  DTW 进度: 11480/17955
+  DTW 进度: 11490/17955
+  DTW 进度: 11500/17955
+  DTW 进度: 11510/17955
+  DTW 进度: 11520/17955
+  DTW 进度: 11530/17955
+  DTW 进度: 11540/17955
+  DTW 进度: 11550/17955
+  DTW 进度: 11560/17955
+  DTW 进度: 11570/17955
+  DTW 进度: 11580/17955
+  DTW 进度: 11590/17955
+  DTW 进度: 11600/17955
+  DTW 进度: 11610/17955
+  DTW 进度: 11620/17955
+  DTW 进度: 11630/17955
+  DTW 进度: 11640/17955
+  DTW 进度: 11650/17955
+  DTW 进度: 11660/17955
+  DTW 进度: 11670/17955
+  DTW 进度: 11680/17955
+  DTW 进度: 11690/17955
+  DTW 进度: 11700/17955
+  DTW 进度: 11710/17955
+  DTW 进度: 11720/17955
+  DTW 进度: 11730/17955
+  DTW 进度: 11740/17955
+  DTW 进度: 11750/17955
+  DTW 进度: 11760/17955
+  DTW 进度: 11770/17955
+  DTW 进度: 11780/17955
+  DTW 进度: 11790/17955
+  DTW 进度: 11800/17955
+  DTW 进度: 11810/17955
+  DTW 进度: 11820/17955
+  DTW 进度: 11830/17955
+  DTW 进度: 11840/17955
+  DTW 进度: 11850/17955
+  DTW 进度: 11860/17955
+  DTW 进度: 11870/17955
+  DTW 进度: 11880/17955
+  DTW 进度: 11890/17955
+  DTW 进度: 11900/17955
+  DTW 进度: 11910/17955
+  DTW 进度: 11920/17955
+  DTW 进度: 11930/17955
+  DTW 进度: 11940/17955
+  DTW 进度: 11950/17955
+  DTW 进度: 11960/17955
+  DTW 进度: 11970/17955
+  DTW 进度: 11980/17955
+  DTW 进度: 11990/17955
+  DTW 进度: 12000/17955
+  DTW 进度: 12010/17955
+  DTW 进度: 12020/17955
+  DTW 进度: 12030/17955
+  DTW 进度: 12040/17955
+  DTW 进度: 12050/17955
+  DTW 进度: 12060/17955
+  DTW 进度: 12070/17955
+  DTW 进度: 12080/17955
+  DTW 进度: 12090/17955
+  DTW 进度: 12100/17955
+  DTW 进度: 12110/17955
+  DTW 进度: 12120/17955
+  DTW 进度: 12130/17955
+  DTW 进度: 12140/17955
+  DTW 进度: 12150/17955
+  DTW 进度: 12160/17955
+  DTW 进度: 12170/17955
+  DTW 进度: 12180/17955
+  DTW 进度: 12190/17955
+  DTW 进度: 12200/17955
+  DTW 进度: 12210/17955
+  DTW 进度: 12220/17955
+  DTW 进度: 12230/17955
+  DTW 进度: 12240/17955
+  DTW 进度: 12250/17955
+  DTW 进度: 12260/17955
+  DTW 进度: 12270/17955
+  DTW 进度: 12280/17955
+  DTW 进度: 12290/17955
+  DTW 进度: 12300/17955
+  DTW 进度: 12310/17955
+  DTW 进度: 12320/17955
+  DTW 进度: 12330/17955
+  DTW 进度: 12340/17955
+  DTW 进度: 12350/17955
+  DTW 进度: 12360/17955
+  DTW 进度: 12370/17955
+  DTW 进度: 12380/17955
+  DTW 进度: 12390/17955
+  DTW 进度: 12400/17955
+  DTW 进度: 12410/17955
+  DTW 进度: 12420/17955
+  DTW 进度: 12430/17955
+  DTW 进度: 12440/17955
+  DTW 进度: 12450/17955
+  DTW 进度: 12460/17955
+  DTW 进度: 12470/17955
+  DTW 进度: 12480/17955
+  DTW 进度: 12490/17955
+  DTW 进度: 12500/17955
+  DTW 进度: 12510/17955
+  DTW 进度: 12520/17955
+  DTW 进度: 12530/17955
+  DTW 进度: 12540/17955
+  DTW 进度: 12550/17955
+  DTW 进度: 12560/17955
+  DTW 进度: 12570/17955
+  DTW 进度: 12580/17955
+  DTW 进度: 12590/17955
+  DTW 进度: 12600/17955
+  DTW 进度: 12610/17955
+  DTW 进度: 12620/17955
+  DTW 进度: 12630/17955
+  DTW 进度: 12640/17955
+  DTW 进度: 12650/17955
+  DTW 进度: 12660/17955
+  DTW 进度: 12670/17955
+  DTW 进度: 12680/17955
+  DTW 进度: 12690/17955
+  DTW 进度: 12700/17955
+  DTW 进度: 12710/17955
+  DTW 进度: 12720/17955
+  DTW 进度: 12730/17955
+  DTW 进度: 12740/17955
+  DTW 进度: 12750/17955
+  DTW 进度: 12760/17955
+  DTW 进度: 12770/17955
+  DTW 进度: 12780/17955
+  DTW 进度: 12790/17955
+  DTW 进度: 12800/17955
+  DTW 进度: 12810/17955
+  DTW 进度: 12820/17955
+  DTW 进度: 12830/17955
+  DTW 进度: 12840/17955
+  DTW 进度: 12850/17955
+  DTW 进度: 12860/17955
+  DTW 进度: 12870/17955
+  DTW 进度: 12880/17955
+  DTW 进度: 12890/17955
+  DTW 进度: 12900/17955
+  DTW 进度: 12910/17955
+  DTW 进度: 12920/17955
+  DTW 进度: 12930/17955
+  DTW 进度: 12940/17955
+  DTW 进度: 12950/17955
+  DTW 进度: 12960/17955
+  DTW 进度: 12970/17955
+  DTW 进度: 12980/17955
+  DTW 进度: 12990/17955
+  DTW 进度: 13000/17955
+  DTW 进度: 13010/17955
+  DTW 进度: 13020/17955
+  DTW 进度: 13030/17955
+  DTW 进度: 13040/17955
+  DTW 进度: 13050/17955
+  DTW 进度: 13060/17955
+  DTW 进度: 13070/17955
+  DTW 进度: 13080/17955
+  DTW 进度: 13090/17955
+  DTW 进度: 13100/17955
+  DTW 进度: 13110/17955
+  DTW 进度: 13120/17955
+  DTW 进度: 13130/17955
+  DTW 进度: 13140/17955
+  DTW 进度: 13150/17955
+  DTW 进度: 13160/17955
+  DTW 进度: 13170/17955
+  DTW 进度: 13180/17955
+  DTW 进度: 13190/17955
+  DTW 进度: 13200/17955
+  DTW 进度: 13210/17955
+  DTW 进度: 13220/17955
+  DTW 进度: 13230/17955
+  DTW 进度: 13240/17955
+  DTW 进度: 13250/17955
+  DTW 进度: 13260/17955
+  DTW 进度: 13270/17955
+  DTW 进度: 13280/17955
+  DTW 进度: 13290/17955
+  DTW 进度: 13300/17955
+  DTW 进度: 13310/17955
+  DTW 进度: 13320/17955
+  DTW 进度: 13330/17955
+  DTW 进度: 13340/17955
+  DTW 进度: 13350/17955
+  DTW 进度: 13360/17955
+  DTW 进度: 13370/17955
+  DTW 进度: 13380/17955
+  DTW 进度: 13390/17955
+  DTW 进度: 13400/17955
+  DTW 进度: 13410/17955
+  DTW 进度: 13420/17955
+  DTW 进度: 13430/17955
+  DTW 进度: 13440/17955
+  DTW 进度: 13450/17955
+  DTW 进度: 13460/17955
+  DTW 进度: 13470/17955
+  DTW 进度: 13480/17955
+  DTW 进度: 13490/17955
+  DTW 进度: 13500/17955
+  DTW 进度: 13510/17955
+  DTW 进度: 13520/17955
+  DTW 进度: 13530/17955
+  DTW 进度: 13540/17955
+  DTW 进度: 13550/17955
+  DTW 进度: 13560/17955
+  DTW 进度: 13570/17955
+  DTW 进度: 13580/17955
+  DTW 进度: 13590/17955
+  DTW 进度: 13600/17955
+  DTW 进度: 13610/17955
+  DTW 进度: 13620/17955
+  DTW 进度: 13630/17955
+  DTW 进度: 13640/17955
+  DTW 进度: 13650/17955
+  DTW 进度: 13660/17955
+  DTW 进度: 13670/17955
+  DTW 进度: 13680/17955
+  DTW 进度: 13690/17955
+  DTW 进度: 13700/17955
+  DTW 进度: 13710/17955
+  DTW 进度: 13720/17955
+  DTW 进度: 13730/17955
+  DTW 进度: 13740/17955
+  DTW 进度: 13750/17955
+  DTW 进度: 13760/17955
+  DTW 进度: 13770/17955
+  DTW 进度: 13780/17955
+  DTW 进度: 13790/17955
+  DTW 进度: 13800/17955
+  DTW 进度: 13810/17955
+  DTW 进度: 13820/17955
+  DTW 进度: 13830/17955
+  DTW 进度: 13840/17955
+  DTW 进度: 13850/17955
+  DTW 进度: 13860/17955
+  DTW 进度: 13870/17955
+  DTW 进度: 13880/17955
+  DTW 进度: 13890/17955
+  DTW 进度: 13900/17955
+  DTW 进度: 13910/17955
+  DTW 进度: 13920/17955
+  DTW 进度: 13930/17955
+  DTW 进度: 13940/17955
+  DTW 进度: 13950/17955
+  DTW 进度: 13960/17955
+  DTW 进度: 13970/17955
+  DTW 进度: 13980/17955
+  DTW 进度: 13990/17955
+  DTW 进度: 14000/17955
+  DTW 进度: 14010/17955
+  DTW 进度: 14020/17955
+  DTW 进度: 14030/17955
+  DTW 进度: 14040/17955
+  DTW 进度: 14050/17955
+  DTW 进度: 14060/17955
+  DTW 进度: 14070/17955
+  DTW 进度: 14080/17955
+  DTW 进度: 14090/17955
+  DTW 进度: 14100/17955
+  DTW 进度: 14110/17955
+  DTW 进度: 14120/17955
+  DTW 进度: 14130/17955
+  DTW 进度: 14140/17955
+  DTW 进度: 14150/17955
+  DTW 进度: 14160/17955
+  DTW 进度: 14170/17955
+  DTW 进度: 14180/17955
+  DTW 进度: 14190/17955
+  DTW 进度: 14200/17955
+  DTW 进度: 14210/17955
+  DTW 进度: 14220/17955
+  DTW 进度: 14230/17955
+  DTW 进度: 14240/17955
+  DTW 进度: 14250/17955
+  DTW 进度: 14260/17955
+  DTW 进度: 14270/17955
+  DTW 进度: 14280/17955
+  DTW 进度: 14290/17955
+  DTW 进度: 14300/17955
+  DTW 进度: 14310/17955
+  DTW 进度: 14320/17955
+  DTW 进度: 14330/17955
+  DTW 进度: 14340/17955
+  DTW 进度: 14350/17955
+  DTW 进度: 14360/17955
+  DTW 进度: 14370/17955
+  DTW 进度: 14380/17955
+  DTW 进度: 14390/17955
+  DTW 进度: 14400/17955
+  DTW 进度: 14410/17955
+  DTW 进度: 14420/17955
+  DTW 进度: 14430/17955
+  DTW 进度: 14440/17955
+  DTW 进度: 14450/17955
+  DTW 进度: 14460/17955
+  DTW 进度: 14470/17955
+  DTW 进度: 14480/17955
+  DTW 进度: 14490/17955
+  DTW 进度: 14500/17955
+  DTW 进度: 14510/17955
+  DTW 进度: 14520/17955
+  DTW 进度: 14530/17955
+  DTW 进度: 14540/17955
+  DTW 进度: 14550/17955
+  DTW 进度: 14560/17955
+  DTW 进度: 14570/17955
+  DTW 进度: 14580/17955
+  DTW 进度: 14590/17955
+  DTW 进度: 14600/17955
+  DTW 进度: 14610/17955
+  DTW 进度: 14620/17955
+  DTW 进度: 14630/17955
+  DTW 进度: 14640/17955
+  DTW 进度: 14650/17955
+  DTW 进度: 14660/17955
+  DTW 进度: 14670/17955
+  DTW 进度: 14680/17955
+  DTW 进度: 14690/17955
+  DTW 进度: 14700/17955
+  DTW 进度: 14710/17955
+  DTW 进度: 14720/17955
+  DTW 进度: 14730/17955
+  DTW 进度: 14740/17955
+  DTW 进度: 14750/17955
+  DTW 进度: 14760/17955
+  DTW 进度: 14770/17955
+  DTW 进度: 14780/17955
+  DTW 进度: 14790/17955
+  DTW 进度: 14800/17955
+  DTW 进度: 14810/17955
+  DTW 进度: 14820/17955
+  DTW 进度: 14830/17955
+  DTW 进度: 14840/17955
+  DTW 进度: 14850/17955
+  DTW 进度: 14860/17955
+  DTW 进度: 14870/17955
+  DTW 进度: 14880/17955
+  DTW 进度: 14890/17955
+  DTW 进度: 14900/17955
+  DTW 进度: 14910/17955
+  DTW 进度: 14920/17955
+  DTW 进度: 14930/17955
+  DTW 进度: 14940/17955
+  DTW 进度: 14950/17955
+  DTW 进度: 14960/17955
+  DTW 进度: 14970/17955
+  DTW 进度: 14980/17955
+  DTW 进度: 14990/17955
+  DTW 进度: 15000/17955
+  DTW 进度: 15010/17955
+  DTW 进度: 15020/17955
+  DTW 进度: 15030/17955
+  DTW 进度: 15040/17955
+  DTW 进度: 15050/17955
+  DTW 进度: 15060/17955
+  DTW 进度: 15070/17955
+  DTW 进度: 15080/17955
+  DTW 进度: 15090/17955
+  DTW 进度: 15100/17955
+  DTW 进度: 15110/17955
+  DTW 进度: 15120/17955
+  DTW 进度: 15130/17955
+  DTW 进度: 15140/17955
+  DTW 进度: 15150/17955
+  DTW 进度: 15160/17955
+  DTW 进度: 15170/17955
+  DTW 进度: 15180/17955
+  DTW 进度: 15190/17955
+  DTW 进度: 15200/17955
+  DTW 进度: 15210/17955
+  DTW 进度: 15220/17955
+  DTW 进度: 15230/17955
+  DTW 进度: 15240/17955
+  DTW 进度: 15250/17955
+  DTW 进度: 15260/17955
+  DTW 进度: 15270/17955
+  DTW 进度: 15280/17955
+  DTW 进度: 15290/17955
+  DTW 进度: 15300/17955
+  DTW 进度: 15310/17955
+  DTW 进度: 15320/17955
+  DTW 进度: 15330/17955
+  DTW 进度: 15340/17955
+  DTW 进度: 15350/17955
+  DTW 进度: 15360/17955
+  DTW 进度: 15370/17955
+  DTW 进度: 15380/17955
+  DTW 进度: 15390/17955
+  DTW 进度: 15400/17955
+  DTW 进度: 15410/17955
+  DTW 进度: 15420/17955
+  DTW 进度: 15430/17955
+  DTW 进度: 15440/17955
+  DTW 进度: 15450/17955
+  DTW 进度: 15460/17955
+  DTW 进度: 15470/17955
+  DTW 进度: 15480/17955
+  DTW 进度: 15490/17955
+  DTW 进度: 15500/17955
+  DTW 进度: 15510/17955
+  DTW 进度: 15520/17955
+  DTW 进度: 15530/17955
+  DTW 进度: 15540/17955
+  DTW 进度: 15550/17955
+  DTW 进度: 15560/17955
+  DTW 进度: 15570/17955
+  DTW 进度: 15580/17955
+  DTW 进度: 15590/17955
+  DTW 进度: 15600/17955
+  DTW 进度: 15610/17955
+  DTW 进度: 15620/17955
+  DTW 进度: 15630/17955
+  DTW 进度: 15640/17955
+  DTW 进度: 15650/17955
+  DTW 进度: 15660/17955
+  DTW 进度: 15670/17955
+  DTW 进度: 15680/17955
+  DTW 进度: 15690/17955
+  DTW 进度: 15700/17955
+  DTW 进度: 15710/17955
+  DTW 进度: 15720/17955
+  DTW 进度: 15730/17955
+  DTW 进度: 15740/17955
+  DTW 进度: 15750/17955
+  DTW 进度: 15760/17955
+  DTW 进度: 15770/17955
+  DTW 进度: 15780/17955
+  DTW 进度: 15790/17955
+  DTW 进度: 15800/17955
+  DTW 进度: 15810/17955
+  DTW 进度: 15820/17955
+  DTW 进度: 15830/17955
+  DTW 进度: 15840/17955
+  DTW 进度: 15850/17955
+  DTW 进度: 15860/17955
+  DTW 进度: 15870/17955
+  DTW 进度: 15880/17955
+  DTW 进度: 15890/17955
+  DTW 进度: 15900/17955
+  DTW 进度: 15910/17955
+  DTW 进度: 15920/17955
+  DTW 进度: 15930/17955
+  DTW 进度: 15940/17955
+  DTW 进度: 15950/17955
+  DTW 进度: 15960/17955
+  DTW 进度: 15970/17955
+  DTW 进度: 15980/17955
+  DTW 进度: 15990/17955
+  DTW 进度: 16000/17955
+  DTW 进度: 16010/17955
+  DTW 进度: 16020/17955
+  DTW 进度: 16030/17955
+  DTW 进度: 16040/17955
+  DTW 进度: 16050/17955
+  DTW 进度: 16060/17955
+  DTW 进度: 16070/17955
+  DTW 进度: 16080/17955
+  DTW 进度: 16090/17955
+  DTW 进度: 16100/17955
+  DTW 进度: 16110/17955
+  DTW 进度: 16120/17955
+  DTW 进度: 16130/17955
+  DTW 进度: 16140/17955
+  DTW 进度: 16150/17955
+  DTW 进度: 16160/17955
+  DTW 进度: 16170/17955
+  DTW 进度: 16180/17955
+  DTW 进度: 16190/17955
+  DTW 进度: 16200/17955
+  DTW 进度: 16210/17955
+  DTW 进度: 16220/17955
+  DTW 进度: 16230/17955
+  DTW 进度: 16240/17955
+  DTW 进度: 16250/17955
+  DTW 进度: 16260/17955
+  DTW 进度: 16270/17955
+  DTW 进度: 16280/17955
+  DTW 进度: 16290/17955
+  DTW 进度: 16300/17955
+  DTW 进度: 16310/17955
+  DTW 进度: 16320/17955
+  DTW 进度: 16330/17955
+  DTW 进度: 16340/17955
+  DTW 进度: 16350/17955
+  DTW 进度: 16360/17955
+  DTW 进度: 16370/17955
+  DTW 进度: 16380/17955
+  DTW 进度: 16390/17955
+  DTW 进度: 16400/17955
+  DTW 进度: 16410/17955
+  DTW 进度: 16420/17955
+  DTW 进度: 16430/17955
+  DTW 进度: 16440/17955
+  DTW 进度: 16450/17955
+  DTW 进度: 16460/17955
+  DTW 进度: 16470/17955
+  DTW 进度: 16480/17955
+  DTW 进度: 16490/17955
+  DTW 进度: 16500/17955
+  DTW 进度: 16510/17955
+  DTW 进度: 16520/17955
+  DTW 进度: 16530/17955
+  DTW 进度: 16540/17955
+  DTW 进度: 16550/17955
+  DTW 进度: 16560/17955
+  DTW 进度: 16570/17955
+  DTW 进度: 16580/17955
+  DTW 进度: 16590/17955
+  DTW 进度: 16600/17955
+  DTW 进度: 16610/17955
+  DTW 进度: 16620/17955
+  DTW 进度: 16630/17955
+  DTW 进度: 16640/17955
+  DTW 进度: 16650/17955
+  DTW 进度: 16660/17955
+  DTW 进度: 16670/17955
+  DTW 进度: 16680/17955
+  DTW 进度: 16690/17955
+  DTW 进度: 16700/17955
+  DTW 进度: 16710/17955
+  DTW 进度: 16720/17955
+  DTW 进度: 16730/17955
+  DTW 进度: 16740/17955
+  DTW 进度: 16750/17955
+  DTW 进度: 16760/17955
+  DTW 进度: 16770/17955
+  DTW 进度: 16780/17955
+  DTW 进度: 16790/17955
+  DTW 进度: 16800/17955
+  DTW 进度: 16810/17955
+  DTW 进度: 16820/17955
+  DTW 进度: 16830/17955
+  DTW 进度: 16840/17955
+  DTW 进度: 16850/17955
+  DTW 进度: 16860/17955
+  DTW 进度: 16870/17955
+  DTW 进度: 16880/17955
+  DTW 进度: 16890/17955
+  DTW 进度: 16900/17955
+  DTW 进度: 16910/17955
+  DTW 进度: 16920/17955
+  DTW 进度: 16930/17955
+  DTW 进度: 16940/17955
+  DTW 进度: 16950/17955
+  DTW 进度: 16960/17955
+  DTW 进度: 16970/17955
+  DTW 进度: 16980/17955
+  DTW 进度: 16990/17955
+  DTW 进度: 17000/17955
+  DTW 进度: 17010/17955
+  DTW 进度: 17020/17955
+  DTW 进度: 17030/17955
+  DTW 进度: 17040/17955
+  DTW 进度: 17050/17955
+  DTW 进度: 17060/17955
+  DTW 进度: 17070/17955
+  DTW 进度: 17080/17955
+  DTW 进度: 17090/17955
+  DTW 进度: 17100/17955
+  DTW 进度: 17110/17955
+  DTW 进度: 17120/17955
+  DTW 进度: 17130/17955
+  DTW 进度: 17140/17955
+  DTW 进度: 17150/17955
+  DTW 进度: 17160/17955
+  DTW 进度: 17170/17955
+  DTW 进度: 17180/17955
+  DTW 进度: 17190/17955
+  DTW 进度: 17200/17955
+  DTW 进度: 17210/17955
+  DTW 进度: 17220/17955
+  DTW 进度: 17230/17955
+  DTW 进度: 17240/17955
+  DTW 进度: 17250/17955
+  DTW 进度: 17260/17955
+  DTW 进度: 17270/17955
+  DTW 进度: 17280/17955
+  DTW 进度: 17290/17955
+  DTW 进度: 17300/17955
+  DTW 进度: 17310/17955
+  DTW 进度: 17320/17955
+  DTW 进度: 17330/17955
+  DTW 进度: 17340/17955
+  DTW 进度: 17350/17955
+  DTW 进度: 17360/17955
+  DTW 进度: 17370/17955
+  DTW 进度: 17380/17955
+  DTW 进度: 17390/17955
+  DTW 进度: 17400/17955
+  DTW 进度: 17410/17955
+  DTW 进度: 17420/17955
+  DTW 进度: 17430/17955
+  DTW 进度: 17440/17955
+  DTW 进度: 17450/17955
+  DTW 进度: 17460/17955
+  DTW 进度: 17470/17955
+  DTW 进度: 17480/17955
+  DTW 进度: 17490/17955
+  DTW 进度: 17500/17955
+  DTW 进度: 17510/17955
+  DTW 进度: 17520/17955
+  DTW 进度: 17530/17955
+  DTW 进度: 17540/17955
+  DTW 进度: 17550/17955
+  DTW 进度: 17560/17955
+  DTW 进度: 17570/17955
+  DTW 进度: 17580/17955
+  DTW 进度: 17590/17955
+  DTW 进度: 17600/17955
+  DTW 进度: 17610/17955
+  DTW 进度: 17620/17955
+  DTW 进度: 17630/17955
+  DTW 进度: 17640/17955
+  DTW 进度: 17650/17955
+  DTW 进度: 17660/17955
+  DTW 进度: 17670/17955
+  DTW 进度: 17680/17955
+  DTW 进度: 17690/17955
+  DTW 进度: 17700/17955
+  DTW 进度: 17710/17955
+  DTW 进度: 17720/17955
+  DTW 进度: 17730/17955
+  DTW 进度: 17740/17955
+  DTW 进度: 17750/17955
+  DTW 进度: 17760/17955
+  DTW 进度: 17770/17955
+  DTW 进度: 17780/17955
+  DTW 进度: 17790/17955
+  DTW 进度: 17800/17955
+  DTW 进度: 17810/17955
+  DTW 进度: 17820/17955
+  DTW 进度: 17830/17955
+  DTW 进度: 17840/17955
+  DTW 进度: 17850/17955
+  DTW 进度: 17860/17955
+  DTW 进度: 17870/17955
+  DTW 进度: 17880/17955
+  DTW 进度: 17890/17955
+  DTW 进度: 17900/17955
+  DTW 进度: 17910/17955
+  DTW 进度: 17920/17955
+  DTW 进度: 17930/17955
+  DTW 进度: 17940/17955
+  DTW 进度: 17950/17955
+💾 DTW矩阵已保存到缓存: dtw_cache/delta_cog/pruned_dataset_dtw_matrix.npy
+   矩阵形状: (190, 190), 特征模式: delta_cog, DTW方法: fastdtw
+   文件hash: cdd53b23...
+
+📊 特征标准化参数诊断（mu/sigma estimated from absolute features）:
+  feature_mode: delta_cog
+  note: lat/lon 先近似投影为米制 (x_m,y_m)，保留绝对位置 (x_abs,y_abs)，避免经纬度不等距导致距离不稳定
+  全局参考点 (lat_ref, lon_ref): (42.283360, -71.056870) [所有轨迹共享此参考点，保证绝对位置可比]
+  mu (均值，来自绝对特征):    [x_abs=-11763.407000, y_abs=-43633.020065, sog=6.467366, delta_cog=-0.104787]
+  sigma (标准差，来自绝对特征): [x_abs=24702.022766, y_abs=56451.321068, sog=3.857984, delta_cog=29.610551]
+  mu_delta (对照，仅调试，不用于标准化): [dx=-32.130952, dy=-52.675439, dsog=0.013757, delta_cog=-0.104787]
+  sigma_delta (对照，仅调试，不用于标准化): [dx=954.532305, dy=819.152673, dsog=0.879851, delta_cog=29.610551]
+  ⚠️ 检测到失衡:
+    - x_abs sigma过大(24702.02), 可能主导距离
+    - y_abs sigma过大(56451.32), 可能主导距离
+    - delta_cog sigma过大(29.61), 可能主导距离
+📦 使用提供的DTW矩阵，形状: (190, 190)
+
+📏 距离矩阵统计:
+  mean: 2.2067
+  std:  1.0542
+  min:  0.1460
+  max:  4.3251
+  LD(min valid): 0.1460
+  HD(max valid): 4.3251
+  [Two-stage] note: delta_s is NOT used as the scan step here. Scan resolution is controlled by coarse_steps/refine_steps/window_mult.
+  [Two-stage] coarse_steps=150, coarse_step=0.027861
+  [Two-stage] eps_coarse=0.480373, window=[0.341071,0.619676], refine_steps=300, refine_step=0.000929
+  [Two-stage] eps_final=0.417223, Gmax=197.820435
+  [POA Table3] step=0.000929, LD=0.1460, HD=4.3251, Size=300 | Eps=0.4172, MinPt(Eps*Gmax)=82.5352, Gmax=197.820435
+  [minPts@eps] mean(Num)=3.4737, median(Num)=1.0000, use=mean -> 3
+✅ [Paper] K=7, 噪声比=45.26%, eps=0.417, minPts=3
+
+✅ [All] 聚类完成 (Paper): K=7, 噪声比=45.26%, eps=0.4172, minPts=3
+
+========================================
+步骤5: 聚类质量评估
+========================================
+Paper-strict evaluation: Eq.(15)-(18) + Eq.(21)-(22), centre trajectory + DTW.
+DTW window: disabled (Sakoe–Chiba window code commented out)
+[All]  DBI′: 1.6765
+[All]  CP′ : 0.4527
+[All]  SP′ : 2.1432
+
+========================================
+步骤6: 可视化与输出
+========================================
+📈 density_power.png 曲线口径: poa_strict
+
+========================================
+步骤7: 导出轨迹数据
+========================================
+✅ 已导出 190 条原始轨迹到: /Users/lcx/Desktop/毕设/复现/outputs/ais_sample2_segments_v2_test/run_20260312_212857/debug_raw_trajs.csv
+✅ 已导出 190 条简化轨迹到: /Users/lcx/Desktop/毕设/复现/outputs/ais_sample2_segments_v2_test/run_20260312_212857/debug_simplified_trajs.csv
+
+🎉 AMTBRA 流程完成！结果已保存至： /Users/lcx/Desktop/毕设/复现/outputs/ais_sample2_segments_v2_test/run_20260312_212857

@@ -1,0 +1,63 @@
+{
+  "seed_info": {
+    "seed_run_dir": "/Users/lcx/Desktop/毕设/复现/outputs/test_cleaning_seed/run_20260206_174317",
+    "ais_csv": "/Users/lcx/Desktop/毕设/复现/data/raw/ais_yuanli.csv",
+    "dtw_npy": "/Users/lcx/Desktop/毕设/复现/dtw_cache/delta_cog/ais_yuanli_dtw_matrix.npy",
+    "feature_mode": "delta_cog"
+  },
+  "target": {
+    "noise_ratio": 0.1,
+    "K_range": [
+      3,
+      5
+    ]
+  },
+  "params": {
+    "minpts_stat": "mean",
+    "poa_two_stage": true,
+    "coarse_steps": 150,
+    "refine_steps": 300,
+    "refine_window_mult": 5.0,
+    "max_iters": 20,
+    "recompute_dtw": "each_iter",
+    "fixed_dt_s": 60,
+    "simp_alpha": 1.0,
+    "dp_epsilon_scale": 0.8,
+    "max_interp_points": null,
+    "max_simplified_points": null,
+    "dtw_n_jobs": -1,
+    "delta_s": 0.07
+  },
+  "history": [
+    {
+      "iter": 0,
+      "n": 80,
+      "eps": 0.5128843418785585,
+      "minPts": 3,
+      "K": 3,
+      "noise_ratio": 0.35,
+      "removed": 6
+    },
+    {
+      "iter": 1,
+      "n": 74,
+      "eps": 0.28197471311571776,
+      "minPts": 1,
+      "K": 52,
+      "noise_ratio": 0.0,
+      "removed": 0
+    }
+  ],
+  "best_metrics": {
+    "eps": 0.5128843418785585,
+    "minPts": 3,
+    "K": 3,
+    "noise_ratio": 0.35
+  },
+  "final": {
+    "n_keep": 80,
+    "n_total": 80,
+    "final_csv": "/Users/lcx/Desktop/毕设/复现/data/cleaned/loopclean_20260225_122852/final.csv",
+    "final_csv_rows": 1087195
+  }
+}

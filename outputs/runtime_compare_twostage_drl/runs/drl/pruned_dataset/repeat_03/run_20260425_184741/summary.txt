@@ -1,0 +1,357 @@
+============================================================
+海洋交通行为模式识别系统 (DRL 自动调参模式)
+============================================================
+📌 选参模式: drl
+🧩 特征模式: delta_cog
+✅ 找到AIS文件: /Users/lcx/Desktop/毕设/复现/outputs/two_stage/k=3_dataset/pruned_dataset.csv
+
+========================================
+步骤1: 数据加载
+========================================
+✅ 成功加载 73 艘船舶的轨迹数据
+✅ 选择 73 艘船舶进行处理
+
+========================================
+步骤2: 数据预处理
+========================================
+✅ 从轨迹缓存加载成功: /Users/lcx/Desktop/毕设/复现/traj_cache/pruned_dataset/dt60_len50_a1.0_dp0.8_minone_msnone/traj_cache.pkl.gz（轨迹数=68）
+✅ 已从轨迹缓存恢复预处理+简化结果：processed=68, simplified=68
+⚠️  已跳过 5 条轨迹（Length 缺失/异常）。示例 MMSI: [900000001, 900000002, 900000003, 900000004, 900000005]
+✅ 预处理完成，共 68 条轨迹（跳过 5 条）
+
+========================================
+步骤3: 轨迹简化
+========================================
+[SACSB] N=144, len(COG_Variation)=71, len(idx_sacsb_keypoints)=40
+[SACSB] keypoints orig idx (first10)=[3, 5, 7, 9, 11, 13, 15, 17, 31, 33]
+[Simplify] N=144, DP_kept=4, SACSB_keypoints=40, merge_kept=43, compression=70.14%
+  简化轨迹 1/68 完成（MMSI=900000006），点数 43，压缩率 70.14%
+[SACSB] N=94, len(COG_Variation)=46, len(idx_sacsb_keypoints)=11
+[SACSB] keypoints orig idx (first10)=[3, 17, 19, 35, 39, 41, 43, 49, 51, 69]
+[Simplify] N=94, DP_kept=5, SACSB_keypoints=11, merge_kept=15, compression=84.04%
+  简化轨迹 2/68 完成（MMSI=900000007），点数 15，压缩率 84.04%
+[SACSB] N=273, len(COG_Variation)=136, len(idx_sacsb_keypoints)=49
+[SACSB] keypoints orig idx (first10)=[23, 53, 77, 79, 93, 95, 99, 111, 113, 193]
+[Simplify] N=273, DP_kept=8, SACSB_keypoints=49, merge_kept=56, compression=79.49%
+  简化轨迹 3/68 完成（MMSI=900000008），点数 56，压缩率 79.49%
+[SACSB] N=288, len(COG_Variation)=143, len(idx_sacsb_keypoints)=86
+[SACSB] keypoints orig idx (first10)=[3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+[Simplify] N=288, DP_kept=7, SACSB_keypoints=86, merge_kept=91, compression=68.40%
+  简化轨迹 4/68 完成（MMSI=900000009），点数 91，压缩率 68.40%
+[SACSB] N=130, len(COG_Variation)=64, len(idx_sacsb_keypoints)=42
+[SACSB] keypoints orig idx (first10)=[3, 7, 15, 21, 23, 33, 35, 37, 43, 45]
+[Simplify] N=130, DP_kept=5, SACSB_keypoints=42, merge_kept=46, compression=64.62%
+  简化轨迹 5/68 完成（MMSI=900000010），点数 46，压缩率 64.62%
+[SACSB] N=177, len(COG_Variation)=88, len(idx_sacsb_keypoints)=40
+[Simplify] N=177, DP_kept=5, SACSB_keypoints=40, merge_kept=45, compression=74.58%
+  简化轨迹 6/68 完成（MMSI=900000011），点数 45，压缩率 74.58%
+[SACSB] N=155, len(COG_Variation)=77, len(idx_sacsb_keypoints)=28
+[Simplify] N=155, DP_kept=41, SACSB_keypoints=28, merge_kept=69, compression=55.48%
+  简化轨迹 7/68 完成（MMSI=900000012），点数 69，压缩率 55.48%
+[SACSB] N=136, len(COG_Variation)=67, len(idx_sacsb_keypoints)=18
+[Simplify] N=136, DP_kept=49, SACSB_keypoints=18, merge_kept=65, compression=52.21%
+  简化轨迹 8/68 完成（MMSI=900000013），点数 65，压缩率 52.21%
+[SACSB] N=413, len(COG_Variation)=206, len(idx_sacsb_keypoints)=96
+[Simplify] N=413, DP_kept=268, SACSB_keypoints=96, merge_kept=322, compression=22.03%
+  简化轨迹 9/68 完成（MMSI=900000014），点数 322，压缩率 22.03%
+[SACSB] N=348, len(COG_Variation)=173, len(idx_sacsb_keypoints)=80
+[Simplify] N=348, DP_kept=202, SACSB_keypoints=80, merge_kept=245, compression=29.60%
+  简化轨迹 10/68 完成（MMSI=900000015），点数 245，压缩率 29.60%
+[SACSB] N=214, len(COG_Variation)=106, len(idx_sacsb_keypoints)=65
+[Simplify] N=214, DP_kept=99, SACSB_keypoints=65, merge_kept=136, compression=36.45%
+  简化轨迹 11/68 完成（MMSI=900000016），点数 136，压缩率 36.45%
+[SACSB] N=128, len(COG_Variation)=63, len(idx_sacsb_keypoints)=12
+[Simplify] N=128, DP_kept=15, SACSB_keypoints=12, merge_kept=25, compression=80.47%
+  简化轨迹 12/68 完成（MMSI=900000017），点数 25，压缩率 80.47%
+[SACSB] N=137, len(COG_Variation)=68, len(idx_sacsb_keypoints)=21
+[Simplify] N=137, DP_kept=20, SACSB_keypoints=21, merge_kept=40, compression=70.80%
+  简化轨迹 13/68 完成（MMSI=900000018），点数 40，压缩率 70.80%
+[SACSB] N=121, len(COG_Variation)=60, len(idx_sacsb_keypoints)=14
+[Simplify] N=121, DP_kept=16, SACSB_keypoints=14, merge_kept=29, compression=76.03%
+  简化轨迹 14/68 完成（MMSI=900000019），点数 29，压缩率 76.03%
+[SACSB] N=136, len(COG_Variation)=67, len(idx_sacsb_keypoints)=10
+[Simplify] N=136, DP_kept=19, SACSB_keypoints=10, merge_kept=25, compression=81.62%
+  简化轨迹 15/68 完成（MMSI=900000020），点数 25，压缩率 81.62%
+[SACSB] N=167, len(COG_Variation)=83, len(idx_sacsb_keypoints)=25
+[Simplify] N=167, DP_kept=23, SACSB_keypoints=25, merge_kept=46, compression=72.46%
+  简化轨迹 16/68 完成（MMSI=900000021），点数 46，压缩率 72.46%
+[SACSB] N=140, len(COG_Variation)=69, len(idx_sacsb_keypoints)=19
+[Simplify] N=140, DP_kept=15, SACSB_keypoints=19, merge_kept=32, compression=77.14%
+  简化轨迹 17/68 完成（MMSI=900000022），点数 32，压缩率 77.14%
+[SACSB] N=132, len(COG_Variation)=65, len(idx_sacsb_keypoints)=5
+[Simplify] N=132, DP_kept=16, SACSB_keypoints=5, merge_kept=19, compression=85.61%
+  简化轨迹 18/68 完成（MMSI=900000023），点数 19，压缩率 85.61%
+[SACSB] N=131, len(COG_Variation)=65, len(idx_sacsb_keypoints)=6
+[Simplify] N=131, DP_kept=17, SACSB_keypoints=6, merge_kept=21, compression=83.97%
+  简化轨迹 19/68 完成（MMSI=900000024），点数 21，压缩率 83.97%
+[SACSB] N=121, len(COG_Variation)=60, len(idx_sacsb_keypoints)=9
+[Simplify] N=121, DP_kept=16, SACSB_keypoints=9, merge_kept=22, compression=81.82%
+  简化轨迹 20/68 完成（MMSI=900000025），点数 22，压缩率 81.82%
+[SACSB] N=130, len(COG_Variation)=64, len(idx_sacsb_keypoints)=8
+[Simplify] N=130, DP_kept=16, SACSB_keypoints=8, merge_kept=23, compression=82.31%
+  简化轨迹 21/68 完成（MMSI=900000026），点数 23，压缩率 82.31%
+[SACSB] N=220, len(COG_Variation)=109, len(idx_sacsb_keypoints)=45
+[Simplify] N=220, DP_kept=63, SACSB_keypoints=45, merge_kept=87, compression=60.45%
+  简化轨迹 22/68 完成（MMSI=900000027），点数 87，压缩率 60.45%
+[SACSB] N=100, len(COG_Variation)=49, len(idx_sacsb_keypoints)=18
+[Simplify] N=100, DP_kept=40, SACSB_keypoints=18, merge_kept=53, compression=47.00%
+  简化轨迹 23/68 完成（MMSI=900000028），点数 53，压缩率 47.00%
+[SACSB] N=255, len(COG_Variation)=127, len(idx_sacsb_keypoints)=52
+[Simplify] N=255, DP_kept=12, SACSB_keypoints=52, merge_kept=62, compression=75.69%
+  简化轨迹 24/68 完成（MMSI=900000029），点数 62，压缩率 75.69%
+[SACSB] N=282, len(COG_Variation)=140, len(idx_sacsb_keypoints)=56
+[Simplify] N=282, DP_kept=19, SACSB_keypoints=56, merge_kept=71, compression=74.82%
+  简化轨迹 25/68 完成（MMSI=900000030），点数 71，压缩率 74.82%
+[SACSB] N=173, len(COG_Variation)=86, len(idx_sacsb_keypoints)=47
+[Simplify] N=173, DP_kept=64, SACSB_keypoints=47, merge_kept=99, compression=42.77%
+  简化轨迹 26/68 完成（MMSI=900000031），点数 99，压缩率 42.77%
+[SACSB] N=356, len(COG_Variation)=177, len(idx_sacsb_keypoints)=120
+[Simplify] N=356, DP_kept=122, SACSB_keypoints=120, merge_kept=204, compression=42.70%
+  简化轨迹 27/68 完成（MMSI=900000032），点数 204，压缩率 42.70%
+[SACSB] N=480, len(COG_Variation)=239, len(idx_sacsb_keypoints)=80
+[Simplify] N=480, DP_kept=178, SACSB_keypoints=80, merge_kept=221, compression=53.96%
+  简化轨迹 28/68 完成（MMSI=900000033），点数 221，压缩率 53.96%
+[SACSB] N=150, len(COG_Variation)=74, len(idx_sacsb_keypoints)=33
+[Simplify] N=150, DP_kept=3, SACSB_keypoints=33, merge_kept=35, compression=76.67%
+  简化轨迹 29/68 完成（MMSI=900000034），点数 35，压缩率 76.67%
+[SACSB] N=309, len(COG_Variation)=154, len(idx_sacsb_keypoints)=70
+[Simplify] N=309, DP_kept=18, SACSB_keypoints=70, merge_kept=87, compression=71.84%
+  简化轨迹 30/68 完成（MMSI=900000035），点数 87，压缩率 71.84%
+[SACSB] N=305, len(COG_Variation)=152, len(idx_sacsb_keypoints)=97
+[Simplify] N=305, DP_kept=65, SACSB_keypoints=97, merge_kept=139, compression=54.43%
+  简化轨迹 31/68 完成（MMSI=900000036），点数 139，压缩率 54.43%
+[SACSB] N=145, len(COG_Variation)=72, len(idx_sacsb_keypoints)=27
+[Simplify] N=145, DP_kept=35, SACSB_keypoints=27, merge_kept=56, compression=61.38%
+  简化轨迹 32/68 完成（MMSI=900000037），点数 56，压缩率 61.38%
+[SACSB] N=143, len(COG_Variation)=71, len(idx_sacsb_keypoints)=17
+[Simplify] N=143, DP_kept=52, SACSB_keypoints=17, merge_kept=67, compression=53.15%
+  简化轨迹 33/68 完成（MMSI=900000038），点数 67，压缩率 53.15%
+[SACSB] N=191, len(COG_Variation)=95, len(idx_sacsb_keypoints)=69
+[Simplify] N=191, DP_kept=38, SACSB_keypoints=69, merge_kept=92, compression=51.83%
+  简化轨迹 34/68 完成（MMSI=900000039），点数 92，压缩率 51.83%
+[SACSB] N=208, len(COG_Variation)=103, len(idx_sacsb_keypoints)=68
+[Simplify] N=208, DP_kept=45, SACSB_keypoints=68, merge_kept=104, compression=50.00%
+  简化轨迹 35/68 完成（MMSI=900000040），点数 104，压缩率 50.00%
+[SACSB] N=247, len(COG_Variation)=123, len(idx_sacsb_keypoints)=33
+[Simplify] N=247, DP_kept=52, SACSB_keypoints=33, merge_kept=82, compression=66.80%
+  简化轨迹 36/68 完成（MMSI=900000041），点数 82，压缩率 66.80%
+[SACSB] N=237, len(COG_Variation)=118, len(idx_sacsb_keypoints)=28
+[Simplify] N=237, DP_kept=47, SACSB_keypoints=28, merge_kept=74, compression=68.78%
+  简化轨迹 37/68 完成（MMSI=900000042），点数 74，压缩率 68.78%
+[SACSB] N=305, len(COG_Variation)=152, len(idx_sacsb_keypoints)=65
+[Simplify] N=305, DP_kept=36, SACSB_keypoints=65, merge_kept=90, compression=70.49%
+  简化轨迹 38/68 完成（MMSI=900000043），点数 90，压缩率 70.49%
+[SACSB] N=168, len(COG_Variation)=83, len(idx_sacsb_keypoints)=67
+[Simplify] N=168, DP_kept=18, SACSB_keypoints=67, merge_kept=80, compression=52.38%
+  简化轨迹 39/68 完成（MMSI=900000044），点数 80，压缩率 52.38%
+[SACSB] N=126, len(COG_Variation)=62, len(idx_sacsb_keypoints)=32
+[Simplify] N=126, DP_kept=48, SACSB_keypoints=32, merge_kept=67, compression=46.83%
+  简化轨迹 40/68 完成（MMSI=900000045），点数 67，压缩率 46.83%
+[SACSB] N=136, len(COG_Variation)=67, len(idx_sacsb_keypoints)=34
+[Simplify] N=136, DP_kept=5, SACSB_keypoints=34, merge_kept=38, compression=72.06%
+  简化轨迹 41/68 完成（MMSI=900000046），点数 38，压缩率 72.06%
+[SACSB] N=141, len(COG_Variation)=70, len(idx_sacsb_keypoints)=25
+[Simplify] N=141, DP_kept=8, SACSB_keypoints=25, merge_kept=31, compression=78.01%
+  简化轨迹 42/68 完成（MMSI=900000047），点数 31，压缩率 78.01%
+[SACSB] N=138, len(COG_Variation)=68, len(idx_sacsb_keypoints)=30
+[Simplify] N=138, DP_kept=7, SACSB_keypoints=30, merge_kept=33, compression=76.09%
+  简化轨迹 43/68 完成（MMSI=900000048），点数 33，压缩率 76.09%
+[SACSB] N=151, len(COG_Variation)=75, len(idx_sacsb_keypoints)=34
+[Simplify] N=151, DP_kept=5, SACSB_keypoints=34, merge_kept=38, compression=74.83%
+  简化轨迹 44/68 完成（MMSI=900000049），点数 38，压缩率 74.83%
+[SACSB] N=134, len(COG_Variation)=66, len(idx_sacsb_keypoints)=37
+[Simplify] N=134, DP_kept=3, SACSB_keypoints=37, merge_kept=39, compression=70.90%
+  简化轨迹 45/68 完成（MMSI=900000050），点数 39，压缩率 70.90%
+[SACSB] N=168, len(COG_Variation)=83, len(idx_sacsb_keypoints)=36
+[Simplify] N=168, DP_kept=4, SACSB_keypoints=36, merge_kept=39, compression=76.79%
+  简化轨迹 46/68 完成（MMSI=900000051），点数 39，压缩率 76.79%
+[SACSB] N=119, len(COG_Variation)=59, len(idx_sacsb_keypoints)=27
+[Simplify] N=119, DP_kept=4, SACSB_keypoints=27, merge_kept=31, compression=73.95%
+  简化轨迹 47/68 完成（MMSI=900000052），点数 31，压缩率 73.95%
+[SACSB] N=117, len(COG_Variation)=58, len(idx_sacsb_keypoints)=28
+[Simplify] N=117, DP_kept=4, SACSB_keypoints=28, merge_kept=32, compression=72.65%
+  简化轨迹 48/68 完成（MMSI=900000053），点数 32，压缩率 72.65%
+[SACSB] N=172, len(COG_Variation)=85, len(idx_sacsb_keypoints)=49
+[Simplify] N=172, DP_kept=4, SACSB_keypoints=49, merge_kept=51, compression=70.35%
+  简化轨迹 49/68 完成（MMSI=900000054），点数 51，压缩率 70.35%
+[SACSB] N=121, len(COG_Variation)=60, len(idx_sacsb_keypoints)=27
+[Simplify] N=121, DP_kept=4, SACSB_keypoints=27, merge_kept=30, compression=75.21%
+  简化轨迹 50/68 完成（MMSI=900000055），点数 30，压缩率 75.21%
+[SACSB] N=121, len(COG_Variation)=60, len(idx_sacsb_keypoints)=32
+[Simplify] N=121, DP_kept=3, SACSB_keypoints=32, merge_kept=34, compression=71.90%
+  简化轨迹 51/68 完成（MMSI=900000056），点数 34，压缩率 71.90%
+[SACSB] N=121, len(COG_Variation)=60, len(idx_sacsb_keypoints)=31
+[Simplify] N=121, DP_kept=5, SACSB_keypoints=31, merge_kept=35, compression=71.07%
+  简化轨迹 52/68 完成（MMSI=900000057），点数 35，压缩率 71.07%
+[SACSB] N=174, len(COG_Variation)=86, len(idx_sacsb_keypoints)=34
+[Simplify] N=174, DP_kept=4, SACSB_keypoints=34, merge_kept=38, compression=78.16%
+  简化轨迹 53/68 完成（MMSI=900000058），点数 38，压缩率 78.16%
+[SACSB] N=99, len(COG_Variation)=49, len(idx_sacsb_keypoints)=23
+[Simplify] N=99, DP_kept=3, SACSB_keypoints=23, merge_kept=26, compression=73.74%
+  简化轨迹 54/68 完成（MMSI=900000059），点数 26，压缩率 73.74%
+[SACSB] N=100, len(COG_Variation)=49, len(idx_sacsb_keypoints)=25
+[Simplify] N=100, DP_kept=4, SACSB_keypoints=25, merge_kept=28, compression=72.00%
+  简化轨迹 55/68 完成（MMSI=900000060），点数 28，压缩率 72.00%
+[SACSB] N=114, len(COG_Variation)=56, len(idx_sacsb_keypoints)=36
+[Simplify] N=114, DP_kept=2, SACSB_keypoints=36, merge_kept=37, compression=67.54%
+  简化轨迹 56/68 完成（MMSI=900000061），点数 37，压缩率 67.54%
+[SACSB] N=121, len(COG_Variation)=60, len(idx_sacsb_keypoints)=32
+[Simplify] N=121, DP_kept=5, SACSB_keypoints=32, merge_kept=37, compression=69.42%
+  简化轨迹 57/68 完成（MMSI=900000062），点数 37，压缩率 69.42%
+[SACSB] N=123, len(COG_Variation)=61, len(idx_sacsb_keypoints)=19
+[Simplify] N=123, DP_kept=4, SACSB_keypoints=19, merge_kept=22, compression=82.11%
+  简化轨迹 58/68 完成（MMSI=900000063），点数 22，压缩率 82.11%
+[SACSB] N=176, len(COG_Variation)=87, len(idx_sacsb_keypoints)=38
+[Simplify] N=176, DP_kept=4, SACSB_keypoints=38, merge_kept=41, compression=76.70%
+  简化轨迹 59/68 完成（MMSI=900000064），点数 41，压缩率 76.70%
+[SACSB] N=119, len(COG_Variation)=59, len(idx_sacsb_keypoints)=24
+[Simplify] N=119, DP_kept=2, SACSB_keypoints=24, merge_kept=26, compression=78.15%
+  简化轨迹 60/68 完成（MMSI=900000065），点数 26，压缩率 78.15%
+[SACSB] N=127, len(COG_Variation)=63, len(idx_sacsb_keypoints)=32
+[Simplify] N=127, DP_kept=3, SACSB_keypoints=32, merge_kept=34, compression=73.23%
+  简化轨迹 61/68 完成（MMSI=900000066），点数 34，压缩率 73.23%
+[SACSB] N=128, len(COG_Variation)=63, len(idx_sacsb_keypoints)=32
+[Simplify] N=128, DP_kept=2, SACSB_keypoints=32, merge_kept=34, compression=73.44%
+  简化轨迹 62/68 完成（MMSI=900000067），点数 34，压缩率 73.44%
+[SACSB] N=140, len(COG_Variation)=69, len(idx_sacsb_keypoints)=38
+[Simplify] N=140, DP_kept=6, SACSB_keypoints=38, merge_kept=43, compression=69.29%
+  简化轨迹 63/68 完成（MMSI=900000068），点数 43，压缩率 69.29%
+[SACSB] N=135, len(COG_Variation)=67, len(idx_sacsb_keypoints)=30
+[Simplify] N=135, DP_kept=4, SACSB_keypoints=30, merge_kept=33, compression=75.56%
+  简化轨迹 64/68 完成（MMSI=900000069），点数 33，压缩率 75.56%
+[SACSB] N=102, len(COG_Variation)=50, len(idx_sacsb_keypoints)=26
+[Simplify] N=102, DP_kept=2, SACSB_keypoints=26, merge_kept=28, compression=72.55%
+  简化轨迹 65/68 完成（MMSI=900000070），点数 28，压缩率 72.55%
+[SACSB] N=105, len(COG_Variation)=52, len(idx_sacsb_keypoints)=26
+[Simplify] N=105, DP_kept=4, SACSB_keypoints=26, merge_kept=30, compression=71.43%
+  简化轨迹 66/68 完成（MMSI=900000071），点数 30，压缩率 71.43%
+[SACSB] N=110, len(COG_Variation)=54, len(idx_sacsb_keypoints)=19
+[Simplify] N=110, DP_kept=4, SACSB_keypoints=19, merge_kept=23, compression=79.09%
+  简化轨迹 67/68 完成（MMSI=900000072），点数 23，压缩率 79.09%
+[SACSB] N=108, len(COG_Variation)=53, len(idx_sacsb_keypoints)=24
+[Simplify] N=108, DP_kept=2, SACSB_keypoints=24, merge_kept=25, compression=76.85%
+  简化轨迹 68/68 完成（MMSI=900000073），点数 25，压缩率 76.85%
+✅ 简化完成，共 68 条轨迹
+
+平均压缩率：68.00%
+💾 轨迹缓存已保存: /Users/lcx/Desktop/毕设/复现/traj_cache/pruned_dataset/dt60_len50_a1.0_dp0.8_minone_msnone/traj_cache.pkl.gz
+   轨迹数: 68, hash: bb464578..., tag: dt60_len50_a1.0_dp0.8_minone_msnone
+
+========================================
+步骤4: 自适应聚类 (统一处理所有轨迹)
+========================================
+  轨迹数: 68 条
+
+🤖 使用 DRL 自动调参模式
+
+[All] DRL 自动调参...
+
+📊 特征标准化参数诊断（mu/sigma estimated from absolute features）:
+  feature_mode: delta_cog
+  note: lat/lon 先近似投影为米制 (x_m,y_m)，保留绝对位置 (x_abs,y_abs)，避免经纬度不等距导致距离不稳定
+  全局参考点 (lat_ref, lon_ref): (43.858950, -67.719330) [所有轨迹共享此参考点，保证绝对位置可比]
+  mu (均值，来自绝对特征):    [x_abs=-125953.925476, y_abs=-13425.772608, sog=7.761442, delta_cog=1.595170]
+  sigma (标准差，来自绝对特征): [x_abs=80280.453977, y_abs=7998.281179, sog=4.850875, delta_cog=43.547550]
+  mu_delta (对照，仅调试，不用于标准化): [dx=-408.790299, dy=-286.539305, dsog=0.005825, delta_cog=1.595170]
+  sigma_delta (对照，仅调试，不用于标准化): [dx=1229.048150, dy=735.345603, dsog=1.657106, delta_cog=43.547550]
+  ⚠️ 检测到失衡:
+    - x_abs sigma过大(80280.45), 可能主导距离
+    - y_abs sigma过大(7998.28), 可能主导距离
+    - delta_cog sigma过大(43.55), 可能主导距离
+✅ 从缓存加载DTW矩阵: dtw_cache/delta_cog/pruned_dataset_dtw_matrix.npy
+   矩阵形状: (68, 68), 文件hash: bb464578...
+
+============================================================
+🔎 [State Debug] DBSCAN 结构性状态特征诊断（仅打印一次）
+============================================================
+- N=68, k_ref=5, eps_ref(kdist_q50)=0.085746
+- k-distance: min=0.005674, q10=0.013356, q50=0.085746, q90=0.372309, max=0.683846, std=0.161463
+- neighbor_count: mean=11.794, std=12.040, q10=0.000, q90=28.000
+- density_cv(std/mean)=1.020834
+- ratio_isolated(n_i<=1)=0.411765
+[Check A][Infer] eps=0.0086, minPts=1 eps_min=0.0085, eps_max=1.0000, pos=0.01% (⚠️ near eps_min)
+  ✅ DRL 选参结果: eps=0.0086, minPts=1
+[Check B][all] silhouette=0.0450, noise_ratio=0.00%, core_ratio=100.00%, K=48 (eps=0.0086, minPts=1)
+  ✅ [DRL] K=48, 噪声比=0.00%, eps=0.0086, minPts=1
+
+✅ [All] 聚类完成 (DRL): K=48, 噪声比=0.00%, eps=0.0086, minPts=1
+
+========================================
+额外对比: 传统聚类 (K-Means / Agglomerative / Spectral)
+========================================
+[K-Means] MDS降维: 68×68 -> 68×10
+[K-Means] 自动选择最优k (范围: (2, 10))...
+[K-Means] 使用MDS将距离矩阵转换为 10 维特征向量...
+✅ MDS转换完成，特征向量形状: (68, 10)
+  k=2: silhouette=0.6924
+  k=3: silhouette=0.5534
+  k=4: silhouette=0.5677
+  k=5: silhouette=0.5846
+  k=6: silhouette=0.5865
+  k=7: silhouette=0.5825
+  k=8: silhouette=0.5305
+  k=9: silhouette=0.5241
+  k=10: silhouette=0.5218
+✅ 最优 k=2 (method=silhouette)
+[K-Means] 执行聚类，k=2...
+✅ [K-Means] 聚类完成: k=2, silhouette=0.6924
+[KMeans] 自动选择结果: k=2, silhouette=0.6924
+[KMeans]  DBI′: 0.6005
+[KMeans]  CP′ : 0.5507
+[KMeans]  SP′ : 1.8341
+[层次聚类] 自动选择最优簇数 (最大: 10)...
+  n=2: silhouette=0.6965
+  n=3: silhouette=0.6593
+  n=4: silhouette=0.6200
+  n=5: silhouette=0.5833
+  n=6: silhouette=0.5448
+  n=7: silhouette=0.5273
+  n=8: silhouette=0.5859
+  n=9: silhouette=0.5861
+  n=10: silhouette=0.5773
+✅ 最优 n=2 (linkage=average)
+[层次聚类] 执行聚类，n_clusters=2, linkage=average...
+✅ [层次聚类] 聚类完成: k=2, silhouette=0.6965
+[Agglomerative] 自动选择结果: k=2, silhouette=0.6965
+[Agglomerative]  DBI′: 0.6005
+[Agglomerative]  CP′ : 0.5507
+[Agglomerative]  SP′ : 1.8341
+[谱聚类] 构建相似度矩阵，sigma=0.6855...
+[谱聚类] 自动选择最优簇数 (最大: 10)...
+  n=2: silhouette=-0.4894
+  n=3: silhouette=-0.5072
+  n=4: silhouette=-0.5136
+  n=5: silhouette=-0.5282
+  n=6: silhouette=-0.5471
+  n=7: silhouette=-0.5566
+  n=8: silhouette=-0.5746
+  n=9: silhouette=-0.5755
+  n=10: silhouette=-0.5763
+[谱聚类] 执行聚类，n_clusters=2...
+✅ [谱聚类] 聚类完成: k=2, silhouette=-0.4894
+[Spectral] 自动选择结果: k=2, silhouette=-0.4894
+[Spectral]  DBI′: 0.6005
+[Spectral]  CP′ : 0.5507
+[Spectral]  SP′ : 1.8341
+
+========================================
+步骤5: 聚类质量评估
+========================================
+Paper-strict evaluation: Eq.(15)-(18) + Eq.(21)-(22), centre trajectory + DTW.
+DTW window: disabled (Sakoe–Chiba window code commented out)
+ℹ️ DRL 模式提示：聚类使用的是 DRL 的距离约束层(constrain_distance_matrix)后的距离矩阵；但以下 DBI′/CP′/SP′ 按论文定义，基于原始 DTW 距离对聚类标签做评估。
+[All]  DBI′: 0.3003
+[All]  CP′ : 0.0124
+[All]  SP′ : 1.9899
+
+========================================
+步骤6: 可视化与输出
+========================================
+
+========================================
+步骤7: 导出轨迹数据
+========================================
+✅ 已导出 68 条原始轨迹到: /Users/lcx/Desktop/毕设/复现/outputs/runtime_compare_twostage_drl/runs/drl/pruned_dataset/repeat_03/run_20260425_184741/debug_raw_trajs.csv
+✅ 已导出 68 条简化轨迹到: /Users/lcx/Desktop/毕设/复现/outputs/runtime_compare_twostage_drl/runs/drl/pruned_dataset/repeat_03/run_20260425_184741/debug_simplified_trajs.csv
+
+🎉 AMTBRA 流程完成！结果已保存至： /Users/lcx/Desktop/毕设/复现/outputs/runtime_compare_twostage_drl/runs/drl/pruned_dataset/repeat_03/run_20260425_184741
